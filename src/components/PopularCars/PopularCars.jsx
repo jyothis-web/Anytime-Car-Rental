@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import carData from "../../data/car.json";
 import "./Popularcars.css";
 const PopularCars = () => {
@@ -257,11 +258,13 @@ const PopularCars = () => {
                           {car.price}
                         </h6>
                       </div>
-                      <div className="card-button">
-                        <a href={car.detailsUrl} className="btn btn-primary">
-                          Book Now
-                        </a>
-                      </div>
+                      <Link to="/CarDetilPage">
+                        <div className="card-button">
+                          <div className="btn btn-primary">
+                            Book Now
+                          </div>
+                        </div>
+                      </Link>
                     </div>
                   </div>
                 ))}
