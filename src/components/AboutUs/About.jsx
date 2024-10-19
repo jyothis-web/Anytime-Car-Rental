@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 const About = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
 
       <main className="main">
         <div className="page-header pt-30 background-body">
@@ -45,26 +45,29 @@ const About = () => {
               <div className="col-lg-4">
                 <h3 className="neutral-1000">
                   The Future of <br />
-                  <span className="text-primary">Car Rental</span>
+                  <span
+                    className="text-primary"
+                    style={{ paddingRight: "10px" }}
+                  >
+                    Car Rental
+                  </span>
                   is Here
                 </h3>
               </div>
               <div className="col-lg-7 offset-lg-1">
                 <p className="text-lg-medium neutral-500">
-                  TG7 Cars, we&apos;re more than just a used car dealership.
-                  We&apos;re a gateway to a world of opulence and performance.
-                  Our passion lies in curating a collection of premium used cars
-                  that redefine luxury.
+                  Since 2013, Anytime Rent a Car has been Standout in the Car
+                  rental industry, offering extraordinary services that
+                  transcend the ordinary. with a diverse fleet ranging from
+                  Sedans to SUVs and 4x4s, we craft a personalized experience
+                  for every traveler. Embark on a journey, not just to a
+                  destination with our meticulously maintained fleet of the
+                  latest models. From the elegance of sedans to the versatility
+                  of SUVs and the rugged capability of 4x4s, our vehicles
+                  transform your travel into an unforgettable adventure.
                 </p>
-                <p className="text-lg-medium neutral-500">
-                  Over 20 years, we&apos;ve transformed from a standard car
-                  showroom to a luxury destination, delighting 5000 clients with
-                  our commitment to quality and trust in preowned vehicles. We
-                  believe in honesty, transparency, and building long-lasting
-                  relationships. Every vehicle in our inventory is meticulously
-                  selected, ensuring it meets our stringent standards of quality
-                  and condition.
-                </p>
+                <br />
+                
               </div>
             </div>
             <div className="row g-4">
@@ -279,11 +282,9 @@ const About = () => {
                     Get started with us today.
                   </h4>
                   <p className="text-lg-medium neutral-500 mb-4">
-                    Our mission is to make car rental easy, accessible, and
-                    affordable for everyone. We believe that renting a car
-                    should be a hassle-free experience, and we&apos;re dedicated
-                    to ensuring that every customer finds the perfect vehicle
-                    for their journey.
+                    Our mission is to Provide innovative and customer-centric
+                    solutions that redefine personal transportation, inspiring a
+                    new way of empowering and enjoyable travel.
                   </p>
                   <div className="row">
                     <div className="col">
@@ -302,24 +303,26 @@ const About = () => {
                       </ul>
                     </div>
                   </div>
-                  <a className="btn btn-primary mt-2" href="#">
-                    Get Started Now
-                    <svg
-                      width={16}
-                      height={16}
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 15L15 8L8 1M15 8L1 8"
-                        stroke=""
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
+                  <Link to="/CarFilterPage">
+                    <div className="btn btn-primary mt-2">
+                      Get Started Now
+                      <svg
+                        width={16}
+                        height={16}
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 15L15 8L8 1M15 8L1 8"
+                          stroke=""
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </Link>
                 </div>
                 <div className="col-lg-6 offset-lg-1 position-relative z-1 mt-lg-0 mt-4">
                   <div className="d-flex flex-column gap-4">
@@ -363,7 +366,7 @@ const About = () => {
           </div>
         </section>
         {/* Static 1 */}
-        <section className="section-static-1 background-body background-2 pt-80 pb-80">
+        {/* <section className="section-static-1 background-body background-2 pt-80 pb-80">
           <div className="container">
             <div className="row">
               <div className="col-12">
@@ -374,12 +377,10 @@ const About = () => {
                       <h3>2008</h3>
                       <p>Started showroom near Malabar Gold, Kodungallur</p>
                     </div>
-                    {/* <div className="timeline-arrow">→</div> */}
                     <div className="timeline-item">
                       <h3>2012</h3>
                       <p>Established our first office in Kaloor, Cochin</p>
                     </div>
-                    {/* <div className="timeline-arrow">→</div> */}
                     <div className="timeline-item">
                       <h3>2016</h3>
                       <p>Opened our first branch in TKS Puram, Kodungallur</p>
@@ -391,12 +392,10 @@ const About = () => {
                         Launched our first international office in Doha, Qatar
                       </p>
                     </div>
-                    {/* <div className="timeline-arrow">→</div> */}
                     <div className="timeline-item">
                       <h3>2018</h3>
                       <p>Expanded to Africa with second office in Rwanda</p>
                     </div>
-                    {/* <div className="timeline-arrow">→</div> */}
                     <div className="timeline-item">
                       <h3>2022</h3>
                       <p>
@@ -408,7 +407,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* cta 9*/}
         <section className="section-cta-7 background-body py-96">
           <div className="box-cta-6">
@@ -434,16 +433,14 @@ const About = () => {
                 </div>
                 <div className="col-lg-6 ps-lg-5">
                   <a className="btn btn-signin bg-2 text-dark mb-4" href="#">
-                    Our Commitment
+                    Our Vision
                   </a>
                   <h4 className="mb-4 neutral-1000">
                     Carento offers clear pricing and 24/7 great support.
                   </h4>
                   <p className="text-lg-medium neutral-500 mb-4">
-                    We are committed to offering transparent pricing with no
-                    hidden fees, comprehensive insurance options for peace of
-                    mind, and 24/7 customer support to assist you whenever you
-                    need it. At Carento, your satisfaction is our top priority.
+                  Empower individuals to embrace their journeys with
+                  independence, luxury, and flexibility.
                   </p>
                   <div className="row">
                     <div className="col">
@@ -462,24 +459,26 @@ const About = () => {
                       </ul>
                     </div>
                   </div>
-                  <a className="btn btn-primary mt-2" href="#">
-                    Get Started Now
-                    <svg
-                      width={16}
-                      height={16}
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 15L15 8L8 1M15 8L1 8"
-                        stroke=""
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
+                  <Link to="/CarFilterPage">
+                    <div className="btn btn-primary mt-2">
+                      Get Started Now
+                      <svg
+                        width={16}
+                        height={16}
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 15L15 8L8 1M15 8L1 8"
+                          stroke=""
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -512,7 +511,7 @@ const About = () => {
                         aria-controls="collapseOne"
                       >
                         <h3>01</h3>
-                        <p>How do I make a reservation on your website</p>
+                        <p>What types of cars do you offer for rent?</p>
                       </button>
                     </h5>
                     <div
@@ -522,12 +521,7 @@ const About = () => {
                       data-bs-parent="#accordionFAQ"
                     >
                       <div className="accordion-body">
-                        Provide a step-by-step guide on how users can browse and
-                        book travel services on your platform. Include
-                        information on searching for destinations, selecting
-                        dates, choosing accommodation, and completing the
-                        booking process. Mention any special features or tools
-                        that can help users find the best deals.
+                      We offer a wide variety of cars to suit your needs, including economy, compact, sedan, SUV, van, and luxury vehicles.
                       </div>
                     </div>
                   </div>

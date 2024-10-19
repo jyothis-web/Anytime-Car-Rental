@@ -6,10 +6,12 @@ import ServicesPage from "./components/ServicesPage/ServicesPage";
 import CarFilterPage from "./components/CarFilterPage/CarFilterPage";
 import CarDeatailPage from "./components/CarDetailPage/CarDeatailPage";
 import ContactPage from "./components/ContactPage/ContactPage";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
     <>
+    <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/About" element={<About />} />

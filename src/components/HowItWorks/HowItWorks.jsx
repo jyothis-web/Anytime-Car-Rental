@@ -51,8 +51,7 @@ const HowItWorks = () => {
                 Choose a Location
               </h6>
               <p className="text-md-medium neutral-500">
-                Select the ideal destination to begin your journey with
-                ease
+              Whether you&apos;re exploring the vibrant city of Doha, venturing into the desert, or embarking on a coastal adventure, we&apos;ve got you covered.
               </p>
             </div>
           </div>
@@ -98,7 +97,7 @@ const HowItWorks = () => {
                 Choose Your Vehicle
               </h6>
               <p className="text-md-medium neutral-500">
-                Browse our fleet and find the perfect car for your needs
+              The bustling city of Doha or embarking on a desert safari, we have the ideal vehicle to suit your needs. Our diverse fleet includes
               </p>
             </div>
           </div>
@@ -145,7 +144,7 @@ const HowItWorks = () => {
             <div className="card-info">
               <h6 className="text-xl-bold neutral-1000">Verification</h6>
               <p className="text-md-medium neutral-500">
-                Review your information and confirm your booking
+              To ensure a seamless and trustworthy rental experience, we require a few essential documents for verification.
               </p>
             </div>
           </div>
@@ -191,7 +190,7 @@ const HowItWorks = () => {
                 Begin Your Journey
               </h6>
               <p className="text-md-medium neutral-500">
-                Start your adventure with confidence and ease
+              Our fleet of well-maintained vehicles offers comfort, reliability, and flexibility for your journey.
               </p>
             </div>
           </div>

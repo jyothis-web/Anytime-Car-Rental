@@ -6297,7 +6297,7 @@ a.icon-socials:hover svg path {
 
 .footer {
   background-color: var(--bs-background-1000);
-  padding: 40px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .footer .phone-support {
   color: var(--bs-brand-2);
