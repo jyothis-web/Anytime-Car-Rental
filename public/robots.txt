@@ -1,0 +1,12 @@
+# This is a comment
+
+User-agent: *
+Allow: /public/
+Sitemap: https://sequrhomautomations.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /public-google/
+Disallow: /private-google/
+
+User-agent: Bingbot
+Disallow: /no-index-bing/

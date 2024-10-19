@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "IMPORTED CRAFT PAPER",
+        "description1": "Sourced from the finest paper mills, this paper is having unmatched strength, durability, and eco-friendliness. Available in wide range of colours, textures, and finishes this paper is perfect for retail, food, and gift packaging. ",
+        "description2": "",
+        "model": "",
+        "image": "",
+        "one": "80 GSM, 25 BF ",
+        "two": "First Quality Paper",
+        "three": "Also Known as Virgin Paper",
+        "four": "LONG LASTING",
+        "five": "High in Strength",
+        "six": "Long Lasting",
+        "seven": "Little Higher in Rate "
+      },
+     
+      {
+        "id": 2,
+        "title": "INDIAN DRAFT PAPER",
+        "description1": " This paper is local made sourced form recycled paper manufacturers having a medium rate and capacity. Main advantage is the availability in large numbers having less options in texture and finishes. ",
+        "model": "",
+        "image": "w",
+        "one": "100 GSM, 25 BF",
+        "two": "Second Quality Paper",
+        "three": "Made from Recycled Papers",
+        "four": "Medium Strength",
+        "five": "Availability is Higher",
+        "six": "Cheaper in Rate ",
+        "seven": "",
+        "eight": ""
+      },
+      {
+        "id": 3,
+        "title": "DUPLEX BOARD PAPER",
+        "description1": "Robust Duplex Board Paper are used for High-Performance Paper Bags. High-quality image printing can be done using duplex board paper. This offers uncompromising strength and durability for your packaging needs.",
+        "description2": "",
+        "model": "",
+        "image": "",
+        "one": "High Quality Paper",
+        "two": "HIGH IN STRENGTH",
+        "three": "HIGH BEARING CAPACITY"
+      }
+]

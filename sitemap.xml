@@ -1,0 +1,16 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <url>
+    <loc>https://sequrhomautomations.com/</loc> <!-- Replace with your actual domain -->
+    <lastmod>2024-08-02T12:33:56+00:00</lastmod> <!-- Replace with the actual last modified date -->
+    <changefreq>monthly</changefreq> <!-- Optional, set frequency for crawling -->
+    <priority>1.0</priority> <!-- Optional, higher priority for the main page -->
+  </url>
+
+</urlset>

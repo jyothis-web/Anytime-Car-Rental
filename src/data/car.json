@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "model": "Mercedes-Benz C220d",
+      "rating": {
+        "value": 4.96,
+        "reviews": 672
+      },
+      "location": "Manchester, England",
+      "mileage": "25,100 miles",
+      "gear": "Automatic",
+      "fuel": "Diesel",
+      "seats": 7,
+      "price": 498.25,
+      "currency": "$",
+      "detailsUrl": "cars-details-1.html",
+      "image":"assets/imgs/cars-listing/cars-listing-1/car-3.png"
+    },
+    {
+      "id": 2,
+      "model": "BMW 5 Series",
+      "rating": {
+        "value": 4.8,
+        "reviews": 512
+      },
+      "location": "London, England",
+      "mileage": "15,800 miles",
+      "gear": "Automatic",
+      "fuel": "Petrol",
+      "seats": 5,
+      "price": 650.00,
+      "currency": "$",
+      "detailsUrl": "cars-details-2.html",
+      "image":"assets/imgs/cars-listing/cars-listing-1/car-3.png"
+
+    },
+    {
+      "id": 3,
+      "model": "Audi A4",
+      "rating": {
+        "value": 4.75,
+        "reviews": 320
+      },
+      "location": "Birmingham, England",
+      "mileage": "30,500 miles",
+      "gear": "Manual",
+      "fuel": "Diesel",
+      "seats": 5,
+      "price": 475.00,
+      "currency": "$",
+      "detailsUrl": "cars-details-3.html",
+      "image":"assets/imgs/cars-listing/cars-listing-1/car-3.png"
+
+    },
+    {
+      "id": 4,
+      "model": "Tesla Model 3",
+      "rating": {
+        "value": 4.9,
+        "reviews": 400
+      },
+      "location": "Manchester, England",
+      "mileage": "10,000 miles",
+      "gear": "Automatic",
+      "fuel": "Electric",
+      "seats": 5,
+      "price": 650.00,
+      "currency": "$",
+      "detailsUrl": "cars-details-4.html",
+      "image":"assets/imgs/cars-listing/cars-listing-1/car-3.png"
+
+    }
+  ]
+  

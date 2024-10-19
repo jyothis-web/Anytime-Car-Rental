@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Own Offset & Screen Printing",
+    "description": "We are passionate about helping you bring your brand to life through exceptional offset and screen printing. We understand that your brand is more than just a logo; it's a reflection of your values, story, and identity. Our goal is to partner with you to create print materials that truly resonate with your target audience and leave a lasting impression.",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "title": "Customised Designer Bags",
+    "description": "Offer the perfect canvas to showcase your brand's identity, can Create bags that perfectly align with your brand's aesthetic, from color palettes to intricate designs. Our advanced printing techniques ensure vibrant, long-lasting prints that withstand everyday use. Our skilled artisans meticulously craft each bag to deliver exceptional quality and attention to detail.",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Pre Casted Die Works",
+    "description": "Pre-casted dies are essentially pre-fabricated die components that are cast into specific shapes before further machining and finishing. This method offers several advantages in terms of efficiency, precision, and cost-effectiveness. They give your bags a 3D look, and looks different for others.",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "title": "Multicolor Design Printing",
+    "description": "Multicolor design printing brings your creative visions to life with a captivating blend of colors. Whether you're aiming for a subtle gradient or a bold, eye-catching pattern, this technique offers endless possibilities. Provides high-quality prints with a wide color gamut.",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "title": "Quality Printing at Reasonable Rates",
+    "description": "Achieving high-quality prints without breaking the bank is a goal for many businesses and individuals. Opting for slightly lower-grade paper can significantly impact the price without compromising quality too much. Digital printing is often more cost-effective for smaller quantities, while offset printing is better for larger orders.",
+    "image": ""
+  }
+ 
+]

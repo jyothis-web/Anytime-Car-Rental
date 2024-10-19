@@ -1,0 +1,133 @@
+
+.car-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between cards */
+  }
+
+
+.car-card {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .car-image {
+    width: 50%;
+    height: auto;
+  }
+  
+  .car-image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .car-details {
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    width: 50%;
+  }
+  
+  .card-rating {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-rating .fa-star {
+    color: #28a745; /* Green star */
+    margin-right: 5px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .card-specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card-specs p {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-specs i {
+    margin-right: 5px;
+  }
+  
+  .card-price {
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+  }
+  
+  .card-price p {
+    margin-right: 5px;
+  }
+  
+  .card-price h6 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .card-button {
+    margin-top: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 998px) {
+    .car-list-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px; /* Space between cards */
+      }
+      .car-card {
+        display: flex;
+        flex-direction: column;
+      }
+      .car-image {
+        width: 100%;
+        height: auto;
+      }
+      
+      .car-details {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+         width: 100%;
+       }
+
+  }
+  
+  @media (max-width: 458px) {
+    .car-list-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Two columns */
+        gap: 20px; /* Space between cards */
+      }
+    }
