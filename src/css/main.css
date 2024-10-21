@@ -2451,7 +2451,7 @@ label {
 .card-journey-big .card-image {
   position: relative;
   overflow: hidden;
-  height: 326px;
+  height: 356px;
 }
 .card-journey-big .card-image .wish {
   position: absolute;
@@ -2475,6 +2475,7 @@ label {
 .card-journey-big .card-image img {
   display: block;
   width: 100%;
+  min-height: 300px;
 }
 .card-journey-big .card-info {
   padding: 43px 32px 32px 32px;

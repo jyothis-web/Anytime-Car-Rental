@@ -347,7 +347,7 @@ const ServicesPage = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 ps-lg-5 mt-lg-0 mt-4">
-                  <h4 className="mb-4 neutral-1000">Plan Your Trip with Us</h4>
+                  <h4 className="mb-4 neutral-1000">Additional Services</h4>
                   <p className="text-lg-medium neutral-500 mb-4">
                     Let us help you make your next journey smooth and
                     enjoyable—get started today.
@@ -356,13 +356,31 @@ const ServicesPage = () => {
                     <div className="col">
                       <ul className="list-ticks-green list-ticks-green-2">
                         <li className="neutral-1000 pe-0">
-                          Detailed vehicle descriptions and images
+                        School Transportation Services
                         </li>
                         <li className="neutral-1000 pe-0">
-                          Filter options by vehicle type, size, and features
+                        Office Personal Transportation
                         </li>
                         <li className="neutral-1000 pe-0">
-                          Availability information in real-time
+                        VVIP & VIP Transportation
+                        </li>
+                        <li className="neutral-1000 pe-0">
+                        Chauffeur-hailing
+                        </li>
+                        <li className="neutral-1000 pe-0">
+                        Business Tips Chauffeur Services
+                        </li>
+                        <li className="neutral-1000 pe-0">
+                        Meet & Greet Services
+                        </li>
+                        <li className="neutral-1000 pe-0">
+                        Family Vans Chauffeur Services
+                        </li>
+                        <li className="neutral-1000 pe-0">
+                        Entertainment Tour Services
+                        </li>
+                        <li className="neutral-1000 pe-0">
+                        Factory Staff Transportation
                         </li>
                       </ul>
                     </div>

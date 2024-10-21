@@ -5,46 +5,24 @@ const Banner = () => {
         {/* <div className="container"></div> */}
         <div className="container-banner-home7 position-relative">
           <div className="box-swiper">
-            <div className="swiper-container swiper-group-1">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="item-banner-slide banner-1">
-                    <div className="container">
-                      <span className="btn background-brand-2 px-3 py-3 rounded-12 text-sm-bold text-dark">
-                        +3600 cars for you
-                      </span>
-                      <h1 className="mt-20 mb-20 color-white">
-                        Your Journey Redefined
-                      </h1>
-                      <h6 className="color-white heading-6-medium pb-lg-0 pb-4">
-                        Browse our diverse inventory and enjoy a seamless buying
-                        experience <br />
-                        with expert support every step of the way
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="item-banner-slide banner-2">
-                    <div className="container">
-                      <span className="btn background-brand-2 px-3 py-3 rounded-12 text-sm-bold text-dark">
-                        Best car rental system
-                      </span>
-                      <h1 className="mt-20 mb-20 color-white">
-                        Discover your next ride today
-                      </h1>
-                      <h6 className="color-white heading-6-medium">
-                        Explore our wide selection and enjoy a smooth purchasing
-                        journey, <br />
-                        with expert assistance at every turn
-                      </h6>
-                    </div>
-                  </div>
-                </div>
+            <div className="item-banner-slide banner-1">
+              <div className="container">
+                <span className="btn background-brand-2 px-3 py-3 rounded-12 text-sm-bold text-dark">
+                  +3600 cars for you
+                </span>
+                <h1 className="mt-20 mb-20 color-white">
+                  Your Journey Redefined
+                </h1>
+                <h6 className="color-white heading-6-medium pb-lg-0 pb-4">
+                  Browse our diverse inventory and enjoy a seamless buying
+                  experience <br />
+                  with expert support every step of the way
+                </h6>
               </div>
             </div>
           </div>
         </div>
+
         <div className="container-search-advance">
           <div className="container">
             <div className="box-search-advance background-card wow fadeInUp mb-5">
@@ -75,27 +53,25 @@ const Banner = () => {
                 </div>
                 <div className="item-search item-search-2">
                   <label className="text-sm-bold neutral-500">
-                    Pick Up Date 
+                    Pick Up Date
                   </label>
                   <div className="dropdown">
                     <input
                       className="form-control input-field"
                       type="date"
                       // placeholder="Thu, Oct 01 2024"
-                   
                     />
                   </div>
                 </div>
                 <div className="item-search item-search-2">
                   <label className="text-sm-bold neutral-500">
-                    Return Date 
+                    Return Date
                   </label>
                   <div className="dropdown">
                     <input
                       className="form-control input-field"
                       type="date"
                       // placeholder="Thu, Oct 01 2024"
-                     
                     />
                   </div>
                 </div>

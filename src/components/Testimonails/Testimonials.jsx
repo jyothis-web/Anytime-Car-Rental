@@ -101,7 +101,7 @@ const Testimonials = () => {
                             {testimonial.description}
                           </p>
                         </div>
-                        <div className="card-top pt-20 border-0 mb-0">
+                        <div className="card-top  border-0 mb-0">
                           <div className="card-author">
                             <div className="card-image">
                               <img

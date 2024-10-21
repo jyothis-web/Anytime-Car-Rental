@@ -7,6 +7,9 @@ import CarFilterPage from "./components/CarFilterPage/CarFilterPage";
 import CarDeatailPage from "./components/CarDetailPage/CarDeatailPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import ScrollToTop from "./pages/ScrollToTop";
+import AdminPage from "./components/AdminSection/AdminPage";
+import ProductCreation from "./components/AdminSection/Product/ProductCreation";
+import ProductDetail from "./components/AdminSection/Product/ProductDetail";
 
 function App() {
   return (
@@ -19,6 +22,11 @@ function App() {
         <Route path="/CarFilterPage" element={<CarFilterPage />} />
         <Route path="/CarDetilPage" element={<CarDeatailPage />} />
         <Route path="/ContactPage" element={<ContactPage />} />
+        <Route path="/AdminPage" element={<AdminPage />} />
+        <Route path="/ProductPage" element={<ProductCreation />} />
+        <Route path="/car/:id" element={<ProductDetail />} />
+
+
       </Routes>
     </>
   );

@@ -1,0 +1,121 @@
+/* Hide the default checkbox */
+.cb-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Custom checkbox */
+  .cb-container .checkmark {
+
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* When the checkbox is checked, show the checkmark */
+  .cb-container input[type="checkbox"]:checked + .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Checkmark/indicator (hidden when not checked) */
+  .cb-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .cb-container input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .cb-container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .box-filters-sidebar {
+    display: none;
+  }
+  
+  .box-filters-sidebar.open {
+    display: block;
+    height: max-content;
+  }
+  
+  /* General styles for the button */
+
+.filter-button{
+border-radius: 10px;
+padding-left: 10px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+cursor: pointer;
+background: rgb(12, 9, 9);
+color: white;
+font-size: 18px;
+margin-bottom: 40px;
+}
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .btn-secondary {
+    background: transparent; /* Remove background */
+    border: 1px solid #007bff; /* Add border for visibility */
+    color: #007bff; /* Change text color */
+  }
+  .filter-button{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+    }
+
+  .btn-small {
+    padding: 5px 10px; /* Smaller padding for mobile */
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .content-left {
+    padding: 1rem; /* Add padding to the content-left */
+  }
+
+  .sidebar-left {
+    position: absolute;
+    top: 795px; 
+    left: 0; 
+    width: fit-content;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+  }
+
+  .box-filters-sidebar {
+    display: none; 
+  }
+
+  .box-filters-sidebar.open {
+    display: block;
+  }
+
+  .btn-secondary {
+    margin-bottom: 1rem; 
+  }
+}
+
+  

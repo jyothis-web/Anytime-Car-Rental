@@ -2729,7 +2729,7 @@ label {
 .card-journey-small .card-info .card-program .card-facitlities .card-fuel,
 .card-journey-small .card-info .card-program .card-facitlities .card-seat {
   width: 50%;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 10px;
   margin-bottom: 13px;
   color: #000000;
 }
@@ -8208,17 +8208,19 @@ a.icon-socials:hover svg path {
 
 .list-ticks-green {
   display: flex;
-  align-items: center;
+  align-items: left;
+  flex-direction: column;
   flex-wrap: wrap;
+  min-width: 200px;
 }
 .list-ticks-green li {
-  margin-bottom: 18px;
-  padding: 3px 25px 3px 36px;
+  margin-bottom: 8px;
+  padding: 3px 15px 3px 0px;
   background-image: url(../imgs/template/icons/tick-list.svg);
   background-repeat: no-repeat;
   background-position: left center;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 16px;
   color: #ffffff;
   font-weight: bold;
 }
@@ -9564,7 +9566,7 @@ a.icon-socials:hover svg path {
 }
 
 .box-faqs {
-  background-image: url(../imgs/page/homepage3/bg-faq.png);
+  background-image: url(/assets/imgs/page/homepage3/bg-faq.png);
   background-position: left bottom;
   background-repeat: no-repeat;
   padding-bottom: 128px;
@@ -9585,7 +9587,7 @@ a.icon-socials:hover svg path {
 }
 
 .accordion-button::after {
-  background-image: url(../imgs/template/icons/open-faq.png);
+  background-image: url(/assets/imgs/template/icons/open-faq.png);
   transform: rotate(0deg);
   background-position: center;
   background-color: var(--bs-neutral-100);
@@ -9599,7 +9601,7 @@ a.icon-socials:hover svg path {
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url(../imgs/template/icons/close-faq.png);
+  background-image: url(/assets/imgs/template/icons/close-faq.png);
   background-color: var(--bs-neutral-1000);
 }
 
