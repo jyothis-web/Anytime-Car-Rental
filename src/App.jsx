@@ -8,25 +8,27 @@ import CarDeatailPage from "./components/CarDetailPage/CarDeatailPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import ScrollToTop from "./pages/ScrollToTop";
 import AdminPage from "./components/AdminSection/AdminPage";
-import ProductCreation from "./components/AdminSection/Product/ProductCreation";
+
 import ProductDetail from "./components/AdminSection/Product/ProductDetail";
+import CreateCar from "./components/AdminSection/Product/ProductCreation";
+import ProductView from "./components/AdminSection/Product/ProductView";
 
 function App() {
   return (
     <>
-    <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/About" element={<About />} />
         <Route path="/Services" element={<ServicesPage />} />
         <Route path="/CarFilterPage" element={<CarFilterPage />} />
-        <Route path="/CarDetilPage" element={<CarDeatailPage />} />
+        <Route path="/CarDetilPage/:id" element={<CarDeatailPage />} />
         <Route path="/ContactPage" element={<ContactPage />} />
         <Route path="/AdminPage" element={<AdminPage />} />
-        <Route path="/ProductPage" element={<ProductCreation />} />
+        <Route path="/createcar" element={<CreateCar />} />
+
+        <Route path="/ProductPage" element={<ProductView />} />
         <Route path="/car/:id" element={<ProductDetail />} />
-
-
       </Routes>
     </>
   );

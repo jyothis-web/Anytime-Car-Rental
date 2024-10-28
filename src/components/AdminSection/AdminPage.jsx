@@ -6,9 +6,9 @@ const AdminPage = () => {
     <div className="admin-page">
       <h1>Admin Page</h1>
       <div className="navigation-buttons">
-        {/* <Link to="/BrandPage">
-          <Button variant="outlined" className="nav-button">Manage Brands</Button>
-        </Link> */}
+        <Link to="/createcar">
+          <Button variant="outlined" className="nav-button">Create cars</Button>
+        </Link>
         <Link to="/ProductPage">
           <Button variant="outlined" className="nav-button">Manage cars</Button>
         </Link>

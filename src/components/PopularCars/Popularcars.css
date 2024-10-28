@@ -16,10 +16,16 @@
   }
   
   .car-image {
-    width: 50%;
+    width: 70%;
     height: auto;
   }
-  
+  .top-round {
+    width: fit-content;
+    padding: 0px 10px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
   .car-image img {
     width: auto;
     height: 100%;
@@ -85,6 +91,7 @@
   
   .card-button {
     margin-top: 10px;
+    
   }
   
   .btn-primary {

@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom";
-import carData from "../../data/car.json";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "../../Redux/car/CarSlice";
 import "./Popularcars.css";
 const PopularCars = () => {
+  const dispatch = useDispatch();
+
+  const { products = [] } = useSelector((state) => state.car);
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
+  // Slice the first 8 cars
+  const carsToShow = products.slice(0, 4);
+
   return (
     <div>
       <section className="section-box box-flights background-body">
@@ -188,31 +201,29 @@ const PopularCars = () => {
           <div className="block-flights wow fadeInUp">
             <div className="box-swiper mt-30">
               <div className="car-list-container">
-                {carData.map((car) => (
+                {carsToShow.map((car) => (
                   <div key={car.id} className="car-card">
                     <div className="car-image">
-                      <div style={{width:"100%",height:"100%"}}>
-                        <img src={car.image} alt={car.model} />
-                      </div>
+                      {car.carImage1 && (
+                        <img
+                          src={`${import.meta.env.VITE_URL}${
+                            car.carImage1.imagePath
+                          }`} // Corrected path reference
+                          alt={`Image of ${car.brandModel}`}
+                          loading="lazy"
+                        />
+                      )}
                     </div>
                     <div className="car-details">
-                      <div className="card-rating">
-                        <span className="rating">
-                          <i className="fa fa-star"></i>{" "}
-                          {/* Star icon for rating */}
-                          {car.rating.value}
-                          <span className="text-sm-medium neutral-500">
-                            ({car.rating.reviews} reviews)
-                          </span>
+                      <div className="top-round">
+                        <span className="rating text-xs-medium rounded-pill">
+                          {car.brand}
                         </span>
                       </div>
                       <div className="card-title">
-                        <a
-                          href={car.detailsUrl}
-                          className="heading-6 neutral-1000"
-                        >
-                          {car.model}
-                        </a>
+                        <div className="heading-6 neutral-1000">
+                          {car.brandModel}
+                        </div>
                       </div>
                       <div
                         style={{
@@ -227,11 +238,11 @@ const PopularCars = () => {
                               className="fa fa-tachometer-alt"
                               aria-hidden="true"
                             ></i>
-                            {car.miles}
+                            {car.category}
                           </p>
                           <p className="card-gear ">
                             <i className="fa fa-cog" aria-hidden="true"></i>
-                            {car.gear}
+                            {car.transmission}
                           </p>
                         </div>
                         <div className="card-specs">
@@ -247,18 +258,17 @@ const PopularCars = () => {
                               className="fa fa-user-friends"
                               aria-hidden="true"
                             ></i>
-                            {car.seats} seats
+                            {car.seat} seats
                           </p>
                         </div>
                       </div>
                       <div className="card-price">
-                        <p className=" neutral-500">From</p>
+                        <p className=" neutral-500"></p>
                         <h6 className="heading-6 neutral-1000">
-                          {car.currency}
-                          {car.price}
+                          {car.dailyRent}
                         </h6>
                       </div>
-                      <Link to="/CarDetilPage">
+                      <Link to={`/CarDetilPage/${car._id}`}>
                         <div className="card-button">
                           <div className="btn btn-primary">Book Now</div>
                         </div>

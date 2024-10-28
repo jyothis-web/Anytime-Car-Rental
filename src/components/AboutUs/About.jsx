@@ -156,10 +156,10 @@ const About = () => {
               <div className="col-lg-4 col-12">
                 <div className="d-flex flex-column gap-4 align-self-stretch h-100">
                   <div className="box-tag background-brand-2 p-5 d-flex rounded-12">
-                    <span className="text-dark fs-96 me-3">20</span>
+                    <span className="text-dark fs-96 me-3">11</span>
                     <h4>
                       Years in <br />
-                      Business
+                      Rental Car Industry
                     </h4>
                   </div>
                   <img
@@ -341,8 +341,8 @@ const About = () => {
                     Our Mission
                   </a>
                   <h4 className="mb-4 neutral-1000">
-                    Sell your car at a fair price. <br />
-                    Get started with us today.
+                  Committed to ensure your satisfaction & 
+                  make your travel experience memorable
                   </h4>
                   <p className="text-lg-medium neutral-500 mb-4">
                     Our mission is to Provide innovative and customer-centric

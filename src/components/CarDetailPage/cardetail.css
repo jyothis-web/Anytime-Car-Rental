@@ -1,0 +1,45 @@
+.banner-slide {
+    position: relative;
+    padding: 0 5px; /* Add space between thumbnails */
+  }
+  
+  .banner-slide img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .banner-slide.selected img {
+    opacity: 0.5; /* Dim the selected image */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .eye-icon {
+    color: white;
+    font-size: 24px; /* Adjust the size of the eye icon */
+  }
+  
+  .list-checked-green-price{
+ 
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding: 0px !important;
+      margin-bottom: 10px;
+
+  }

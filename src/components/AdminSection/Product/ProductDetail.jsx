@@ -5,22 +5,23 @@ import {
   deleteProduct,
   fetchSingleProduct,
   updateFirstProductImage,
-  updateProduct,
 } from "../../../Redux/car/CarSlice";
+import axios from "axios";
+import { unwrapResult } from "@reduxjs/toolkit";
 
 const ProductDetail = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  // Initialize state with empty strings for controlled inputs
-  const [formData, setFormData] = useState({
+  const [carData, setCarData] = useState({
     brand: "",
     brandModel: "",
-    year: "",
     category: "",
-    fuel: "",
-    transmission: "",
-    seat: "",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    mileage: "",
+    doors: "4",
+    seat: "5",
     bootCapacity: "",
     dailyRent: "",
     weeklyRent: "",
@@ -28,48 +29,84 @@ const ProductDetail = () => {
     description1: "",
     description2: "",
   });
+  const [carImages, setCarImages] = useState([
+    null,
+    null,
 
-  const [carImage1, setCarImage1] = useState(null); // State for the selected image fi
-  const [imagePreview, setImagePreview] = useState(null);
-  
-  const handleImageChange = (e) => {
+  ]);
+  const [imagePreviews, setImagePreviews] = useState([
+    null,
+    null,
+   
+  ]);
+
+  const handleImageChange = (index, e) => {
     const file = e.target.files[0];
-    setCarImage1(file);
+    if (file) {
+      // Update the carImages state immutably
+      setCarImages((prevImages) => {
+        const updatedImages = [...prevImages];
+        updatedImages[index] = file; // Set the new image at the correct index
+        return updatedImages;
+      });
 
-    // Preview the image
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      setImagePreview(reader.result);
-    };
-    reader.readAsDataURL(file);
+      // Create a preview URL for the image
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreviews((prevPreviews) => {
+          const updatedPreviews = [...prevPreviews];
+          updatedPreviews[index] = reader.result; // Set the preview URL at the correct index
+          return updatedPreviews;
+        });
+      };
+      reader.readAsDataURL(file); // Read the file as a data URL
+    }
   };
 
-  const handleImageUpload = (e) => {
+  const handleImageUpload = async (e) => {
     e.preventDefault();
-    if (carImage1) {
-      const formData = new FormData();
-      formData.append("carImage1", carImage1); // Append the selected file
-      dispatch(updateFirstProductImage({ id, carImage1: formData }));
+
+    const formData = new FormData();
+
+    // Append all images to the form data under the same field name
+    carImages.forEach((carImage) => {
+      if (carImage) {
+        formData.append("carImages", carImage); // Use the same field name for all images
+      }
+    });
+     // Log the FormData entries to check what is being sent
+     for (const [key, value] of formData.entries()) {
+      console.log("values",`${key}: ${value}`);
+  }
+
+    try {
+      const resultAction = await dispatch(
+        updateFirstProductImage({ id, formData }) // Pass the whole formData object
+      );
+      unwrapResult(resultAction);
+      alert("Images uploaded successfully!");
+    } catch (error) {
+      alert(`Image upload failed: ${error.message}`);
     }
   };
 
   const { product, isLoading, error } = useSelector((state) => state.car);
 
   useEffect(() => {
-    // Fetch the single product by id when the page loads
     dispatch(fetchSingleProduct(id));
   }, [dispatch, id]);
 
   useEffect(() => {
     if (product) {
-      setFormData({
+      setCarData({
         brand: product.brand || "",
         brandModel: product.brandModel || "",
-        year: product.year || "",
         category: product.category || "",
-        fuel: product.fuel || "",
-        transmission: product.transmission || "",
-        seat: product.seat || "",
+        fuel: product.fuel || "Petrol",
+        transmission: product.transmission || "Automatic",
+        mileage: product.mileage || "",
+        doors: product.doors || "4",
+        seat: product.seat || "5",
         bootCapacity: product.bootCapacity || "",
         dailyRent: product.dailyRent || "",
         weeklyRent: product.weeklyRent || "",
@@ -77,57 +114,79 @@ const ProductDetail = () => {
         description1: product.description1 || "",
         description2: product.description2 || "",
       });
-      if (product.carImage1?.imagePath) {
-        setImagePreview(product.carImage1.imagePath);
-      }
-      setCarImage1(product.carImage1 || null); // Set initial image if available
+
+      // Set image previews if available for all six images
+      const imagePreviews = [
+        product.carImage1?.imagePath || null,
+        product.carImage2?.imagePath || null,
+       
+      ];
+      setImagePreviews(imagePreviews);
+
+      // Set initial image state for all six images
+      const initialImages = [
+        product.carImage1 || null,
+        product.carImage2 || null,
+      
+      ];
+      setCarImages(initialImages); // Assuming you have an array for images
     }
   }, [product]);
 
-  const handleInputChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
+    setCarData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
   };
 
-  const handleUpdate = (e) => {
+  const handleUpdate = async (e) => {
     e.preventDefault();
-
     // Create a FormData object to handle the file upload
     const updatedProduct = new FormData();
-    updatedProduct.append("brand", formData.brand);
-    updatedProduct.append("brandModel", formData.brandModel);
-    updatedProduct.append("year", formData.year);
-    updatedProduct.append("category", formData.category);
-    updatedProduct.append("fuel", formData.fuel);
-    updatedProduct.append("transmission", formData.transmission);
-    updatedProduct.append("seat", formData.seat);
-    updatedProduct.append("bootCapacity", formData.bootCapacity);
-    updatedProduct.append("dailyRent", formData.dailyRent);
-    updatedProduct.append("weeklyRent", formData.weeklyRent);
-    updatedProduct.append("monthlyRent", formData.monthlyRent);
-    updatedProduct.append("description1", formData.description1);
-    updatedProduct.append("description2", formData.description2);
+    updatedProduct.append("brand", carData.brand);
+    updatedProduct.append("brandModel", carData.brandModel);
+    updatedProduct.append("category", carData.category);
+    updatedProduct.append("fuel", carData.fuel);
+    updatedProduct.append("transmission", carData.transmission);
+    updatedProduct.append("mileage", carData.mileage);
+    updatedProduct.append("doors", carData.doors);
+    updatedProduct.append("seat", carData.seat);
+    updatedProduct.append("bootCapacity", carData.bootCapacity);
+    updatedProduct.append("dailyRent", carData.dailyRent);
+    updatedProduct.append("weeklyRent", carData.weeklyRent);
+    updatedProduct.append("monthlyRent", carData.monthlyRent);
+    updatedProduct.append("description1", carData.description1);
+    updatedProduct.append("description2", carData.description2);
 
-    // Check the values being appended to FormData
-    console.log(
-      "Updated Product Data Before Dispatch:",
-      Object.fromEntries(updatedProduct)
-    ); // Convert FormData to an object for easier logging
-    console.log("Form Data:", formData); // Log formData to see the values in state
-    console.log("Product ID:", id); // Log the product ID to ensure it is correct
+    // Log the formData contents for debugging
+    for (let [key, value] of updatedProduct.entries()) {
+      console.log(key, value); // Log each field in the formData
+    }
 
-    // Dispatch the updateProduct action with the ID and updated product data
-    dispatch(updateProduct({ id, updatedProduct })); // Pass the object with updatedProduct
+    try {
+      const response = await axios.put(
+        `${import.meta.env.VITE_URL}Anytime/update-car/${id}`,
+        updatedProduct
+      );
+
+      if (response.data.success) {
+        alert("Car updated successfully!");
+        // Optionally reset the form data or navigate to another page
+      } else {
+        alert(response.data.message || "Failed to update car");
+      }
+    } catch (error) {
+      console.error("Error updating car:", error);
+      alert("There was an error updating the car");
+    }
   };
 
   const handleDelete = () => {
     dispatch(deleteProduct(id));
     // navigate("/"); // Redirect to home page after deletion
   };
-
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error loading product: {error}</p>;
 
@@ -135,156 +194,130 @@ const ProductDetail = () => {
     <div>
       <h2>Update or Delete Product</h2>
       <div>
-        {" "}
-        <h3>Update Image</h3>
-        <input type="file" accept="image/*" onChange={handleImageChange} />
-        {imagePreview && (
-          <img
-            src={imagePreview}
-            alt="Image Preview"
-            style={{ width: "200px", height: "auto" }}
-          />
-        )}
-        <button onClick={handleImageUpload} className="upload-button">
-          Upload Image
-        </button>
-        <form onSubmit={handleUpdate}>
-          <div className="form-group">
-            <label>Brand</label>
-            <input
-              type="text"
-              name="brand"
-              value={formData.brand} // Controlled input
-              onChange={handleInputChange}
-            />
+        <div>
+          <h3>Update Images</h3>
+          <div style={{ display: "flex", gap: "20px" }}>
+            {carImages.map((_, index) => (
+              <div key={index}>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleImageChange(index, e)}
+                />
+                {imagePreviews[index] && (
+                  <img
+                    src={imagePreviews[index]}
+                    alt={`Image Preview ${index + 1}`}
+                    style={{ width: "200px", height: "auto" }}
+                  />
+                )}
+              </div>
+            ))}
           </div>
+          <button onClick={handleImageUpload} className="upload-button">
+            Upload Images
+          </button>
+        </div>
 
-          <div className="form-group">
-            <label>Brand Model</label>
-            <input
-              type="text"
-              name="brandModel"
-              value={formData.brandModel} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Year</label>
-            <input
-              type="text"
-              name="year"
-              value={formData.year} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Category</label>
-            <input
-              type="text"
-              name="category"
-              value={formData.category} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Fuel</label>
-            <input
-              type="text"
-              name="fuel"
-              value={formData.fuel} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Transmission</label>
-            <input
-              type="text"
-              name="transmission"
-              value={formData.transmission} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Seat</label>
-            <input
-              type="text"
-              name="seat"
-              value={formData.seat} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Boot Capacity</label>
-            <input
-              type="text"
-              name="bootCapacity"
-              value={formData.bootCapacity} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Daily Rent</label>
-            <input
-              type="text"
-              name="dailyRent"
-              value={formData.dailyRent} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Weekly Rent</label>
-            <input
-              type="text"
-              name="weeklyRent"
-              value={formData.weeklyRent} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Monthly Rent</label>
-            <input
-              type="text"
-              name="monthlyRent"
-              value={formData.monthlyRent} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Description 1</label>
-            <input
-              type="text"
-              name="description1"
-              value={formData.description1} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Description 2</label>
-            <input
-              type="text"
-              name="description2"
-              value={formData.description2} // Controlled input
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <button type="submit" className="submit-button">
-            Update Product
+        <form onSubmit={handleUpdate} className="car-form-container">
+          {Object.keys(carData).map((field) => {
+            if (field === "brand") {
+              return (
+                <div key={field} className="car-form-group">
+                  <label className="car-form-label">{field}</label>
+                  <select
+                    name="brand"
+                    value={carData.brand}
+                    onChange={handleChange}
+                    className="car-form-input"
+                  >
+                    <option value="">Select Brand</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Geely">Geely</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Foton">Foton</option>
+                    <option value="Nissan">Nissan</option>
+                  </select>
+                </div>
+              );
+            } else if (field === "transmission") {
+              return (
+                <div key={field} className="car-form-group">
+                  <label className="car-form-label">{field}</label>
+                  <select
+                    name="transmission"
+                    value={carData.transmission}
+                    onChange={handleChange}
+                    className="car-form-input"
+                  >
+                    <option value="automatic">Automatic</option>
+                    <option value="manual">Manual</option>
+                  </select>
+                </div>
+              );
+            } else if (field === "fuel") {
+              return (
+                <div key={field} className="car-form-group">
+                  <label className="car-form-label">{field}</label>
+                  <select
+                    name="fuel"
+                    value={carData.fuel}
+                    onChange={handleChange}
+                    className="car-form-input"
+                  >
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Electric">Electric</option>
+                  </select>
+                </div>
+              );
+            } else if (field === "category") {
+              return (
+                <div key={field} className="car-form-group">
+                  <label className="car-form-label">{field}</label>
+                  <select
+                    name="category"
+                    value={carData.category}
+                    onChange={handleChange}
+                    className="car-form-input"
+                  >
+                    <option value="">Select category</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="MiniSUV">Mini SUV</option>
+                    <option value="Coupe">Coupe</option>
+                    <option value="Convertible">Convertible</option>
+                    <option value="Wagon">Wagon</option>
+                    <option value="Van">Van</option>
+                  </select>
+                </div>
+              );
+            } else {
+              return (
+                <div key={field} className="car-form-group">
+                  <label className="car-form-label">{field}</label>
+                  <input
+                    type="text"
+                    name={field}
+                    value={carData[field]}
+                    onChange={handleChange}
+                    className="car-form-input"
+                  />
+                </div>
+              );
+            }
+          })}
+          <button type="submit" className="car-submit-btn">
+            Update Car
           </button>
         </form>
       </div>
-      <button onClick={handleDelete} className="delete-button">
+      <button onClick={handleDelete} className="car-submit-btn">
         Delete Product
       </button>
     </div>

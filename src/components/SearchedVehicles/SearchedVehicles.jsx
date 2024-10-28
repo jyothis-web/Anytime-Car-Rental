@@ -85,28 +85,27 @@ const SearchedVehicles = () => {
                   <div key={car.id}>
                     <div style={{marginRight:"20px"}} className="card-journey-small background-card hover-up">
                       <div className="">
-                        <a href={car.detailsUrl}>
+                        <div>
                           <img src={car.image} alt={car.model} />
-                        </a>
+                        </div>
                       </div>
                       <div className="card-info">
                         <div className="card-rating">
                           <div className="card-right">
                             <span className="rating">
-                              {car.rating.value}
+                              {/* {car.rating.value} */}
                               <span className="text-sm-medium neutral-500">
-                                ({car.rating.reviews} reviews)
+                                {/* ({car.rating.reviews} ) */}
                               </span>
                             </span>
                           </div>
                         </div>
                         <div className="card-title">
-                          <a
+                          <div
                             className="heading-6 neutral-1000"
-                            href={car.detailsUrl}
                           >
                             {car.model}
-                          </a>
+                          </div>
                         </div>
                         <div className="card-program">
                           <div className="card-location">
@@ -125,7 +124,7 @@ const SearchedVehicles = () => {
                               {car.fuel}
                             </p>
                             <p className="card-seat text-md-medium">
-                              {car.seats} seats
+                              {car.seats}seats
                             </p>
                           </div>
                           <div className="endtime">
@@ -134,14 +133,13 @@ const SearchedVehicles = () => {
                                 From
                               </p>
                               <h6 className="heading-6 neutral-1000">
-                                {car.currency}
-                                {car.price.toFixed(2)}
+                                {car.price}
                               </h6>
                             </div>
                             <div className="card-button">
-                              <a className="btn btn-gray" href={car.detailsUrl}>
+                              <div className="btn btn-gray">
                                 Book Now
-                              </a>
+                              </div>
                             </div>
                           </div>
                         </div>

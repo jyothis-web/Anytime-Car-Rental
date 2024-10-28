@@ -15,7 +15,7 @@ const UserLogin = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`http://localhost:8080/auth/login`, {
+      const response = await axios.post(`${import.meta.env.VITE_URL}/auth/login`, {
         email,
         password,
       });

@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between; /* Adjust spacing between items */
   margin-bottom: 15px; /* Space between rows */
+  background-color: black;
 }
 
 .form-group {
@@ -133,3 +134,96 @@ color: blue;
     font-weight: bold;
   }
   
+
+
+
+
+  .form-container {
+  background: black;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 48%; /* For 2 fields per row */
+}
+
+.form-label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+
+.form-group:nth-child(odd) {
+  margin-right: 4%;
+}
+
+.car-form-container {
+  background: black;
+  padding: 20px;
+}
+
+.car-form-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  width: 45%; /* Two fields per row */
+}
+
+.car-form-label {
+  color: white;
+  margin-bottom: 5px;
+}
+.car-form-group  input{
+  background-color: white;
+  color: black;
+}
+.car-form-input{
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.car-submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color :black;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.car-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+
+.car-form-group:nth-child(odd) {
+  margin-right: 4%;
+}

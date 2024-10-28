@@ -28,11 +28,13 @@ const CarFilterPage = () => {
               </div>
               <div className="container position-absolute z-1 top-50 start-50 pb-70 translate-middle text-center">
                 <span className="text-sm-bold bg-2 px-4 py-3 rounded-12">
-                  Find cars for sale and for rent near you
+                Find a car for rent near you
+
                 </span>
-                <h2 className="text-white mt-4">Find Your Perfect Car</h2>
+                <h2 className="text-white mt-4">Find your rental car that suits your lifestyle
+                </h2>
                 <span className="text-white text-lg-medium">
-                  Search and find your best car rental with easy way
+                Search & get your best car rental with peace of mind
                 </span>
               </div>
             </div>

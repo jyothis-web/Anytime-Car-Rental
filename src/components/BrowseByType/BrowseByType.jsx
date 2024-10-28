@@ -48,11 +48,7 @@ const BrowseByType = () => {
             </a>
             <div className="card-info">
               <div className="card-meta position-absolute top-100 start-50 translate-middle ">
-                <div className="meta-links">
-                  <a className="background-0" href="cars-list-2.html">
-                    24 Vehicles
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -76,11 +72,7 @@ const BrowseByType = () => {
             </a>
             <div className="card-info">
               <div className="card-meta position-absolute top-100 start-50 translate-middle ">
-                <div className="meta-links">
-                  <a className="background-0" href="cars-list-2.html">
-                    24 Vehicles
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -104,11 +96,7 @@ const BrowseByType = () => {
             </a>
             <div className="card-info">
               <div className="card-meta position-absolute top-100 start-50 translate-middle ">
-                <div className="meta-links">
-                  <a className="background-0" href="cars-list-2.html">
-                    24 Vehicles
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -132,11 +120,7 @@ const BrowseByType = () => {
             </a>
             <div className="card-info">
               <div className="card-meta position-absolute top-100 start-50 translate-middle ">
-                <div className="meta-links">
-                  <a className="background-0" href="cars-list-2.html">
-                    24 Vehicles
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -160,11 +144,7 @@ const BrowseByType = () => {
             </a>
             <div className="card-info">
               <div className="card-meta position-absolute top-100 start-50 translate-middle ">
-                <div className="meta-links">
-                  <a className="background-0" href="cars-list-2.html">
-                    24 Vehicles
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -188,11 +168,7 @@ const BrowseByType = () => {
             </a>
             <div className="card-info">
               <div className="card-meta position-absolute top-100 start-50 translate-middle ">
-                <div className="meta-links">
-                  <a className="background-0" href="cars-list-2.html">
-                    24 Vehicles
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
