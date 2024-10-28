@@ -14,7 +14,6 @@ const PopularCars = () => {
 
   // Slice the first 8 cars
   const carsToShow = products.slice(0, 4);
-
   return (
     <div>
       <section className="section-box box-flights background-body">

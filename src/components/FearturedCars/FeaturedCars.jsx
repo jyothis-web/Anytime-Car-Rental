@@ -1,5 +1,19 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "../../Redux/car/CarSlice";
 
 const FeaturedCars = () => {
+  const dispatch = useDispatch();
+
+  const { products = [] } = useSelector((state) => state.car);
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
+  // Slice the first 8 cars
+  const carsToShow = products.slice(0, 8);
+
   return (
     <div>
       <section className="section-box box-flights background-body">
@@ -35,462 +49,78 @@ const FeaturedCars = () => {
             </div>
           </div>
           <div className="row pt-30 wow fadeInUp">
-            <div className="col-lg-3 col-md-6">
-              <div className="card-journey-small background-card hover-up">
-                <div className="card-image">
-                  <a href="cars-details-2.html">
-                    <img
-                      src="assets/imgs/cars-listing/cars-listing-2/car-1.png"
-                      alt="Carento"
-                    />
-                  </a>
-                </div>
-                <div className="card-info p-4 pt-30">
-                  <div className="card-rating">
-                    <div className="card-left" />
-                    <div className="card-right">
-                      <span className="rating text-xs-medium rounded-pill">
-                        4.96{" "}
-                        <span className="text-xs-medium neutral-500">
-                          (672 reviews)
+            {carsToShow.map((car, index) => (
+              <div key={index} className="col-lg-3 col-md-6">
+                <div className="card-journey-small background-card hover-up">
+                  <div className="">
+                  {car.carImage1 && (
+                        <img
+                          src={`${import.meta.env.VITE_URL}${
+                            car.carImage1.imagePath
+                          }`} // Corrected path reference
+                          alt={`Image of ${car.brandModel}`}
+                          loading="lazy"
+                        />
+                      )}
+                  </div>
+                  <div className="card-info p-4 pt-30">
+                    <div className="card-rating">
+                      <div className="card-left" />
+                      <div className="card-right">
+                        <span className="rating text-xs-medium rounded-pill">
+                          {car.rating}{" "}
+                          <span className="text-xs-medium neutral-500">
+                            {car.brand}
+                          </span>
                         </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-title">
-                    <a
-                      className="text-lg-bold neutral-1000 text-nowrap"
-                      href="cars-details-2.html"
-                    >
-                      Volkswagen Golf GTD
-                    </a>
-                  </div>
-                  <div className="card-program">
-                    <div className="card-location">
-                      <p className="text-location text-sm-medium neutral-500">
-                        Manchester, England
-                      </p>
-                    </div>
-                    <div className="card-facitlities">
-                      <p className="card-miles text-md-medium">25,100 miles</p>
-                      <p className="card-gear text-md-medium">Automatic</p>
-                      <p className="card-fuel text-md-medium">Diesel</p>
-                      <p className="card-seat text-md-medium">7 seats</p>
-                    </div>
-                    <div className="endtime">
-                      <div className="card-price">
-                        <h6 className="text-lg-bold neutral-1000">$69.56</h6>
-                        <p className="text-md-medium neutral-500" />
                       </div>
-                      <div className="card-button">
-                        <a className="btn btn-gray" href="cars-details-2.html">
-                          Book Now
-                        </a>
+                    </div>
+                    <div className="card-title">
+                      <div className="text-lg-bold neutral-1000 text-nowrap">
+                        {car.brandModel}
+                      </div>
+                    </div>
+                    <div className="card-program">
+                      <div className="card-location">
+                        <p className="text-location text-sm-medium neutral-500">
+                          {car.category}
+                        </p>
+                      </div>
+                      <div className="card-facitlities">
+                        <p className="card-miles ">
+                           {car. mileage}
+                        </p>
+                        <p className="card-gear ">
+                          {car.transmission}
+                        </p>
+                        <p className="card-fuel ">
+                       {car.fuel}
+                        </p>
+                        <p className="card-seat ">
+                          {car.seat} seats
+                        </p>
+                      </div>
+                      <div className="endtime">
+                        <div className="card-price">
+                          <h6 className="text-lg-bold neutral-1000">
+                            ${car.dailyRent}
+                          </h6>
+                          <p className="text-md-medium neutral-500" />
+                        </div>
+                        <div className="card-button">
+                          <a
+                            className="btn btn-gray"
+                            href="cars-details-2.html"
+                          >
+                            Book Now
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="card-journey-small background-card hover-up">
-                <div className="card-image">
-                  <a href="cars-details-2.html">
-                    <img
-                      src="assets/imgs/cars-listing/cars-listing-2/car-5.png"
-                      alt="Carento"
-                    />
-                  </a>
-                </div>
-                <div className="card-info p-4 pt-30">
-                  <div className="card-rating">
-                    <div className="card-left" />
-                    <div className="card-right">
-                      <span className="rating text-xs-medium rounded-pill">
-                        4.96{" "}
-                        <span className="text-xs-medium neutral-500">
-                          (672 reviews)
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-title">
-                    <a
-                      className="text-lg-bold neutral-1000"
-                      href="cars-details-2.html"
-                    >
-                      Volvo S60 D4 R-Design
-                    </a>
-                  </div>
-                  <div className="card-program">
-                    <div className="card-location">
-                      <p className="text-location text-sm-medium neutral-500">
-                        New South Wales, Australia
-                      </p>
-                    </div>
-                    <div className="card-facitlities">
-                      <p className="card-miles text-md-medium">25,100 miles</p>
-                      <p className="card-gear text-md-medium">Automatic</p>
-                      <p className="card-fuel text-md-medium">Diesel</p>
-                      <p className="card-seat text-md-medium">7 seats</p>
-                    </div>
-                    <div className="endtime">
-                      <div className="card-price">
-                        <h6 className="text-lg-bold neutral-1000">$69.56</h6>
-                        <p className="text-md-medium neutral-500" />
-                      </div>
-                      <div className="card-button">
-                        <a className="btn btn-gray" href="cars-details-2.html">
-                          Book Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="card-journey-small background-card hover-up">
-                <div className="card-image">
-                  <a href="cars-details-2.html">
-                    <img
-                      src="assets/imgs/cars-listing/cars-listing-2/car-6.png"
-                      alt="Carento"
-                    />
-                  </a>
-                </div>
-                <div className="card-info p-4 pt-30">
-                  <div className="card-rating">
-                    <div className="card-left" />
-                    <div className="card-right">
-                      <span className="rating text-xs-medium rounded-pill">
-                        4.96{" "}
-                        <span className="text-xs-medium neutral-500">
-                          (672 reviews)
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-title">
-                    <a
-                      className="text-lg-bold neutral-1000"
-                      href="cars-details-2.html"
-                    >
-                      Jaguar XE 2.0d R-Sport
-                    </a>
-                  </div>
-                  <div className="card-program">
-                    <div className="card-location">
-                      <p className="text-location text-sm-medium neutral-500">
-                        Manchester, England
-                      </p>
-                    </div>
-                    <div className="card-facitlities">
-                      <p className="card-miles text-md-medium">25,100 miles</p>
-                      <p className="card-gear text-md-medium">Automatic</p>
-                      <p className="card-fuel text-md-medium">Diesel</p>
-                      <p className="card-seat text-md-medium">7 seats</p>
-                    </div>
-                    <div className="endtime">
-                      <div className="card-price">
-                        <h6 className="text-lg-bold neutral-1000">$69.56</h6>
-                        <p className="text-md-medium neutral-500" />
-                      </div>
-                      <div className="card-button">
-                        <a className="btn btn-gray" href="cars-details-2.html">
-                          Book Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="card-journey-small background-card hover-up">
-                <div className="card-image">
-                  <a href="cars-details-2.html">
-                    <img
-                      src="assets/imgs/cars-listing/cars-listing-2/car-7.png"
-                      alt="Carento"
-                    />
-                  </a>
-                </div>
-                <div className="card-info p-4 pt-30">
-                  <div className="card-rating">
-                    <div className="card-left" />
-                    <div className="card-right">
-                      <span className="rating text-xs-medium rounded-pill">
-                        4.96{" "}
-                        <span className="text-xs-medium neutral-500">
-                          (672 reviews)
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-title">
-                    <a
-                      className="text-lg-bold neutral-1000"
-                      href="cars-details-2.html"
-                    >
-                      Lexus IS 300h F Sport
-                    </a>
-                  </div>
-                  <div className="card-program">
-                    <div className="card-location">
-                      <p className="text-location text-sm-medium neutral-500">
-                        Manchester, England
-                      </p>
-                    </div>
-                    <div className="card-facitlities">
-                      <p className="card-miles text-md-medium">25,100 miles</p>
-                      <p className="card-gear text-md-medium">Automatic</p>
-                      <p className="card-fuel text-md-medium">Diesel</p>
-                      <p className="card-seat text-md-medium">7 seats</p>
-                    </div>
-                    <div className="endtime">
-                      <div className="card-price">
-                        <h6 className="text-lg-bold neutral-1000">$69.56</h6>
-                        <p className="text-md-medium neutral-500" />
-                      </div>
-                      <div className="card-button">
-                        <a className="btn btn-gray" href="cars-details-2.html">
-                          Book Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="card-journey-small background-card hover-up">
-                <div className="card-image">
-                  <a href="cars-details-2.html">
-                    <img
-                      src="assets/imgs/cars-listing/cars-listing-2/car-8.png"
-                      alt="Carento"
-                    />
-                  </a>
-                </div>
-                <div className="card-info p-4 pt-30">
-                  <div className="card-rating">
-                    <div className="card-left" />
-                    <div className="card-right">
-                      <span className="rating text-xs-medium rounded-pill">
-                        4.96{" "}
-                        <span className="text-xs-medium neutral-500">
-                          (672 reviews)
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-title">
-                    <a
-                      className="text-lg-bold neutral-1000 text-nowrap"
-                      href="cars-details-2.html"
-                    >
-                      Volkswagen Golf GTD
-                    </a>
-                  </div>
-                  <div className="card-program">
-                    <div className="card-location">
-                      <p className="text-location text-sm-medium neutral-500">
-                        Manchester, England
-                      </p>
-                    </div>
-                    <div className="card-facitlities">
-                      <p className="card-miles text-md-medium">25,100 miles</p>
-                      <p className="card-gear text-md-medium">Automatic</p>
-                      <p className="card-fuel text-md-medium">Diesel</p>
-                      <p className="card-seat text-md-medium">7 seats</p>
-                    </div>
-                    <div className="endtime">
-                      <div className="card-price">
-                        <h6 className="text-lg-bold neutral-1000">$69.56</h6>
-                        <p className="text-md-medium neutral-500" />
-                      </div>
-                      <div className="card-button">
-                        <a className="btn btn-gray" href="cars-details-2.html">
-                          Book Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="card-journey-small background-card hover-up">
-                <div className="card-image">
-                  <a href="cars-details-2.html">
-                    <img
-                      src="assets/imgs/cars-listing/cars-listing-2/car-9.png"
-                      alt="Carento"
-                    />
-                  </a>
-                </div>
-                <div className="card-info p-4 pt-30">
-                  <div className="card-rating">
-                    <div className="card-left" />
-                    <div className="card-right">
-                      <span className="rating text-xs-medium rounded-pill">
-                        4.96{" "}
-                        <span className="text-xs-medium neutral-500">
-                          (672 reviews)
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-title">
-                    <a
-                      className="text-lg-bold neutral-1000"
-                      href="cars-details-2.html"
-                    >
-                      Volvo S60 D4 R-Design
-                    </a>
-                  </div>
-                  <div className="card-program">
-                    <div className="card-location">
-                      <p className="text-location text-sm-medium neutral-500">
-                        New South Wales, Australia
-                      </p>
-                    </div>
-                    <div className="card-facitlities">
-                      <p className="card-miles text-md-medium">25,100 miles</p>
-                      <p className="card-gear text-md-medium">Automatic</p>
-                      <p className="card-fuel text-md-medium">Diesel</p>
-                      <p className="card-seat text-md-medium">7 seats</p>
-                    </div>
-                    <div className="endtime">
-                      <div className="card-price">
-                        <h6 className="text-lg-bold neutral-1000">$69.56</h6>
-                        <p className="text-md-medium neutral-500" />
-                      </div>
-                      <div className="card-button">
-                        <a className="btn btn-gray" href="cars-details-2.html">
-                          Book Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="card-journey-small background-card hover-up">
-                <div className="card-image">
-                  <a href="cars-details-2.html">
-                    <img
-                      src="assets/imgs/cars-listing/cars-listing-2/car-10.png"
-                      alt="Carento"
-                    />
-                  </a>
-                </div>
-                <div className="card-info p-4 pt-30">
-                  <div className="card-rating">
-                    <div className="card-left" />
-                    <div className="card-right">
-                      <span className="rating text-xs-medium rounded-pill">
-                        4.96{" "}
-                        <span className="text-xs-medium neutral-500">
-                          (672 reviews)
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-title">
-                    <a
-                      className="text-lg-bold neutral-1000"
-                      href="cars-details-2.html"
-                    >
-                      Jaguar XE 2.0d R-Sport
-                    </a>
-                  </div>
-                  <div className="card-program">
-                    <div className="card-location">
-                      <p className="text-location text-sm-medium neutral-500">
-                        Manchester, England
-                      </p>
-                    </div>
-                    <div className="card-facitlities">
-                      <p className="card-miles text-md-medium">25,100 miles</p>
-                      <p className="card-gear text-md-medium">Automatic</p>
-                      <p className="card-fuel text-md-medium">Diesel</p>
-                      <p className="card-seat text-md-medium">7 seats</p>
-                    </div>
-                    <div className="endtime">
-                      <div className="card-price">
-                        <h6 className="text-lg-bold neutral-1000">$69.56</h6>
-                        <p className="text-md-medium neutral-500" />
-                      </div>
-                      <div className="card-button">
-                        <a className="btn btn-gray" href="cars-details-2.html">
-                          Book Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="card-journey-small background-card hover-up">
-                <div className="card-image">
-                  <a href="cars-details-2.html">
-                    <img
-                      src="assets/imgs/cars-listing/cars-listing-2/car-11.png"
-                      alt="Carento"
-                    />
-                  </a>
-                </div>
-                <div className="card-info p-4 pt-30">
-                  <div className="card-rating">
-                    <div className="card-left" />
-                    <div className="card-right">
-                      <span className="rating text-xs-medium rounded-pill">
-                        4.96{" "}
-                        <span className="text-xs-medium neutral-500">
-                          (672 reviews)
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-title">
-                    <a
-                      className="text-lg-bold neutral-1000"
-                      href="cars-details-2.html"
-                    >
-                      Lexus IS 300h F Sport
-                    </a>
-                  </div>
-                  <div className="card-program">
-                    <div className="card-location">
-                      <p className="text-location text-sm-medium neutral-500">
-                        Manchester, England
-                      </p>
-                    </div>
-                    <div className="card-facitlities">
-                      <p className="card-miles text-md-medium">25,100 miles</p>
-                      <p className="card-gear text-md-medium">Automatic</p>
-                      <p className="card-fuel text-md-medium">Diesel</p>
-                      <p className="card-seat text-md-medium">7 seats</p>
-                    </div>
-                    <div className="endtime">
-                      <div className="card-price">
-                        <h6 className="text-lg-bold neutral-1000">$69.56</h6>
-                        <p className="text-md-medium neutral-500" />
-                      </div>
-                      <div className="card-button">
-                        <a className="btn btn-gray" href="cars-details-2.html">
-                          Book Now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
