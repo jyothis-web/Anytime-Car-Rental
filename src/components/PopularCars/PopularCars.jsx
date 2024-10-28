@@ -237,7 +237,7 @@ const PopularCars = () => {
                               className="fa fa-tachometer-alt"
                               aria-hidden="true"
                             ></i>
-                            {car.category}
+                            {car.mileage} Km
                           </p>
                           <p className="card-gear ">
                             <i className="fa fa-cog" aria-hidden="true"></i>

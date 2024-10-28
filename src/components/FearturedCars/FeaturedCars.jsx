@@ -88,7 +88,7 @@ const FeaturedCars = () => {
                       </div>
                       <div className="card-facitlities">
                         <p className="card-miles ">
-                           {car. mileage}
+                           {car. mileage} km
                         </p>
                         <p className="card-gear ">
                           {car.transmission}
