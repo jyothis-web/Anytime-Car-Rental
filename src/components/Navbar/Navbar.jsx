@@ -143,17 +143,14 @@ const Navbar = () => {
         <div className="main-header">
           <div className="header-left">
             <div className="header-logo">
-              <a className="d-flex" href="index.html">
+              <a className="d-flex" >
                 <img
                   className="light-mode"
                   alt="Carento"
-                  src="assets/imgs/template/logo-w.svg"
+                 src="/logo.avif"
+                height={"50px"}
                 />
-                <img
-                  className="dark-mode"
-                  alt="Carento"
-                  src="assets/imgs/template/logo-w.svg"
-                />
+                
               </a>
             </div>
             <div className="navbar-title-flex">
@@ -172,7 +169,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-button">
               <Link to="/CarFilterPage" className="navbar-title">
-                <button className="btn btn-primary">Book Now</button>
+                <button className="btn btn-primary" >Book Now</button>
               </Link>
             </div>
             <div className="nav-mobile">

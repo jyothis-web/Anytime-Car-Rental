@@ -1,73 +1,150 @@
 /* Hide the default checkbox */
 .cb-container input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Custom checkbox */
-  .cb-container .checkmark {
-
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border-radius: 4px;
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  /* When the checkbox is checked, show the checkmark */
-  .cb-container input[type="checkbox"]:checked + .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Checkmark/indicator (hidden when not checked) */
-  .cb-container .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .cb-container input[type="checkbox"]:checked + .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .cb-container .checkmark:after {
-    left: 6px;
-    top: 3px;
-    width: 6px;
-    height: 12px;
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-  }
-
-  .box-filters-sidebar {
-    display: none;
-  }
-  
-  .box-filters-sidebar.open {
-    display: block;
-    height: max-content;
-  }
-  
-  /* General styles for the button */
-
-.filter-button{
-border-radius: 10px;
-padding-left: 10px;
-padding-right: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
-cursor: pointer;
-background: rgb(12, 9, 9);
-color: white;
-font-size: 18px;
-margin-bottom: 40px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
+/* Custom checkbox */
+.cb-container .checkmark {
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* When the checkbox is checked, show the checkmark */
+.cb-container input[type="checkbox"]:checked + .checkmark {
+  background-color: #2196f3;
+}
+
+/* Checkmark/indicator (hidden when not checked) */
+.cb-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.cb-container input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.cb-container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.box-filters-sidebar {
+  display: none;
+}
+
+.box-filters-sidebar.open {
+  display: block;
+  height: max-content;
+}
+
+/* General styles for the button */
+
+.filter-button {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background: rgb(12, 9, 9);
+  color: white;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.arrow-indicator {
+  margin-left: 10px; /* Adjust spacing as needed */
+  display: inline-flex;
+  flex-direction: column; /* Stack arrows vertically */
+  justify-content: center; /* Center arrows vertically */
+}
+
+.arrow-down {
+  font-size: 12px; /* Adjust size as needed */
+  color: #000; /* Change color if needed */
+}
+
+.filter-container {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between; /* Space out filters */
+  
+  /* Adding box shadow and border */
+  border: 1px solid #ccc; /* Light gray border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+  border-radius: 5px; /* Optional: adds rounded corners */
+  padding: 10px; /* Optional: adds some padding inside the container */
+  background-color: #fff; /* Optional: sets a background color */
+}
+
+
+.filter-item {
+  flex: 1; /* Make each filter take equal space */
+  margin: 10px; /* Add some margin around filters */
+}
+
+.button-flex {
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  gap: 10px;
+}
+
+.button-flex > div {
+  flex: 1; /* Make both child divs take equal space */
+  text-align: center; /* Center text inside buttons */
+}
+
+.card-button .btn {
+  width: 100%; /* Make button fill the entire parent width */
+}
+
+.card-latest-button{
+  display: inline-block; /* Ensure the button is inline */
+  padding: 5px 10px; /* Adjust padding for button */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  border: 1px solid #007bff; /* Border color */
+  border-radius: 25px; /* Rounded corners */
+  text-align: center; /* Center text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
 
 /* Media query for mobile view */
 @media (max-width: 768px) {
@@ -76,7 +153,7 @@ margin-bottom: 40px;
     border: 1px solid #007bff; /* Add border for visibility */
     color: #007bff; /* Change text color */
   }
-  .filter-button{
+  .filter-button {
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 20px;
@@ -85,7 +162,7 @@ margin-bottom: 40px;
     cursor: pointer;
     font-size: 18px;
     margin-bottom: 10px;
-    }
+  }
 
   .btn-small {
     padding: 5px 10px; /* Smaller padding for mobile */
@@ -98,15 +175,15 @@ margin-bottom: 40px;
 
   .sidebar-left {
     position: absolute;
-    top: 795px; 
-    left: 0; 
+    top: 795px;
+    left: 0;
     width: fit-content;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
 
   .box-filters-sidebar {
-    display: none; 
+    display: none;
   }
 
   .box-filters-sidebar.open {
@@ -114,8 +191,10 @@ margin-bottom: 40px;
   }
 
   .btn-secondary {
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+  }
+
+  .filter-container {
+    flex-direction: column; /* Stack filters in a column on small screens */
   }
 }
-
-  

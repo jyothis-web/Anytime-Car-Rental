@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../Redux/car/CarSlice";
 import "./Popularcars.css";
+import CarPriceDisplay from "../CarFilterPage/CarPriceDisplay";
 const PopularCars = () => {
   const dispatch = useDispatch();
 
@@ -201,17 +202,19 @@ const PopularCars = () => {
             <div className="box-swiper mt-30">
               <div className="car-list-container">
                 {carsToShow.map((car) => (
-                  <div key={car.id} className="car-card">
+                  <div key={car._id} className="car-card">
                     <div className="car-image">
-                      {car.carImage1 && (
-                        <img
-                          src={`${import.meta.env.VITE_URL}${
-                            car.carImage1.imagePath
-                          }`} // Corrected path reference
-                          alt={`Image of ${car.brandModel}`}
-                          loading="lazy"
-                        />
-                      )}
+                      <Link to={`/CarDetilPage/${car._id}`}>
+                        {car.carImage1 && (
+                          <img
+                            src={`${import.meta.env.VITE_URL}${
+                              car.carImage1.imagePath
+                            }`} // Corrected path reference
+                            alt={`Image of ${car.brandModel}`}
+                            loading="lazy"
+                          />
+                        )}
+                      </Link>
                     </div>
                     <div className="car-details">
                       <div className="top-round">
@@ -232,27 +235,27 @@ const PopularCars = () => {
                         }}
                       >
                         <div className="card-specs">
-                          <p className="card-miles ">
+                          <p className="card-icons ">
                             <i
                               className="fa fa-tachometer-alt"
                               aria-hidden="true"
                             ></i>
                             {car.mileage} Km
                           </p>
-                          <p className="card-gear ">
+                          <p className="card-icons ">
                             <i className="fa fa-cog" aria-hidden="true"></i>
                             {car.transmission}
                           </p>
                         </div>
                         <div className="card-specs">
-                          <p className="card-fuel ">
+                          <p className="card-icons ">
                             <i
                               className="fa fa-gas-pump"
                               aria-hidden="true"
                             ></i>
                             {car.fuel}
                           </p>
-                          <p className="card-seat ">
+                          <p className="card-icons ">
                             <i
                               className="fa fa-user-friends"
                               aria-hidden="true"
@@ -261,12 +264,7 @@ const PopularCars = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="card-price">
-                        <p className=" neutral-500"></p>
-                        <h6 className="heading-6 neutral-1000">
-                          {car.dailyRent}
-                        </h6>
-                      </div>
+                      <CarPriceDisplay car={car} />
                       <Link to={`/CarDetilPage/${car._id}`}>
                         <div className="card-button">
                           <div className="btn btn-primary">Book Now</div>

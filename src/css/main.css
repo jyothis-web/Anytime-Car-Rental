@@ -1696,7 +1696,7 @@ body {
 }
 .btn.btn-primary {
   padding: 12px 22px 12px 28px;
-  color: #101010 !important;
+  color: white;
   font-size: 14px !important;
   line-height: 26px !important;
   font-family: "Urbanist", sans-serif;

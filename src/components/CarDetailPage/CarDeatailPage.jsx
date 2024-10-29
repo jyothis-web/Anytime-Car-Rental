@@ -95,7 +95,7 @@ const CarDeatailPage = () => {
                 </span>
               </li>
               <li>
-                <a href="destination.html">Cars Rental</a>
+               <Link to ="/CarFilterPage"><div >Cars Rental</div></Link> 
                 <span className="arrow-right">
                   <svg
                     width={7}

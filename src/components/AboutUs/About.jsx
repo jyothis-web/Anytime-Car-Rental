@@ -96,9 +96,9 @@ const About = () => {
                   alt="Carento"
                 />
               </span>
-              <a href="#" className="neutral-1000 text-md-bold">
+              <Link to="/About" className="neutral-1000 text-md-bold">
                 About Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -337,9 +337,9 @@ const About = () => {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-5">
-                  <a className="btn btn-signin bg-2 text-dark mb-4" href="#">
+                  <div className="btn btn-signin bg-2 text-dark mb-4" >
                     Our Mission
-                  </a>
+                  </div>
                   <h4 className="mb-4 neutral-1000">
                   Committed to ensure your satisfaction & 
                   make your travel experience memorable
@@ -452,9 +452,9 @@ const About = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 ps-lg-5">
-                  <a className="btn btn-signin bg-2 text-dark mb-4" href="#">
+                  <div className="btn btn-signin bg-2 text-dark mb-4" >
                     Our Vision
-                  </a>
+                  </div>
                   <h4 className="mb-4 neutral-1000">
                     Carento offers clear pricing and 24/7 great support.
                   </h4>
@@ -557,7 +557,8 @@ const About = () => {
               <div className="row">
                 <div className="col-12 wow fadeInUp mt-4">
                   <div className="d-flex justify-content-center gap-2">
-                    <a className="btn btn-primary mt-2" href="#">
+                    <Link to="/ContactPage">
+                    <div className="btn btn-primary mt-2" >
                       Contact Us
                       <svg
                         width={16}
@@ -574,28 +575,9 @@ const About = () => {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </a>
-                    <a
-                      className="btn btn-primary bg-transparent mt-2 invert"
-                      href="#"
-                    >
-                      Help Center
-                      <svg
-                        width={16}
-                        height={16}
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8 15L15 8L8 1M15 8L1 8"
-                          stroke=""
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </a>
+                    </div>
+                    </Link>
+                  
                   </div>
                 </div>
               </div>

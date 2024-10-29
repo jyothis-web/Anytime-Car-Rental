@@ -46,9 +46,9 @@ const CarBrands = () => {
           <p className="text-lg-medium neutral-500">
             Unveil the Finest Selection of High-End Vehicles
           </p>
-          <a href="cars-list-1.html" className="text-sm-bold neutral-1000">
+          <div className="text-sm-bold neutral-1000">
             Show All Brands
-          </a>
+          </div>
 
           <Slider {...settings} className="box-list-brand-car">
             <div className="carouselTicker__item">
