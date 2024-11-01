@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div>
@@ -7,18 +9,14 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-3 col-sm-12 footer-1">
               <div className="mt-20 mb-20">
-                <a className="d-flex" href="index.html">
+              <Link to="/" className="d-flex mb-20 mt-0 " style={{ paddingLeft: "40px",paddingTop:"-10px" }} >
                   <img
                     className="light-mode"
                     alt="Carento"
-                    src="assets/imgs/template/logo-w.svg"
+                    src="/logo.avif"
+                    height={"50px"}
                   />
-                  <img
-                    className="dark-mode"
-                    alt="Carento"
-                    src="assets/imgs/template/logo-w.svg"
-                  />
-                </a>
+                </Link>
                 <div className="box-info-contact mt-0">
                   <p className="text-md neutral-400 icon-address">
                     Street No 955, Building No 128, Zone 56

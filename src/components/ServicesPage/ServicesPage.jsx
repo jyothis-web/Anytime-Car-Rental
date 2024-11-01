@@ -298,11 +298,10 @@ const ServicesPage = () => {
                         Delivery Services
                       </a>
                       <p className="text-md-medium neutral-500 mt-2">
-                         We
-                        offer convenient car delivery services throughout Qatar.
-                        Simply book your rental online or over the phone, and
-                        we&apos;ll deliver your chosen vehicle directly to your
-                        preferred location.
+                        We offer convenient car delivery services throughout
+                        Qatar. Simply book your rental online or over the phone,
+                        and we&apos;ll deliver your chosen vehicle directly to
+                        your preferred location.
                       </p>
                     </div>
                   </div>
@@ -312,7 +311,7 @@ const ServicesPage = () => {
           </div>
         </section>
         {/* banners 3 */}
-        
+
         {/* testimonials */}
         {/* cta 10*/}
         <section className="section-cta-7 background-body">
@@ -320,30 +319,17 @@ const ServicesPage = () => {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-6">
-                  <div className="box-swiper">
-                    <div className="swiper-container swiper-group-1">
-                      <div className="swiper-wrapper">
-                        <div className="swiper-slide">
-                          <img
-                            className="rounded-12"
-                            src="assets/imgs/cta/cta-10/img-1.png"
-                            alt="Carento"
-                          />
-                        </div>
-                        <div className="swiper-slide">
-                          <img
-                            className="rounded-12"
-                            src="assets/imgs/cta/cta-10/img-1.png"
-                            alt="Carento"
-                          />
-                        </div>
-                      </div>
-                      <div className="position-absolute end-0 bottom-0 p-40">
-                        <div className="box-button-slider box-button-slider-team justify-content-end">
-                          
-                        </div>
-                      </div>
+                  <div className="swiper-wrapper">
+                    <div className="swiper-slide">
+                      <img
+                        className="rounded-12"
+                        src="assets/imgs/cta/cta-10/img-1.png"
+                        alt="Carento"
+                      />
                     </div>
+                  </div>
+                  <div className="position-absolute end-0 bottom-0 p-40">
+                    <div className="box-button-slider box-button-slider-team justify-content-end"></div>
                   </div>
                 </div>
                 <div className="col-lg-6 ps-lg-5 mt-lg-0 mt-4">
@@ -354,34 +340,158 @@ const ServicesPage = () => {
                   </p>
                   <div className="row">
                     <div className="col">
-                      <ul className="list-ticks-green list-ticks-green-2">
-                        <li className="neutral-1000 pe-0">
-                        School Transportation Services
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                        Office Personal Transportation
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                        VVIP & VIP Transportation
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                        Chauffeur-hailing
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                        Business Tips Chauffeur Services
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                        Meet & Greet Services
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                        Family Vans Chauffeur Services
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                        Entertainment Tour Services
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                        Factory Staff Transportation
-                        </li>
+                      <ul className="list-ticks-green ">
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            School Transportation Services
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            Office Personal Transportation
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            VVIP & VIP Transportation
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            Family Vans Chauffeur Services
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            Meet & Greet Services
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            Business Tips Chauffeur Services
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            Chauffeur-hailing
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            Factory Staff Transportation
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            Entertainment Tour Services
+                          </li>
+                        </div>
                       </ul>
                     </div>
                   </div>
@@ -396,7 +506,7 @@ const ServicesPage = () => {
                     >
                       <path
                         d="M8 15L15 8L8 1M15 8L1 8"
-                        stroke=""
+                        stroke="#fff"
                         strokeWidth="1.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -423,8 +533,8 @@ const ServicesPage = () => {
         </section>
         {/* blog-1 */}
         {/* Footer */}
-        
-        <Footer/>
+
+        <Footer />
       </main>
     </div>
   );

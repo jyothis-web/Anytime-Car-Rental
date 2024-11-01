@@ -1,0 +1,61 @@
+.message-search-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Prevent wrapping to maintain single row */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 25px; /* Padding around the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  gap: 15px; /* Space between items */
+  max-width: 100%; /* Full width */
+}
+
+.search-item {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack label above input */
+  flex: 1; /* Flex grow to fill space */
+  min-width: 150px; /* Minimum width for inputs */
+}
+
+.label-text {
+  font-weight: bold; /* Bold text for labels */
+  color: #555; /* Dark grey color */
+  margin-bottom: 5px; /* Space below label */
+}
+
+.input-dropdown {
+  position: relative; /* Required for dropdowns or additional elements */
+}
+
+.input-control {
+  padding: 8px 12px; /* Padding inside input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Font size for input */
+}
+
+.button-container {
+  display: flex; /* Flexbox for button alignment */
+  justify-content: flex-end; /* Align button to the right */
+  flex: none; /* Prevent flex growth for button container */
+}
+
+.send-button {
+  padding: 8px 16px; /* Padding for button */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.send-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .message-search-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+}

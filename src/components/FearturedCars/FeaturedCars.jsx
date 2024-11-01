@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../Redux/car/CarSlice";
+import CarPriceDisplay from "../CarFilterPage/CarPriceDisplay";
 
 const FeaturedCars = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const FeaturedCars = () => {
 
   return (
     <div>
-      <section className="section-box box-flights background-body">
+      <section className="section-box  background-body">
         <div className="container">
           <div className="row align-items-end">
             <div className="col-md-8">
@@ -38,7 +39,7 @@ const FeaturedCars = () => {
                   >
                     <path
                       d="M8 15L15 8L8 1M15 8L1 8"
-                      stroke=""
+                      stroke="#fff"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -103,18 +104,15 @@ const FeaturedCars = () => {
                       <div className="endtime">
                         <div className="card-price">
                           <h6 className="text-lg-bold neutral-1000">
-                            ${car.dailyRent}
+                          <CarPriceDisplay car={car} />
                           </h6>
                           <p className="text-md-medium neutral-500" />
                         </div>
-                        <div className="card-button">
-                          <a
-                            className="btn btn-gray"
-                            href="cars-details-2.html"
-                          >
-                            Book Now
-                          </a>
-                        </div>
+                        <div className="card-latest-button">
+                                  {" "}
+                                  {/* Added classes here */}
+                                  Book Now
+                                </div>
                       </div>
                     </div>
                   </div>

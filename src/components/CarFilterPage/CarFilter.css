@@ -134,16 +134,29 @@
   width: 100%; /* Make button fill the entire parent width */
 }
 
-.card-latest-button{
+.card-latest-button {
   display: inline-block; /* Ensure the button is inline */
   padding: 5px 10px; /* Adjust padding for button */
-  background-color: #007bff; /* Primary button color */
+  background-color: #2174b6; /* Primary button color */
   color: white; /* Text color */
-  border: 1px solid #007bff; /* Border color */
+  border: 1px solid #fff; /* Border color */
   border-radius: 25px; /* Rounded corners */
   text-align: center; /* Center text */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+/* Remove space to ensure hover applies to the button itself */
+.card-latest-button:hover {
+  background-color: white; /* Change background color on hover */
+  color: #2174b6; /* Change text color on hover */
+  border: 1px solid #2174b6; /* Border color */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.padding-popular{
+  margin-top: 10px;
+  padding: 5px 25px;
 }
 
 /* Media query for mobile view */

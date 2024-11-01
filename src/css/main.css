@@ -30,7 +30,6 @@ TABLE CONTENT
 @import url(../css/vendors/normalize.css);
 @import url(../css/vendors/bootstrap.min.css);
 @import url(../css/vendors/uicons-regular-rounded.css);
-@import url(../css/plugins/swiper-bundle.min.css);
 @import url(../css/plugins/magnific-popup.css);
 @import url(../css/plugins/animate.css);
 @import url(../css/plugins/select2.min.css);
@@ -50,7 +49,7 @@ TABLE CONTENT
   --bs-color-1000: #000000;
   --bs-background-body: #ffffff;
   --bs-background-1: #fff0ec;
-  --bs-background-2: #d8f4db;
+  --bs-background-2: #627195;
   --bs-background-3: #e3f0ff;
   --bs-background-4: #f6f3fc;
   --bs-background-5: #ffec88;
@@ -1984,17 +1983,17 @@ body {
   border-radius: 50%;
   padding: 0px;
   width: 40px;
-  color: #ffffff;
+  color: white;
   right: 30px;
   bottom: 30px;
   text-align: center;
   z-index: 999 !important;
   border: 0;
-  background: var(--bs-neutral-900);
+  background: #2174b6;
   line-height: 40px;
 }
 #scrollUp svg {
-  fill: var(--bs-brand-2);
+  fill: white;
   height: 14px;
   position: relative;
   z-index: 123;
@@ -2003,7 +2002,6 @@ body {
 #scrollUp {
   animation: scale-up-center 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
 }
-
 @keyframes pulse-border {
   0% {
     transform: translateY(-50%) translateZ(0) scale(1);
@@ -8213,17 +8211,14 @@ a.icon-socials:hover svg path {
 
 .list-ticks-green {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: left;
+  flex-direction: column;
 }
 .list-ticks-green li {
-  margin-bottom: 18px;
-  padding: 3px 25px 3px 36px;
-  background-image: url(../imgs/template/icons/tick-list.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
+  padding: 3px 25px 3px 10px;
+  
   font-size: 14px;
-  line-height: 22px;
+  line-height: 18px;
   color: #ffffff;
   font-weight: bold;
 }

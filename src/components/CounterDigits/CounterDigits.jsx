@@ -34,13 +34,14 @@ const CounterDigits = () => {
               <div className="mb-4 mb-lg-0 d-block px-lg-5 px-3">
                 <div className="d-flex justify-content-center justify-content-md-start">
                   <h3 className="count neutral-1000">
-                    {inView && <CountUp end={45} duration={3} />}
+                    {inView && <CountUp end={10} duration={3} />}
                   </h3>
                   <h3 className="neutral-1000">+</h3>
                 </div>
                 <div className="text-md-start text-center">
-                  <p className="text-lg-bold neutral-1000">Global</p>
-                  <p className="text-lg-bold neutral-1000">Branches</p>
+                  <p className="text-lg-bold neutral-1000">Car
+                  </p>
+                  <p className="text-lg-bold neutral-1000">Brands</p>
                 </div>
               </div>
 
@@ -48,13 +49,13 @@ const CounterDigits = () => {
               <div className="mb-4 mb-lg-0 d-block px-lg-5 px-3">
                 <div className="d-flex justify-content-center justify-content-md-start">
                   <h3 className="count neutral-1000">
-                    {inView && <CountUp end={29} duration={3} />}
+                    {inView && <CountUp end={100} duration={3} />}
                   </h3>
-                  <h3 className="neutral-1000">K</h3>
+                  <h3 className="neutral-1000">+</h3>
                 </div>
                 <div className="text-md-start text-center">
-                  <p className="text-lg-bold neutral-1000">Destinations</p>
-                  <p className="text-lg-bold neutral-1000">Collaboration</p>
+                  <p className="text-lg-bold neutral-1000">Vehicals</p>
+                  <p className="text-lg-bold neutral-1000">Stock</p>
                 </div>
               </div>
 
@@ -62,7 +63,7 @@ const CounterDigits = () => {
               <div className="mb-4 mb-lg-0 d-block px-lg-5 px-3">
                 <div className="d-flex justify-content-center justify-content-md-start">
                   <h3 className="count neutral-1000">
-                    {inView && <CountUp end={20} duration={3} />}
+                    {inView && <CountUp end={10} duration={3} />}
                   </h3>
                   <h3 className="neutral-1000">+</h3>
                 </div>
@@ -76,7 +77,7 @@ const CounterDigits = () => {
               <div className="mb-4 mb-lg-0 d-block px-lg-5 px-3">
                 <div className="d-flex justify-content-center justify-content-md-start">
                   <h3 className="count neutral-1000">
-                    {inView && <CountUp end={168} duration={3} />}
+                    {inView && <CountUp end={25} duration={3} />}
                   </h3>
                   <h3 className="neutral-1000">K</h3>
                 </div>
@@ -92,11 +93,11 @@ const CounterDigits = () => {
                   <h3 className="count neutral-1000">
                     {inView && <CountUp end={15} duration={3} />}
                   </h3>
-                  <h3 className="neutral-1000">M</h3>
+                  <h3 className="neutral-1000">+</h3>
                 </div>
                 <div className="text-md-start text-center">
-                  <p className="text-lg-bold neutral-1000">User</p>
-                  <p className="text-lg-bold neutral-1000">Account</p>
+                  <p className="text-lg-bold neutral-1000">Corporate</p>
+                  <p className="text-lg-bold neutral-1000">Clients</p>
                 </div>
               </div>
 

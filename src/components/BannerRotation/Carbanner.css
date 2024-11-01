@@ -26,10 +26,10 @@
     .car-image-banner {
       position: absolute;
       left: 50%; 
-      bottom: 60px;
-      width: 400px; /* Set car image size */
+      bottom: 70px;
+      width: 400px; 
       height: auto;
-      opacity: 0; /* Hidden by default */
+      opacity: 0; 
       animation: semiCircleX 12s ease-in-out infinite; /* Apply semi-circular animation */
     }
     

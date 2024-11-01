@@ -6,11 +6,13 @@ const MiddleBannners = () => {
   <div className="container position-relative z-1">
     <div className="text-center">
       <span className="text-sm-bold bg-white p-3 rounded-12 wow fadeInDown">
-        Best Car Rental System
+      Best Rent a Car Company in Qatar
+
       </span>
       <h4 className="mt-4 wow fadeInUp">
-        Receive a Competitive Offer <br />
-        Sell Your Car to Us Today.
+      Competitive Car Rental & 
+      <br />
+      Limousine Services.
       </h4>
     </div>
     <div className="row mt-60">
@@ -23,10 +25,11 @@ const MiddleBannners = () => {
               alt="Carento"
             />
           </span>
-          <h6 className=" wow fadeInUp">Loking for a rental car?</h6>
+          <h6 className=" wow fadeInUp">Looking for a Car Rental Services?
+          </h6>
           <p className="text-md-regular wow fadeInUp">
-            Find your perfect rental car for any journey, from road trips to
-            business travel.
+          Experience the freedom of the open road with our comprehensive car rental services.
+
           </p>
           <a className="btn btn-primary wow fadeInUp" href="cars-list-1.html">
             Get Started Now
@@ -39,7 +42,7 @@ const MiddleBannners = () => {
             >
               <path
                 d="M12 19L19 12L12 5M19 12L5 12"
-                stroke="#101010"
+                stroke="#fff"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -60,10 +63,10 @@ const MiddleBannners = () => {
               alt="Carento"
             />
           </span>
-          <h6 className=" wow fadeInUp">Loking for a rental car?</h6>
+          <h6 className=" wow fadeInUp">Looking for a Limousine Services?
+          </h6>
           <p className="text-md-regular wow fadeInUp">
-            Find your perfect rental car for any journey, from road trips to
-            business travel.
+          Experience the epitome of luxury travel with our exquisite limousines.
           </p>
           <a className="btn btn-primary wow fadeInUp" href="cars-list-1.html">
             Get Started Now
@@ -76,7 +79,7 @@ const MiddleBannners = () => {
             >
               <path
                 d="M12 19L19 12L12 5M19 12L5 12"
-                stroke="#101010"
+                stroke="#fff"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"

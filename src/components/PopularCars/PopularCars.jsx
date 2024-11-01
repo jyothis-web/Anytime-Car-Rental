@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../Redux/car/CarSlice";
 import "./Popularcars.css";
 import CarPriceDisplay from "../CarFilterPage/CarPriceDisplay";
+import PickUpMessage from "../PickUpMessage/PickUpMessage";
 const PopularCars = () => {
   const dispatch = useDispatch();
 
@@ -27,174 +28,7 @@ const PopularCars = () => {
               </p>
             </div>
             <div className="col-lg-6 mb-30">
-              <div className="d-flex align-items-center justify-content-center justify-content-lg-end popular-categories">
-                {/* Categories Dropdown */}
-                <div className="dropdown dropdown-filter">
-                  <button
-                    className="btn btn-dropdown dropdown-toggle m-0"
-                    id="dropdownCategory1"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>Categories</span>
-                  </button>
-                  <ul
-                    className="dropdown-menu dropdown-menu-light"
-                    aria-labelledby="dropdownCategory1"
-                  >
-                    <li>
-                      <a className="dropdown-item active" href="#">
-                        Sedan
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        SUVs
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Coupes
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Hatchbacks
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Trucks
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Minivan
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Sport
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Cross-over
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Fuel Type Dropdown */}
-                <div className="dropdown dropdown-filter">
-                  <button
-                    className="btn btn-dropdown dropdown-toggle m-0"
-                    id="dropdownFuelType"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>Fuel Type</span>
-                  </button>
-                  <ul
-                    className="dropdown-menu dropdown-menu-light"
-                    aria-labelledby="dropdownFuelType"
-                  >
-                    <li>
-                      <a className="dropdown-item active" href="#">
-                        Plug-in Hybrid (PHEV)
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Hybrid (HEV)
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Electric Vehicle (EV)
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Diesel
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Gasoline/Petrol
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Hydrogen
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Review/Rating Dropdown */}
-                <div className="dropdown dropdown-filter">
-                  <button
-                    className="btn btn-dropdown dropdown-toggle m-0"
-                    id="dropdownReviewRating"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>Review / Rating</span>
-                  </button>
-                  <ul
-                    className="dropdown-menu dropdown-menu-light"
-                    aria-labelledby="dropdownReviewRating"
-                  >
-                    <li>
-                      <a className="dropdown-item active" href="#">
-                        Newest
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Oldest
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Price Range Dropdown */}
-                <div className="dropdown dropdown-filter">
-                  <button
-                    className="btn btn-dropdown dropdown-toggle m-0"
-                    id="dropdownPriceRange"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>Price range</span>
-                  </button>
-                  <ul
-                    className="dropdown-menu dropdown-menu-light"
-                    aria-labelledby="dropdownPriceRange"
-                  >
-                    <li>
-                      <a className="dropdown-item active" href="#">
-                        $10 - $100
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        $100 - $1,000
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        $1,000 - $10,000
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+           < PickUpMessage />
             </div>
           </div>
 
@@ -266,9 +100,11 @@ const PopularCars = () => {
                       </div>
                       <CarPriceDisplay car={car} />
                       <Link to={`/CarDetilPage/${car._id}`}>
-                        <div className="card-button">
-                          <div className="btn btn-primary">Book Now</div>
-                        </div>
+                      <div className="card-latest-button padding-popular" >
+                                  {" "}
+                                  {/* Added classes here */}
+                                  Book Now
+                                </div>
                       </Link>
                     </div>
                   </div>
@@ -291,11 +127,11 @@ const PopularCars = () => {
                   <g clipPath="url(#clip0_117_4717)">
                     <path
                       d="M4.4024 14.0977C1.60418 11.2899 1.60418 6.71576 4.4024 3.90794L5.89511 5.40064V0.90332H1.39779L3.13528 2.64081C-0.378102 6.1494 -0.378102 11.8562 3.13528 15.3696C5.35275 17.5823 8.43896 18.403 11.2996 17.8175V15.9648C8.91413 16.584 6.26949 15.9648 4.4024 14.0977Z"
-                      fill="#101010"
+                      fill="#fff"
                     />
                     <path
                       d="M15.864 2.64036C13.6465 0.418093 10.5603 -0.402657 7.69971 0.182907V2.03559C10.0852 1.41643 12.7346 2.04519 14.5969 3.90748C17.4047 6.71531 17.4047 11.2894 14.5969 14.0973L13.1042 12.6045V17.1067H17.6063L15.8688 15.3692C19.3774 11.8558 19.3774 6.14894 15.864 2.64036Z"
-                      fill="#101010"
+                      fill="#fff"
                     />
                   </g>
                   <defs>

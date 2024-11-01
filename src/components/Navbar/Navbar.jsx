@@ -105,14 +105,14 @@ const Navbar = () => {
         <div className="main-header">
           <div className="header-left">
             <div className="header-logo">
-              <a className="d-flex">
+              <Link to="/" className="d-flex">
                 <img
                   className="light-mode"
                   alt="Carento"
                   src="/logo.avif"
                   height={"50px"}
                 />
-              </a>
+              </Link>
             </div>
             <div className="navbar-title-flex">
               <Link to="/" className="navbar-title">

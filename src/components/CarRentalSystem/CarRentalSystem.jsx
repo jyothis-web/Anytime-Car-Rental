@@ -1,7 +1,7 @@
 
 const CarRentalSystem = () => {
   return (
-    <div><section className="box-cta-1 background-100 py-96">
+    <div><section className="box-flights background-100 py-96">
     <div className="container">
       <div className="row align-items-center">
         <div className="col-lg-6 pe-lg-5 wow fadeInUp">

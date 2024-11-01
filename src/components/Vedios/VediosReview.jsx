@@ -71,13 +71,13 @@ const VideosReview = () => {
                   }}
                 />
                 <div className="overlay-content position-absolute z-1 p-5">
-                  <span className="text-primary text-md-bold">CAR REVIEW</span>
+                  <span className="text-white text-md-bold">CAR REVIEW</span>
                   <h3 className="mt-20 mb-20 text-white">{review.title}</h3>
                   <p
                     className="text-lg-medium text-white"
                     dangerouslySetInnerHTML={{ __html: review.description }}
                   ></p>
-                  <a href="#" className="btn btn-primary mt-30">
+                  <div  className="btn btn-primary mt-30">
                     View Details
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -88,13 +88,13 @@ const VideosReview = () => {
                     >
                       <path
                         d="M12 19.5L19 12.5L12 5.5M19 12.5L5 12.5"
-                        stroke="#101010"
+                        stroke="#fff"
                         strokeWidth="1.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
+                  </div>
                 </div>
                 <div className="arrows-container">
             <button className="left-arrow" onClick={goToPrev}>

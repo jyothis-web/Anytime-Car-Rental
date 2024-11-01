@@ -1,7 +1,7 @@
 
 const HowItWorks = () => {
   return (
-    <div><section className="section-box  box-why-book-22 background-body @@classList" style={{paddingTop:"50px"}}>
+    <div><section className="section-box  box-flights box-why-book-22 background-body @@classList">
     <div className="container">
       <div className="text-center wow fadeInUp">
         <p className="text-xl-medium neutral-500 wow fadeInUp">

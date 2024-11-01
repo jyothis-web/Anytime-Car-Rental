@@ -156,8 +156,8 @@ const About = () => {
               <div className="col-lg-4 col-12">
                 <div className="d-flex flex-column gap-4 align-self-stretch h-100">
                   <div className="box-tag background-brand-2 p-5 d-flex rounded-12">
-                    <span className="text-dark fs-96 me-3">11</span>
-                    <h4>
+                    <span className="text-white fs-96 me-3">11</span>
+                    <h4 className="text-white">
                       Years in <br />
                       Rental Car Industry
                     </h4>
@@ -337,7 +337,7 @@ const About = () => {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-5">
-                  <div className="btn btn-signin bg-2 text-dark mb-4" >
+                  <div className="btn btn-signin bg-6 text-dark mb-4" >
                     Our Mission
                   </div>
                   <h4 className="mb-4 neutral-1000">
@@ -351,18 +351,60 @@ const About = () => {
                   </p>
                   <div className="row">
                     <div className="col">
-                      <ul className="list-ticks-green list-ticks-green-2">
-                        <li className="neutral-1000 pe-0">
-                          Explore a wide range of flexible rental options to
-                          suit your needs
-                        </li>
-                        <li className="neutral-1000 pe-0">
+                      
+                      <ul className="list-ticks-green ">
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                          24/7 customer support for assistance anytime, anywhere
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
                           Comprehensive insurance coverage for complete peace of
                           mind
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                          24/7 customer support for assistance anytime, anywhere
-                        </li>
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            Explore a wide range of flexible rental options to
+                            suit your needs
+                          </li>
+                        </div>
+                        
                       </ul>
                     </div>
                   </div>
@@ -378,7 +420,7 @@ const About = () => {
                       >
                         <path
                           d="M8 15L15 8L8 1M15 8L1 8"
-                          stroke=""
+                          stroke="#fff"
                           strokeWidth="1.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -452,7 +494,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 ps-lg-5">
-                  <div className="btn btn-signin bg-2 text-dark mb-4" >
+                  <div className="btn btn-signin bg-6 text-dark mb-4" >
                     Our Vision
                   </div>
                   <h4 className="mb-4 neutral-1000">
@@ -464,18 +506,59 @@ const About = () => {
                   </p>
                   <div className="row">
                     <div className="col">
-                      <ul className="list-ticks-green list-ticks-green-2">
-                        <li className="neutral-1000 pe-0">
-                          Explore a wide range of flexible rental options to
-                          suit your needs
-                        </li>
-                        <li className="neutral-1000 pe-0">
+                    <ul className="list-ticks-green ">
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                          24/7 customer support for assistance anytime, anywhere
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
                           Comprehensive insurance coverage for complete peace of
                           mind
-                        </li>
-                        <li className="neutral-1000 pe-0">
-                          24/7 customer support for assistance anytime, anywhere
-                        </li>
+                          </li>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                          }}
+                        >
+                          <img
+                            src="./assets/imgs/template/icons/tick-list.svg"
+                            alt=""
+                            width={"20px"}
+                          />
+                          <li className="neutral-1000 pe-0">
+                            {" "}
+                            Explore a wide range of flexible rental options to
+                            suit your needs
+                          </li>
+                        </div>
+                        
                       </ul>
                     </div>
                   </div>
@@ -491,7 +574,7 @@ const About = () => {
                       >
                         <path
                           d="M8 15L15 8L8 1M15 8L1 8"
-                          stroke=""
+                          stroke="#fff"
                           strokeWidth="1.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -511,7 +594,7 @@ const About = () => {
           <div className="box-faqs-inner">
             <div className="container">
               <div className="text-center">
-                <span className="text-sm-bold bg-2 p-3 rounded-12">
+                <span className="text-sm-bold bg-6 p-3 rounded-12">
                   Our Support
                 </span>
                 <h3 className="mt-4 neutral-1000">
@@ -569,7 +652,7 @@ const About = () => {
                       >
                         <path
                           d="M8 15L15 8L8 1M15 8L1 8"
-                          stroke=""
+                          stroke="#fff"
                           strokeWidth="1.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
