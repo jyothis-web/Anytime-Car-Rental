@@ -8,10 +8,10 @@ import CarDeatailPage from "./components/CarDetailPage/CarDeatailPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import ScrollToTop from "./pages/ScrollToTop";
 import AdminPage from "./components/AdminSection/AdminPage";
-
 import ProductDetail from "./components/AdminSection/Product/ProductDetail";
 import CreateCar from "./components/AdminSection/Product/ProductCreation";
 import ProductView from "./components/AdminSection/Product/ProductView";
+import BannerRotation from "./components/BannerRotation/BannerRotation";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
         <Route path="/ContactPage" element={<ContactPage />} />
         <Route path="/AdminPage" element={<AdminPage />} />
         <Route path="/createcar" element={<CreateCar />} />
+        <Route path="/BannerRotation" element={<BannerRotation />} />
 
         <Route path="/ProductPage" element={<ProductView />} />
         <Route path="/car/:id" element={<ProductDetail />} />

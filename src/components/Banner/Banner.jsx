@@ -1,26 +1,12 @@
+import BannerRotation from "../BannerRotation/BannerRotation";
+
 const Banner = () => {
   return (
     <div>
-      <section className="section-box box-banner-home7 background-body">
+      <section className="section-box">
         {/* <div className="container"></div> */}
-        <div className="container-banner-home7 position-relative">
-          <div className="box-swiper">
-            <div className="item-banner-slide banner-1">
-              <div className="container">
-                <span className="btn background-brand-2 px-3 py-3 rounded-12 text-sm-bold text-dark">
-                  +3600 cars for you
-                </span>
-                <h1 className="mt-20 mb-20 color-white">
-                  Your Journey Redefined
-                </h1>
-                <h6 className="color-white heading-6-medium pb-lg-0 pb-4">
-                  Browse our diverse inventory and enjoy a seamless buying
-                  experience <br />
-                  with expert support every step of the way
-                </h6>
-              </div>
-            </div>
-          </div>
+        <div >
+          <BannerRotation/>
         </div>
 
         <div className="container-search-advance">

@@ -1,0 +1,59 @@
+.car-banner {
+      position: relative;
+      width: 100%; /* Full width for horizontal motion */
+      height: 500px; /* Set height to fit car images */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      background-color: black;
+      height: 90vh;
+    }
+    
+    .text-container {
+      position: absolute;
+      top: 50%;  /* Center vertically */
+      left: 10%; /* Position text on the left side */
+      transform: translateY(-50%); /* Adjust to center vertically */
+      max-width: 500px;
+      text-align: left;
+      font-size: 1.5em;
+      color: #333;
+      z-index: 2; /* Ensures text is above car animation */
+    }
+    
+    .car-image-banner {
+      position: absolute;
+      left: 50%; 
+      bottom: 60px;
+      width: 400px; /* Set car image size */
+      height: auto;
+      opacity: 0; /* Hidden by default */
+      animation: semiCircleX 12s ease-in-out infinite; /* Apply semi-circular animation */
+    }
+    
+    
+    @keyframes semiCircleX {
+      0% {
+        transform: translateX(-200px) translateY(20px) scale(0.8); /* Start off-screen left, lower */
+        opacity: 0; /* Start hidden */
+      }
+      25% {
+        transform: translateX(-50px) translateY(-20px) scale(1); /* Moving towards center */
+        opacity: 1; /* Fully visible */
+      }
+      50%, 55%, 60% { 
+        transform: translateX(0) translateY(-30px) scale(1.2); /* Hold at center, highest point */
+        opacity: 1; /* Fully visible */
+      }
+      75% {
+        transform: translateX(50px) translateY(-20px) scale(1); /* Moving down to the right */
+        opacity: 1; /* Fully visible */
+      }
+      100% {
+        transform: translateX(200px) translateY(20px) scale(0.8); /* End off-screen right, lower */
+        opacity: 0; /* Fade out */
+      }
+    }
+    

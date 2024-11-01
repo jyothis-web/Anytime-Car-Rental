@@ -1645,6 +1645,7 @@ body {
   font-weight: 500 !important;
   border-radius: 20px !important;
   border: 0 !important;
+  color: white;
 }
 .btn.btn-gray {
   padding: 8px 18px !important;
@@ -1765,7 +1766,7 @@ body {
   font-weight: 700;
   background-color: var(--bs-brand-2);
   border-radius: 12px;
-  color: var(--bs-color-1000) !important;
+  color: var(--bs-background-white) !important;
   display: flex;
   align-items: center;
   border: 1px solid var(--bs-brand-2-darken);
@@ -8068,7 +8069,7 @@ a.icon-socials:hover svg path {
 
 .container-search-advance {
   position: absolute;
-  bottom: 30px;
+  bottom: -100px;
   left: 0px;
   right: 0px;
   z-index: 12;

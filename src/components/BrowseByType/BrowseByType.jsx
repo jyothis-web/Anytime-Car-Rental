@@ -12,7 +12,7 @@ const BrowseByType = () => {
       </div>
       <div className="col-md-4">
         <div className="d-flex justify-content-md-end mt-md-0 mt-4">
-          <a className="btn btn-primary" href="cars-list-1.html">
+          <div className="btn btn-primary" href="cars-list-1.html">
             View All
             <svg
               width={16}
@@ -29,7 +29,7 @@ const BrowseByType = () => {
                 strokeLinejoin="round"
               />
             </svg>
-          </a>
+          </div>
         </div>
       </div>
     </div>

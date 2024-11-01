@@ -13,10 +13,7 @@ import FeaturedCars from "./FearturedCars/FeaturedCars";
 const IndexPage = () => {
   return (
     <div>
-     
       <link href="assets/css/main.css?v=1.0.0" rel="stylesheet" />
-
-   
 
       <main className="main">
         <Banner />
