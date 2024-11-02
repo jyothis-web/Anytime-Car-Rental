@@ -4973,6 +4973,8 @@ label {
   max-height: 80px;
   justify-content: space-between;
   position: relative;
+  background-color: black;
+
 }
 .header .main-header .header-left {
   display: flex;
@@ -4981,6 +4983,7 @@ label {
   justify-content: space-between;
   margin-right: 5%;
   margin-left: 5%;
+  
 }
 .header .main-header .header-left .header-logo {
   margin-right: 0px;
@@ -5309,6 +5312,8 @@ label {
   position: fixed;
   top: 0px;
   left: 0px;
+  background-color: black;
+
 }
 .header.header-fixed.header {
   border-bottom-color: rgba(255, 255, 255, 0.3);

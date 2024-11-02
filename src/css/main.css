@@ -4984,6 +4984,8 @@ label {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  background-color: black;
+
 }
 .header .main-header .header-left .header-logo {
   margin-right: 0px;
