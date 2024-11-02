@@ -4966,6 +4966,8 @@ label {
   max-width: 100%;
   padding-left: 60px;
   padding-right: 60px;
+  background-color: black;
+
 }
 .header .main-header {
   display: flex;
