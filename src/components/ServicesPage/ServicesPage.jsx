@@ -19,7 +19,7 @@ const ServicesPage = () => {
               <img
                 className="w-100 h-100 img-banner"
                 src="assets/imgs/page-header/banner1.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
             </div>
             <div className="container position-absolute z-1 top-50 start-50 translate-middle">
@@ -35,7 +35,7 @@ const ServicesPage = () => {
               <span>
                 <img
                   src="assets/imgs/template/icons/arrow-right.svg"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </span>
               <a href="#" className="neutral-1000 text-md-bold">
@@ -68,7 +68,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-1.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -95,7 +95,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -122,7 +122,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -151,7 +151,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-1.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -179,7 +179,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -205,7 +205,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -233,7 +233,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-1.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -260,7 +260,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -286,7 +286,7 @@ const ServicesPage = () => {
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                   <div className="card-info">
@@ -324,7 +324,7 @@ const ServicesPage = () => {
                       <img
                         className="rounded-12"
                         src="assets/imgs/cta/cta-10/img-1.png"
-                        alt="Carento"
+                        alt="Anytime car rental"
                       />
                     </div>
                   </div>

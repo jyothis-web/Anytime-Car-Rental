@@ -16,8 +16,8 @@ const BannerRotation = () => {
   return (
     <div className="car-banner">
       <div className="text-container">
-        <h1>Banner Title</h1>
-        <p>banner details about the anytime car</p>
+        <h2>Rent a Car Anytime</h2>
+        <p>Your Journey is Our Priority <br/> Enjoy the freedom to explore with ease and confidence.</p>
       </div>
       <div>
       <img src={images[currentIndex]} alt={`Car ${currentIndex + 1}`} className="car-image-banner" />

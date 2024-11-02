@@ -78,8 +78,8 @@ TABLE CONTENT
   --bs-brand-2: #70f46d;
   --bs-brand-2-dark: #70f46d;
   --bs-brand-2-darken: #5edd5b;
-  --bs-brand-2-light: #2d4a2c;
-  --bs-link-hover-color: #235922;
+  --bs-brand-2-light: #2174b6;
+  --bs-link-hover-color: #2174b6;
   --bs-brand-1: #8acfff;
   --bs-warning: #ffc700;
   --bs-success: #34d674;
@@ -5322,7 +5322,6 @@ label {
   background: url(../imgs/template/icons/arrow-lang.svg) no-repeat right center;
 }
 .header.header-fixed.sticky-bar.stick {
-  background-color: rgba(45, 74, 44, 0.6);
   border-bottom: 0;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);

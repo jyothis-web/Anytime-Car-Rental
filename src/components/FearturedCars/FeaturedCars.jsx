@@ -29,7 +29,8 @@ const FeaturedCars = () => {
             </div>
             <div className="col-md-4 mt-md-0 mt-4">
               <div className="d-flex justify-content-end">
-                <a className="btn btn-primary" href="cars-list-1.html">
+             
+                <div className="btn btn-primary" >
                   View More
                   <svg
                     width={16}
@@ -46,7 +47,7 @@ const FeaturedCars = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </div>
               </div>
             </div>
           </div>

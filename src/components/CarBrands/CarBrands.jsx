@@ -52,152 +52,152 @@ const CarBrands = () => {
 
           <Slider {...settings} className="box-list-brand-car">
             <div className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/lexus.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/lexus-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </div>
             <div className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/mer.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/mer-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </div>
             <div className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
              
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/lexus-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </div>
             <li className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/mer.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/mer-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </li>
             <li className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/bugatti.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/bugatti-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </li>
             <li className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/jaguar.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/jaguar-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </li>
             <li className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/honda.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/honda-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </li>
             <li className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/chevrolet.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/chevrolet-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </li>
             <li className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/acura.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/acura-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </li>
             <li className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/bmw.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/bmw-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </li>
             <li className="carouselTicker__item">
-              <a href="cars-list-2.html" className="item-brand-2">
+              <a  className="item-brand-2">
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/toyota.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
                 <img
                   className="dark-mode"
                   src="assets/imgs/page/homepage2/toyota-w.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </a>
             </li>

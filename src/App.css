@@ -74,8 +74,8 @@ TABLE CONTENT
   --bs-brand-2: #2174b6;
   --bs-brand-2-dark: #2174b6;
   --bs-brand-2-darken: #55abdd;
-  --bs-brand-2-light: #2d4a2c;
-  --bs-link-hover-color: #235922;
+  --bs-brand-2-light: #2174b6;
+  --bs-link-hover-color: #2174b6;
   --bs-brand-1: #8acfff;
   --bs-warning: #ffc700;
   --bs-success: #34d674;
@@ -182,6 +182,7 @@ main {
   display: block;
   clear: both;
 }
+
 
 thead {
   font-weight: 600;
@@ -5325,7 +5326,6 @@ label {
   background: url(../imgs/template/icons/arrow-lang.svg) no-repeat right center;
 }
 .header.header-fixed.sticky-bar.stick {
-  background-color: rgba(45, 74, 44, 0.6);
   border-bottom: 0;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
@@ -8238,7 +8238,7 @@ a.icon-socials:hover svg path {
   width: 100%;
   height: 100%;
   opacity: 0.26;
-  background: url(../imgs/cta/cta-4/banner.png) lightgray 50%/cover no-repeat;
+  background: url(../imgs/banners/cta-4/banner.png) lightgray 50%/cover no-repeat;
 }
 .section-cta-4 .bg-shape::after {
   content: "";

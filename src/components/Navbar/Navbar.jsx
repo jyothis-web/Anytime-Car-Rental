@@ -108,7 +108,7 @@ const Navbar = () => {
               <Link to="/" className="d-flex">
                 <img
                   className="light-mode"
-                  alt="Carento"
+                  alt="Anytime car rental"
                   src="/logo.avif"
                   height={"50px"}
                 />

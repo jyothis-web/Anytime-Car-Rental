@@ -47,6 +47,10 @@
     color: white;
     padding-right: 20px;
   }
+  .navbar-title:hover{
+    color: #2174b6 !important
+  }
+
 }
 @media (max-width: 1030px) {
   .navbar-title-flex {

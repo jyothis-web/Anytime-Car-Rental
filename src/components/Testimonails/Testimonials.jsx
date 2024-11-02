@@ -9,8 +9,9 @@ const testimonialsData = [
     title: "Fast and Easy to Use",
     description:
       "I’ve used many car rental platforms before, but Carento’s booking system is hands down the best! The process is so smooth and straightforward.",
-    author: "Sophia Moore",
-    location: "New York",
+    author: "Antony",
+    location: " Purchasing officer",
+    company: "Arab qatari agricultural production",
     image: "assets/imgs/testimonials/testimonials-1/author-1.png",
     rating: 5,
   },
@@ -19,8 +20,8 @@ const testimonialsData = [
     title: "Super Convenient",
     description:
       "The booking system on this site is top-notch. Everything is laid out clearly, and there are multiple payment options, which makes things super convenient.",
-    author: "Atend John",
-    location: "Tokyo",
+    author: "Nishant ",
+    location: "HR manager ",
     image: "assets/imgs/testimonials/testimonials-1/author-2.png",
     rating: 5,
   },
@@ -28,9 +29,9 @@ const testimonialsData = [
     id: 3,
     title: "Great Features and Process",
     description:
-      "I was impressed by the range of features available when booking. The calendar tool for selecting dates was especially useful, and I appreciated the live availability feature.",
-    author: "Sara Mohamed",
-    location: "Jakarta",
+      "I was impressed by the range of features available when booking. The calendar tool for selecting dates and other features was especially useful.",
+    author: "Kiran xavior",
+    location: "Facility manager",
     image: "assets/imgs/testimonials/testimonials-1/author-3.png",
     rating: 5,
   },
@@ -116,7 +117,9 @@ const Testimonials = () => {
                               <p className="text-md-regular neutral-1000">
                                 {testimonial.location}
                               </p>
+                             
                             </div>
+                            
                           </div>
                           <div className="card-rate">
                             {[...Array(testimonial.rating)].map((_, index) => (

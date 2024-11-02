@@ -21,7 +21,7 @@ const MiddleBannners = () => {
                   <img
                     className="dark-invert"
                     src="assets/imgs/cta/cta-4/icon-1.svg"
-                    alt="Carento"
+                    alt="Anytime car rental"
                   />
                 </span>
                 <h6 className=" wow fadeInUp">
@@ -63,7 +63,7 @@ const MiddleBannners = () => {
                   <img
                     className="dark-invert"
                     src="assets/imgs/cta/cta-4/icon-2.svg"
-                    alt="Carento"
+                    alt="Anytime car rental"
                   />
                 </span>
                 <h6 className=" wow fadeInUp">

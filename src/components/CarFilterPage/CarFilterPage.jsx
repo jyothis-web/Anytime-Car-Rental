@@ -10,6 +10,7 @@ import CarFilterPrice from "./CarFilterPrice";
 import CarPriceDisplay from "./CarPriceDisplay";
 import { Link } from "react-router-dom";
 import Loading from "../../pages/Loading";
+import Footer from "../Footer/Footer";
 
 const CarFilterPage = () => {
   const dispatch = useDispatch();
@@ -94,11 +95,11 @@ const CarFilterPage = () => {
                 <img
                   className="w-100 h-100 img-fluid img-banner"
                   src="assets/imgs/page-header/banner6.png"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </div>
               <div className="container position-absolute z-1 top-50 start-50 pb-70 translate-middle text-center">
-                <span className="text-sm-bold bg-2 px-4 py-3 rounded-12">
+                <span className="text-sm-bold bg-6 px-4 py-3 rounded-12">
                   Find a car for rent near you
                 </span>
                 <h2 className="text-white mt-4">
@@ -230,7 +231,7 @@ const CarFilterPage = () => {
                                 </div>
                               </div>
                               <div className="button-flex">
-                                <CarPriceDisplay car={car} />
+                              <CarPriceDisplay car={car} />
 
                                 <Link to={`/CarDetilPage/${car._id}`}>
                                   <div className="card-latest-button">
@@ -362,6 +363,7 @@ const CarFilterPage = () => {
           {/* Count down*/}
           {/*Custom script for this template*/}
         </main>
+        <Footer/>
       </>
     </div>
   );

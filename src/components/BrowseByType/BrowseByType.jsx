@@ -40,36 +40,35 @@ const BrowseByType = () => {
           data-wow-delay="0.1s"
         >
           <div className="card-popular background-100 hover-up position-relative">
-            <a href="cars-list-2.html" className="card-image border-0">
+            <div className="card-image border-0">
               <img
                 src="assets/imgs/categories/categories-2/cross-over.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
-            </a>
+            </div>
             <div className="card-info">
               <div className="card-meta position-absolute top-100 start-50 translate-middle ">
                 
               </div>
             </div>
           </div>
-          <a
+          <div
             className="card-title text-lg-bold neutral-1000"
-            href="cars-list-1.html"
           >
             Crossover
-          </a>
+          </div>
         </div>
         <div
           className="col-lg-2 col-md-4 col-sm-4 text-center mb-lg-0 mb-3 wow fadeIn"
           data-wow-delay="0.2s"
         >
           <div className="card-popular background-100 hover-up position-relative">
-            <a href="cars-list-2.html" className="card-image border-0">
+            <div  className="card-image border-0">
               <img
                 src="assets/imgs/categories/categories-2/hatchback.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
-            </a>
+            </div>
             <div className="card-info">
               <div className="card-meta position-absolute top-100 start-50 translate-middle ">
                 
@@ -88,10 +87,10 @@ const BrowseByType = () => {
           data-wow-delay="0.3s"
         >
           <div className="card-popular background-100 hover-up position-relative">
-            <a href="cars-list-2.html" className="card-image border-0">
+            <a  className="card-image border-0">
               <img
                 src="assets/imgs/categories/categories-2/sedan.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
             </a>
             <div className="card-info">
@@ -112,10 +111,10 @@ const BrowseByType = () => {
           data-wow-delay="0.4s"
         >
           <div className="card-popular background-100 hover-up position-relative">
-            <a href="cars-list-2.html" className="card-image border-0">
+            <a  className="card-image border-0">
               <img
                 src="assets/imgs/categories/categories-2/SUV.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
             </a>
             <div className="card-info">
@@ -136,10 +135,10 @@ const BrowseByType = () => {
           data-wow-delay="0.5s"
         >
           <div className="card-popular background-100 hover-up position-relative">
-            <a href="cars-list-2.html" className="card-image border-0">
+            <a  className="card-image border-0">
               <img
                 src="assets/imgs/categories/categories-2/sport.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
             </a>
             <div className="card-info">
@@ -160,10 +159,10 @@ const BrowseByType = () => {
           data-wow-delay="0.6s"
         >
           <div className="card-popular background-100 hover-up position-relative">
-            <a href="cars-list-2.html" className="card-image border-0">
+            <a  className="card-image border-0">
               <img
                 src="assets/imgs/categories/categories-2/minivan.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
             </a>
             <div className="card-info">

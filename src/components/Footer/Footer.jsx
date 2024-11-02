@@ -12,7 +12,7 @@ const Footer = () => {
               <Link to="/" className="d-flex mb-20 mt-0 " style={{ paddingLeft: "40px",paddingTop:"-10px" }} >
                   <img
                     className="light-mode"
-                    alt="Carento"
+                    alt="Anytime car rental"
                     src="/logo.avif"
                     height={"50px"}
                   />
@@ -79,9 +79,7 @@ const Footer = () => {
                 <li>
                   <a href="#">Long-Term Car Rentals</a>
                 </li>
-                <li>
-                  <a href="#">Car Sales and Trade-Ins</a>
-                </li>
+             
                 <li>
                   <a href="#">Luxury Car Rentals</a>
                 </li>
@@ -102,15 +100,8 @@ const Footer = () => {
                 <li>
                   <a href="#">Travel Agents</a>
                 </li>
-                <li>
-                  <a href="#">AARP Members</a>
-                </li>
-                <li>
-                  <a href="#">Points Programs</a>
-                </li>
-                <li>
-                  <a href="#">Military &amp; Veterans</a>
-                </li>
+      
+              
                 <li>
                   <a href="#">Work with us</a>
                 </li>
@@ -128,9 +119,7 @@ const Footer = () => {
                 <li>
                   <a href="#">Help Center</a>
                 </li>
-                <li>
-                  <a href="#">Live chat</a>
-                </li>
+           
                 <li>
                   <a href="#">How it works</a>
                 </li>
@@ -147,7 +136,7 @@ const Footer = () => {
             <div className="row align-items-center justify-content-center">
               <div className="col-md-6 text-md-start text-center mb-20">
                 <p className="text-sm color-white">
-                  © 2024 Carento Inc. All rights reserved.
+                  © 2024 Anytime Inc. All rights reserved.
                 </p>
               </div>
               <div className="col-md-6 text-md-end text-center mb-20">

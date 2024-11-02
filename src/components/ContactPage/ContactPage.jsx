@@ -31,7 +31,7 @@ const ContactPage = () => {
               <img
                 className="w-100 h-100 rounded-12 img-banner"
                 src="assets/imgs/page-header/banner4.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
             </div>
             <div className="container position-absolute z-1 top-50 start-50 translate-middle">

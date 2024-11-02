@@ -77,7 +77,7 @@ const About = () => {
               <img
                 className="w-100 h-100 img-banner"
                 src="assets/imgs/page-header/banner.png"
-                alt="Carento"
+                alt="Anytime car rental"
               />
             </div>
             <div className="container position-absolute z-1 top-50 start-50 translate-middle">
@@ -93,7 +93,7 @@ const About = () => {
               <span>
                 <img
                   src="assets/imgs/template/icons/arrow-right.svg"
-                  alt="Carento"
+                  alt="Anytime car rental"
                 />
               </span>
               <Link to="/About" className="neutral-1000 text-md-bold">
@@ -120,7 +120,7 @@ const About = () => {
               </div>
               <div className="col-lg-7 offset-lg-1">
                 <p className="text-lg-medium neutral-500">
-                  Since 2013, Anytime Rent a Car has been Standout in the Car
+                  Since 2013, Anytime car rental Rent a Car has been Standout in the Car
                   rental industry, offering extraordinary services that
                   transcend the ordinary. with a diverse fleet ranging from
                   Sedans to SUVs and 4x4s, we craft a personalized experience
@@ -139,7 +139,7 @@ const About = () => {
                   <img
                     className="rounded-12"
                     src="assets/imgs/section-1/img-1.png"
-                    alt="Carento"
+                    alt="Anytime car rental"
                   />
                   <div className="box-tag bg-white p-3 d-flex position-absolute bottom-0 end-0 rounded-12 m-3"></div>
                 </div>
@@ -149,7 +149,7 @@ const About = () => {
                   <img
                     className="rounded-12"
                     src="assets/imgs/section-1/img-2.png"
-                    alt="Carento"
+                    alt="Anytime car rental"
                   />
                 </div>
               </div>
@@ -165,7 +165,7 @@ const About = () => {
                   <img
                     className="rounded-12"
                     src="assets/imgs/section-1/img-3.png"
-                    alt="Carento"
+                    alt="Anytime car rental"
                   />
                 </div>
               </div>
@@ -379,14 +379,14 @@ const About = () => {
                         <img
                           className="bdrd8 w-100"
                           src="assets/imgs/cta/cta-8/img-1.png"
-                          alt="Carento"
+                          alt="Anytime car rental"
                         />
                       </div>
                       <div className="mt-auto">
                         <img
                           className="bdrd8 w-100"
                           src="assets/imgs/cta/cta-8/img-2.png"
-                          alt="Carento"
+                          alt="Anytime car rental"
                         />
                       </div>
                     </div>
@@ -395,14 +395,14 @@ const About = () => {
                         <img
                           className="bdrd8 w-100"
                           src="assets/imgs/cta/cta-8/img-3.png"
-                          alt="Carento"
+                          alt="Anytime car rental"
                         />
                       </div>
                       <div className="position-relative">
                         <img
                           className="bdrd8 w-100"
                           src="assets/imgs/cta/cta-8/img-4.png"
-                          alt="Carento"
+                          alt="Anytime car rental"
                         />
                       </div>
                     </div>
@@ -423,7 +423,7 @@ const About = () => {
                     <img
                       className="rounded-12"
                       src="assets/imgs/cta/cta-9/img-1.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                     <a
                       className="btn btn-play popup-youtube position-absolute top-50 start-50 translate-middle"
@@ -432,7 +432,7 @@ const About = () => {
                     <img
                       className="position-absolute top-100 start-100 translate-middle rounded-12 d-none d-md-block"
                       src="assets/imgs/cta/cta-9/img-2.png"
-                      alt="Carento"
+                      alt="Anytime car rental"
                     />
                   </div>
                 </div>
@@ -441,7 +441,7 @@ const About = () => {
                     Our Vision
                   </div>
                   <h4 className="mb-4 neutral-1000">
-                    Anytime offers trasparent pricing and 24/7 support.
+                    Anytime car rental offers trasparent pricing and 24/7 support.
                   </h4>
                   <p className="text-lg-medium neutral-500 mb-4">
                     Empowering individuals to embrace their journeys with

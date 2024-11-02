@@ -19,7 +19,7 @@ const CarDeatailPage = () => {
     const fetchSingleProduct = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_URL}anytime/singleCar/${id}`
+          `${import.meta.env.VITE_URL}Anytime car rental/singleCar/${id}`
         );
         setProduct(response.data.car); // Adjust based on your API response structure
         setIsLoading(false);
@@ -58,6 +58,26 @@ const CarDeatailPage = () => {
     arrows: false,
     focusOnSelect: false, // Disable focusing on selected image to prevent shifting
   };
+
+  const shareDetails = async () => {
+    if (!product) return;
+  
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `${product.brand} - ${product.brandModel}`,
+          text: `${product.brand} - ${product.brandModel} (${product.year})`,
+          url: window.location.href,
+        });
+        console.log("Car details and link shared successfully");
+      } catch (error) {
+        console.error("Error sharing car details:", error);
+      }
+    } else {
+      alert("Sharing is not supported on this browser.");
+    }
+  };
+
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
@@ -193,7 +213,7 @@ const CarDeatailPage = () => {
                     </h4>
                   </div>
                   <div className="tour-meta-right">
-                    <a className="btn btn-share" href="#">
+                    <div className="btn btn-share"  onClick={shareDetails}>
                       <svg
                         width={16}
                         height={18}
@@ -207,7 +227,7 @@ const CarDeatailPage = () => {
                         />
                       </svg>
                       Share
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -221,7 +241,7 @@ const CarDeatailPage = () => {
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/km.svg"
-                            alt="Carento"
+                            alt="Anytime car rental"
                           />
                         </div>
                         <div className="feature-info">
@@ -236,7 +256,7 @@ const CarDeatailPage = () => {
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/diesel.svg"
-                            alt="Carento"
+                            alt="Anytime car rental"
                           />
                         </div>
                         <div className="feature-info">
@@ -251,7 +271,7 @@ const CarDeatailPage = () => {
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/auto.svg"
-                            alt="Carento"
+                            alt="Anytime car rental"
                           />
                         </div>
                         <div className="feature-info">
@@ -266,7 +286,7 @@ const CarDeatailPage = () => {
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/seat.svg"
-                            alt="Carento"
+                            alt="Anytime car rental"
                           />
                         </div>
                         <div className="feature-info">
@@ -281,7 +301,7 @@ const CarDeatailPage = () => {
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/bag.svg"
-                            alt="Carento"
+                            alt="Anytime car rental"
                           />
                         </div>
                         <div className="feature-info">
@@ -296,7 +316,7 @@ const CarDeatailPage = () => {
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/suv.svg"
-                            alt="Carento"
+                            alt="Anytime car rental"
                           />
                         </div>
                         <div className="feature-info">
@@ -311,7 +331,7 @@ const CarDeatailPage = () => {
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/door.svg"
-                            alt="Carento"
+                            alt="Anytime car rental"
                           />
                         </div>
                         <div className="feature-info">
@@ -326,7 +346,7 @@ const CarDeatailPage = () => {
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/lit.svg"
-                            alt="Carento"
+                            alt="Anytime car rental"
                           />
                         </div>
                         <div className="feature-info">
