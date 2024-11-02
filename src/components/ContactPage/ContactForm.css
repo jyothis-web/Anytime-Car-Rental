@@ -1,0 +1,204 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  max-width: 100%;
+  padding: 5%;
+  background: white;
+  color :black
+
+}
+
+/* Map and info container */
+.map-container {
+  width: 100%;
+  height: 100%;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-container {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.info-box {
+  margin-bottom: 20px;
+}
+
+.info-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #adadad;
+  margin: 20px 0;
+}
+
+/* Contact form */
+.contact-form-container {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-heading h2 {
+  font-size: 2em;
+  color: black;
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  min-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* Focus state */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: black; /* Changes the border to black on focus */
+  background-color: black; /* Changes the background to black on focus */
+  color: white; /* Changes the text color to white on focus */
+  outline: none; /* Removes the default outline */
+}
+
+.form-group textarea {
+  height: 130px;
+}
+
+.submit-button {
+  background: #cf2938;
+  border-radius: 25px;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 180px;
+}
+
+/* Iframe should always take up full width and height */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: block;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .contact-page {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Full width for smaller screens */
+  }
+  .form-group input,
+  .form-group textarea {
+    min-width: 350px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+  }
+  /* Ensure all containers take up the same width */
+
+  .info-container,
+  .contact-form-container {
+    width: 90%; /* Make containers 90% width for centered appearance */
+  }
+
+  .map-container {
+    width: 96%;
+    height: 400px;
+  }
+
+  .info-box h2,
+  .info-box p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .contact-form-container {
+    padding: 20px; /* Padding for consistent layout */
+    overflow: hidden; /* Prevent overflow */
+  }
+}
+
+@media (max-width: 524px) {
+  .map-container {
+    width: 100%;
+    height: 400px;
+  }
+}
+/* For screens larger than 1024px, show sections in a single row */
+@media (min-width: 1025px) {
+  .contact-page {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Adjusting the width for the middle box */
+  .map-container,
+  .contact-form-container {
+    width: 40%; /* Keep the other two boxes wider */
+    height: auto;
+  }
+
+  .info-container {
+    width: 25%; /* Reduced width for the middle box */
+  }
+}
+
+@media (max-width: 424px) {
+  .map-container {
+    width: 100%;
+    height: 400px;
+  }
+  .form-group input,
+  .form-group textarea {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 380px) {
+  .map-container {
+    width: 100%;
+    height: 400px;
+  }
+  .form-group input,
+  .form-group textarea {
+    min-width: 250px;
+  }
+}

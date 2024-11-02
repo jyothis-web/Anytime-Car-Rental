@@ -717,32 +717,7 @@
     });
   });
 
-  var swiper_center = new Swiper('.swiper-center', {
-    navigation: {
-      nextEl: '.swiper-button-next-center',
-      prevEl: '.swiper-button-prev-center',
-    },
-    slidesPerView: 2,
-    centeredSlides: true,
-    paginationClickable: true,
-    loop: true,
-    spaceBetween: 16,
-    slideToClickedSlide: true,
-  });
-
-  var swiper_center_4 = new Swiper('.swiper-group-center-4', {
-    navigation: {
-      nextEl: '.swiper-button-next-center-4',
-      prevEl: '.swiper-button-prev-center-4',
-    },
-    slidesPerView: 'auto',
-    watchOverflow: true,
-    // centeredSlides: true,
-    // paginationClickable: true,
-    loop: true,
-    spaceBetween: 18,
-    slideToClickedSlide: true,
-  });
+  
 
   //Dropdown selected item
   $('.dropdown-menu li a').on('click', function (e) {
@@ -787,7 +762,7 @@
       var _pd_left = $('.padding-left-auto');
       var _pd_right = $('.padding-right-auto');
       var _container = $('.container');
-      var _offset_left = _container.offset().left;
+      var _offset_left = _container.offset();
       var _container2 = $('.container-top .container');
       if (_container2.length > 0) {
         var _offset_left2 = _container2.offset().left;
@@ -835,7 +810,7 @@
       $(this).html(event.strftime('' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%D</span><span class="countdown-period lh-14 font-xs"> days </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%H</span><span class="countdown-period font-xs lh-14"> hours </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%M</span><span class="countdown-period font-xs lh-14"> mins </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%S</span><span class="countdown-period font-xs lh-14"> secs </span></span>'));
     });
   });
-  var _container_left = $('.container').offset().left + 15;
+  var _container_left = $('.container').offset();
   $('.block-testimonials').css('padding-left', _container_left + 'px');
 
   $('.icon-account').on('click', function () {
@@ -891,15 +866,7 @@
     $('.popup-signup').hide();
   });
 
-  $('.banner-main').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: false,
-    asNavFor: '.slider-nav-thumbnails',
-    prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none"><path d="M7.99992 3.33325L3.33325 7.99992M3.33325 7.99992L7.99992 12.6666M3.33325 7.99992H12.6666" stroke="" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none"><path d="M7.99992 12.6666L12.6666 7.99992L7.99992 3.33325M12.6666 7.99992L3.33325 7.99992" stroke="" stroke-linecap="round" stroke-linejoin="round"> </path></svg></button>',
-  });
+  
 
   $('.slider-nav-thumbnails').slick({
     slidesToShow: 3,

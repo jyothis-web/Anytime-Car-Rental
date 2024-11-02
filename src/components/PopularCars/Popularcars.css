@@ -18,6 +18,7 @@
   .car-image {
     width: 70%;
     height: auto;
+
   }
   .top-round {
     width: fit-content;
@@ -30,6 +31,9 @@
     width: auto;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
   }
   
   .car-details {

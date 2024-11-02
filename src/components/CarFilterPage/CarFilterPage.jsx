@@ -8,21 +8,31 @@ import CarFilterCategory from "./CarFilterCategory";
 import CarFilterBrand from "./CarFilterBrand";
 import CarFilterPrice from "./CarFilterPrice";
 import CarPriceDisplay from "./CarPriceDisplay";
+import { Link } from "react-router-dom";
+import Loading from "../../pages/Loading";
 
 const CarFilterPage = () => {
   const dispatch = useDispatch();
 
   const { products = [] } = useSelector((state) => state.car);
   const [filteredCars, setFilteredCars] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   // Consolidated filter state
 
+
   useEffect(() => {
-    dispatch(fetchProducts());
+    const fetchData = async () => {
+      setLoading(true); // Start loading
+      await dispatch(fetchProducts());
+      setLoading(false); // Stop loading when fetch completes
+    };
+    
+    fetchData();
   }, [dispatch]);
 
   useEffect(() => {
     setFilteredCars(products);
+    
   }, [products]);
 
   // Handle filtering when a category is selected
@@ -63,6 +73,12 @@ const CarFilterPage = () => {
 
     setFilteredCars(filteredCars);
   };
+
+
+  if (loading) {
+    return <Loading />;
+  }
+
 
   return (
     <div>
@@ -216,11 +232,13 @@ const CarFilterPage = () => {
                               <div className="button-flex">
                                 <CarPriceDisplay car={car} />
 
-                                <div className="card-latest-button">
-                                  {" "}
-                                  {/* Added classes here */}
-                                  Book Now
-                                </div>
+                                <Link to={`/CarDetilPage/${car._id}`}>
+                                  <div className="card-latest-button">
+                                    {" "}
+                                    {/* Added classes here */}
+                                    Book Now
+                                  </div>
+                                </Link>
                               </div>
                             </div>
                           </div>

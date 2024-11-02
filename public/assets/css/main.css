@@ -30,7 +30,6 @@ TABLE CONTENT
 @import url(../css/vendors/normalize.css);
 @import url(../css/vendors/bootstrap.min.css);
 @import url(../css/vendors/uicons-regular-rounded.css);
-@import url(../css/plugins/swiper-bundle.min.css);
 @import url(../css/plugins/magnific-popup.css);
 @import url(../css/plugins/animate.css);
 @import url(../css/plugins/select2.min.css);
@@ -38,8 +37,6 @@ TABLE CONTENT
 @import url(../css/plugins/carouselTicker.css);
 @import url(../css/plugins/bootstrap-datepicker.css);
 @import url(../css/plugins/bootstrap-datepicker3.css);
-@import url(../css/plugins/slick.css);
-@import url(../css/plugins/odometer.css);
 :root {
   --bs-border-color: #dde1de;
   --bs-color-white: #ffffff;
@@ -8251,7 +8248,7 @@ a.icon-socials:hover svg path {
   width: 1472px;
   height: 1472px;
   border-radius: 1472px;
-  background: var(--bs-background-2);
+  background: var(--bs-background-6);
 }
 
 .rounded-12 {

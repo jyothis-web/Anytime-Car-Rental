@@ -83,7 +83,7 @@ const About = () => {
             <div className="container position-absolute z-1 top-50 start-50 translate-middle">
               <h2 className="text-white">About Us</h2>
               <span className="text-white text-xl-medium">
-                Get the latest news, updates and tips
+                Affordable car rentals for your travel needs.
               </span>
             </div>
             <div className="background-body position-absolute z-1 top-100 start-50 translate-middle px-3 py-2 rounded-12 border d-flex gap-3 @@navigation-page">
@@ -332,85 +332,28 @@ const About = () => {
         </section>
         {/* team 1 */}
         {/* cta 8*/}
-        <section className="section-cta-7 background-body py-96">
+        <section className="section-cta-7 background-body ">
           <div className="box-cta-6">
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-5">
-                  <div className="btn btn-signin bg-6 text-dark mb-4" >
+                  <div className="btn btn-signin bg-6 text-dark mb-4">
                     Our Mission
                   </div>
                   <h4 className="mb-4 neutral-1000">
-                  Committed to ensure your satisfaction & 
-                  make your travel experience memorable
+                    Make your travel experience memorable
                   </h4>
                   <p className="text-lg-medium neutral-500 mb-4">
-                    Our mission is to Provide innovative and customer-centric
-                    solutions that redefine personal transportation, inspiring a
-                    new way of empowering and enjoyable travel.
+                    By implementing these innovative solutions, we can create a
+                    future of transportation that is more efficient,
+                    sustainable, and enjoyable. This will empower individuals to
+                    embrace new ways of traveling, work, and live, ultimately
+                    improving the quality of life for everyone.
                   </p>
-                  <div className="row">
-                    <div className="col">
-                      
-                      <ul className="list-ticks-green ">
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            paddingBottom: "20px",
-                          }}
-                        >
-                          <img
-                            src="./assets/imgs/template/icons/tick-list.svg"
-                            alt=""
-                            width={"20px"}
-                          />
-                          <li className="neutral-1000 pe-0">
-                          24/7 customer support for assistance anytime, anywhere
-                          </li>
-                        </div>
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            paddingBottom: "20px",
-                          }}
-                        >
-                          <img
-                            src="./assets/imgs/template/icons/tick-list.svg"
-                            alt=""
-                            width={"20px"}
-                          />
-                          <li className="neutral-1000 pe-0">
-                          Comprehensive insurance coverage for complete peace of
-                          mind
-                          </li>
-                        </div>
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            paddingBottom: "20px",
-                          }}
-                        >
-                          <img
-                            src="./assets/imgs/template/icons/tick-list.svg"
-                            alt=""
-                            width={"20px"}
-                          />
-                          <li className="neutral-1000 pe-0">
-                            {" "}
-                            Explore a wide range of flexible rental options to
-                            suit your needs
-                          </li>
-                        </div>
-                        
-                      </ul>
-                    </div>
-                  </div>
+                 
                   <Link to="/CarFilterPage">
                     <div className="btn btn-primary mt-2">
-                      Get Started Now
+                    Get Your Wheels
                       <svg
                         width={16}
                         height={16}
@@ -494,77 +437,28 @@ const About = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 ps-lg-5">
-                  <div className="btn btn-signin bg-6 text-dark mb-4" >
+                  <div className="btn btn-signin bg-6 text-dark mb-4">
                     Our Vision
                   </div>
                   <h4 className="mb-4 neutral-1000">
-                    Carento offers clear pricing and 24/7 great support.
+                    Anytime offers trasparent pricing and 24/7 support.
                   </h4>
                   <p className="text-lg-medium neutral-500 mb-4">
-                    Empower individuals to embrace their journeys with
-                    independence, luxury, and flexibility.
+                    Empowering individuals to embrace their journeys with
+                    independence, luxury, and flexibility means providing them
+                    with the tools, resources, and opportunities to travel and
+                    explore the world on their own terms. Offering tailored
+                    travel itineraries and recommendations that cater to
+                    individual preferences, interests, and budgets.
                   </p>
                   <div className="row">
                     <div className="col">
-                    <ul className="list-ticks-green ">
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            paddingBottom: "20px",
-                          }}
-                        >
-                          <img
-                            src="./assets/imgs/template/icons/tick-list.svg"
-                            alt=""
-                            width={"20px"}
-                          />
-                          <li className="neutral-1000 pe-0">
-                          24/7 customer support for assistance anytime, anywhere
-                          </li>
-                        </div>
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            paddingBottom: "20px",
-                          }}
-                        >
-                          <img
-                            src="./assets/imgs/template/icons/tick-list.svg"
-                            alt=""
-                            width={"20px"}
-                          />
-                          <li className="neutral-1000 pe-0">
-                          Comprehensive insurance coverage for complete peace of
-                          mind
-                          </li>
-                        </div>
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            paddingBottom: "20px",
-                          }}
-                        >
-                          <img
-                            src="./assets/imgs/template/icons/tick-list.svg"
-                            alt=""
-                            width={"20px"}
-                          />
-                          <li className="neutral-1000 pe-0">
-                            {" "}
-                            Explore a wide range of flexible rental options to
-                            suit your needs
-                          </li>
-                        </div>
-                        
-                      </ul>
+                   
                     </div>
                   </div>
                   <Link to="/CarFilterPage">
                     <div className="btn btn-primary mt-2">
-                      Get Started Now
+                    Get Your Wheels
                       <svg
                         width={16}
                         height={16}
@@ -641,26 +535,25 @@ const About = () => {
                 <div className="col-12 wow fadeInUp mt-4">
                   <div className="d-flex justify-content-center gap-2">
                     <Link to="/ContactPage">
-                    <div className="btn btn-primary mt-2" >
-                      Contact Us
-                      <svg
-                        width={16}
-                        height={16}
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8 15L15 8L8 1M15 8L1 8"
-                          stroke="#fff"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
+                      <div className="btn btn-primary mt-2">
+                        Contact Us
+                        <svg
+                          width={16}
+                          height={16}
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8 15L15 8L8 1M15 8L1 8"
+                            stroke="#fff"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
                     </Link>
-                  
                   </div>
                 </div>
               </div>

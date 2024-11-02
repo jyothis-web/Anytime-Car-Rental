@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../Redux/car/CarSlice";
 import "./Popularcars.css";
@@ -28,7 +28,7 @@ const PopularCars = () => {
               </p>
             </div>
             <div className="col-lg-6 mb-30">
-           < PickUpMessage />
+              <PickUpMessage />
             </div>
           </div>
 
@@ -100,11 +100,11 @@ const PopularCars = () => {
                       </div>
                       <CarPriceDisplay car={car} />
                       <Link to={`/CarDetilPage/${car._id}`}>
-                      <div className="card-latest-button padding-popular" >
-                                  {" "}
-                                  {/* Added classes here */}
-                                  Book Now
-                                </div>
+                        <div className="card-latest-button padding-popular">
+                          {" "}
+                          {/* Added classes here */}
+                          Book Now
+                        </div>
                       </Link>
                     </div>
                   </div>

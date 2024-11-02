@@ -1,9 +1,8 @@
 import { Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import IndexPage from "../components/IndexPage";
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-
+import Loading from "./Loading";
 
 const Homepage = () => {
   return (
@@ -44,25 +43,9 @@ const Homepage = () => {
           content="http://sequrhomautomations.com/public/favicon.png"
         />
       </Helmet>
-      <Suspense>
-        {/*Preloader*/}
-        {/* <div id="preloader-active">
-          <div className="preloader d-flex align-items-center justify-content-center">
-            <div className="preloader-inner position-relative">
-              <div className="text-center">
-                <div className="page-loader" />
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/*Preloader-end */}
-        <Link to="/About"><button>AboutUs</button></Link>
-        <Link to="/Services"> <button>Services</button></Link>
-        <Link to="/ContactPage"> <button>ContactUs</button></Link>
-        <Link to="/CarFilterPage"> <button>CarFilterPage</button></Link>
-        <Link to="/CarDetilPage"> <button>CarDetilPage</button></Link>
-        <Link to="/ContactPage"> <button>ContactUs</button></Link>
-      <Navbar/>
+
+      <Suspense fallback={<Loading />}>
+        <Navbar />
         <IndexPage />
       </Suspense>
     </div>

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../Redux/car/CarSlice";
 import CarPriceDisplay from "../CarFilterPage/CarPriceDisplay";
+import { Link } from "react-router-dom";
 
 const FeaturedCars = () => {
   const dispatch = useDispatch();
@@ -54,15 +55,15 @@ const FeaturedCars = () => {
               <div key={index} className="col-lg-3 col-md-6">
                 <div className="card-journey-small background-card hover-up">
                   <div className="">
-                  {car.carImage1 && (
-                        <img
-                          src={`${import.meta.env.VITE_URL}${
-                            car.carImage1.imagePath
-                          }`} // Corrected path reference
-                          alt={`Image of ${car.brandModel}`}
-                          loading="lazy"
-                        />
-                      )}
+                    {car.carImage1 && (
+                      <img
+                        src={`${import.meta.env.VITE_URL}${
+                          car.carImage1.imagePath
+                        }`} // Corrected path reference
+                        alt={`Image of ${car.brandModel}`}
+                        loading="lazy"
+                      />
+                    )}
                   </div>
                   <div className="card-info p-4 pt-30">
                     <div className="card-rating">
@@ -88,31 +89,25 @@ const FeaturedCars = () => {
                         </p>
                       </div>
                       <div className="card-facitlities">
-                        <p className="card-miles ">
-                           {car. mileage} km
-                        </p>
-                        <p className="card-gear ">
-                          {car.transmission}
-                        </p>
-                        <p className="card-fuel ">
-                       {car.fuel}
-                        </p>
-                        <p className="card-seat ">
-                          {car.seat} seats
-                        </p>
+                        <p className="card-miles ">{car.mileage} km</p>
+                        <p className="card-gear ">{car.transmission}</p>
+                        <p className="card-fuel ">{car.fuel}</p>
+                        <p className="card-seat ">{car.seat} seats</p>
                       </div>
                       <div className="endtime">
                         <div className="card-price">
                           <h6 className="text-lg-bold neutral-1000">
-                          <CarPriceDisplay car={car} />
+                            <CarPriceDisplay car={car} />
                           </h6>
                           <p className="text-md-medium neutral-500" />
                         </div>
-                        <div className="card-latest-button">
-                                  {" "}
-                                  {/* Added classes here */}
-                                  Book Now
-                                </div>
+                        <Link to={`/CarDetilPage/${car._id}`}>
+                          <div className="card-latest-button">
+                            {" "}
+                            {/* Added classes here */}
+                            Book Now
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>

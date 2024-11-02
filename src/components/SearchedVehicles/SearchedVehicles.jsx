@@ -3,6 +3,7 @@ import cars from "../../data/car.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const SearchedVehicles = () => {
   const sliderRef = React.useRef(null); // Reference to slider
@@ -137,9 +138,11 @@ const SearchedVehicles = () => {
                               </h6>
                             </div>
                             <div className="card-button">
+                            <Link to={`/CarDetilPage/${car._id}`}>
                               <div className="btn btn-gray">
                                 Book Now
                               </div>
+                              </Link>
                             </div>
                           </div>
                         </div>

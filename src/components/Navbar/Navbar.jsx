@@ -66,8 +66,8 @@ const Navbar = () => {
           </div>
           <div className="text-header">
             <div className="text-unlock text-sm-medium text-white">
-              More than <span className="text-primary">800+</span> special
-              collection cars in this summer
+              More than <span className="text-primary">100+</span>
+               Cars for Rental
             </div>
             <div
               className="btn btn-brand-2 btn-small  px-3 py-2 text-xs-medium"
