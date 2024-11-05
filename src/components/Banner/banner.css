@@ -1,0 +1,146 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust for different screen sizes */
+  overflow: hidden;
+}
+
+.banner-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1; /* Reduced opacity to darken the image */
+  transition: opacity 1.5s ease-in-out;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Darker overlay for better text readability */
+}
+
+.drop-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.drop-shadow2 {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.banner-text {
+  position: absolute;
+  top: 19%;
+  left: 10%;
+  color: white;
+  text-align: left;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+  /* Adding this to ensure content fades in */
+  animation: fadeIn 2s ease-in-out;
+}
+.banner-text h1 {
+  font-size: 56px;
+  line-height: 65px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.banner-text h1 span,
+.banner-text p span {
+  display: inline-block;
+  transform: translateX(500px);
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+@media (max-width: 968px) {
+  .banner-text h1 {
+    font-size: 44px;
+    line-height: normal;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .banner-container {
+    height: 100vh;
+  }
+  
+  .banner-text h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .banner-text {
+    left: 10%;
+  }
+  .overlay {
+    display: none;
+  }
+
+}
+@media (max-width: 668px) {
+  .banner-text h1 {
+    font-size: 34px;
+    line-height: normal;
+  }
+  .overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-container {
+    height: 100vh; /* Adjust height for mobile */
+  }
+  .overlay {
+    display: none;
+  }
+
+  .banner-text {
+    left: 3%;
+  }
+
+  .banner-text h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .banner-text button {
+    font-size: 0.9em;
+  }
+}

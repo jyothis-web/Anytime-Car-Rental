@@ -19,7 +19,7 @@ const CarDeatailPage = () => {
     const fetchSingleProduct = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_URL}Anytime car rental/singleCar/${id}`
+          `${import.meta.env.VITE_URL}anytime/singleCar/${id}`
         );
         setProduct(response.data.car); // Adjust based on your API response structure
         setIsLoading(false);
@@ -61,7 +61,7 @@ const CarDeatailPage = () => {
 
   const shareDetails = async () => {
     if (!product) return;
-  
+
     if (navigator.share) {
       try {
         await navigator.share({
@@ -77,7 +77,6 @@ const CarDeatailPage = () => {
       alert("Sharing is not supported on this browser.");
     }
   };
-
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
@@ -115,7 +114,9 @@ const CarDeatailPage = () => {
                 </span>
               </li>
               <li>
-               <Link to ="/CarFilterPage"><div >Cars Rental</div></Link> 
+                <Link to="/CarFilterPage">
+                  <div>Cars Rental</div>
+                </Link>
                 <span className="arrow-right">
                   <svg
                     width={7}
@@ -202,7 +203,7 @@ const CarDeatailPage = () => {
             <div className="tour-header">
               <div className="tour-rate">
                 <div className="rate-element">
-                  <span className="rating">{product.year}</span>
+                  <span className="rating">{product.brand}</span>
                 </div>
               </div>
               <div className="row">
@@ -213,7 +214,7 @@ const CarDeatailPage = () => {
                     </h4>
                   </div>
                   <div className="tour-meta-right">
-                    <div className="btn btn-share"  onClick={shareDetails}>
+                    <div className="btn btn-share" onClick={shareDetails}>
                       <svg
                         width={16}
                         height={18}
@@ -236,27 +237,27 @@ const CarDeatailPage = () => {
               <div className="col-lg-8">
                 <div className="box-feature-car">
                   <div className="list-feature-car">
-                    <div className="item-feature-car w-md-25">
+                    <div className="item-feature-car w-md-35">
                       <div className="item-feature-car-inner">
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/km.svg"
-                            alt="Anytime car rental"
+                            alt="Anytime"
                           />
                         </div>
                         <div className="feature-info">
                           <p className="text-md-medium neutral-1000">
-                            {product.miles}
+                            {product.mileage} mileage
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="item-feature-car w-md-25">
+                    <div className="item-feature-car w-md-35">
                       <div className="item-feature-car-inner">
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/diesel.svg"
-                            alt="Anytime car rental"
+                            alt="Anytime"
                           />
                         </div>
                         <div className="feature-info">
@@ -266,57 +267,12 @@ const CarDeatailPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="item-feature-car w-md-25">
+                    <div className="item-feature-car w-md-35">
                       <div className="item-feature-car-inner">
                         <div className="feature-image">
                           <img
                             src="/assets/imgs/page/car/auto.svg"
-                            alt="Anytime car rental"
-                          />
-                        </div>
-                        <div className="feature-info">
-                          <p className="text-md-medium neutral-1000">
-                            {product.transmission}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-feature-car w-md-25">
-                      <div className="item-feature-car-inner">
-                        <div className="feature-image">
-                          <img
-                            src="/assets/imgs/page/car/seat.svg"
-                            alt="Anytime car rental"
-                          />
-                        </div>
-                        <div className="feature-info">
-                          <p className="text-md-medium neutral-1000">
-                            {product.seat} seats
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-feature-car w-md-25">
-                      <div className="item-feature-car-inner">
-                        <div className="feature-image">
-                          <img
-                            src="/assets/imgs/page/car/bag.svg"
-                            alt="Anytime car rental"
-                          />
-                        </div>
-                        <div className="feature-info">
-                          <p className="text-md-medium neutral-1000">
-                            {product.bootCapacity}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item-feature-car w-md-25">
-                      <div className="item-feature-car-inner">
-                        <div className="feature-image">
-                          <img
-                            src="/assets/imgs/page/car/suv.svg"
-                            alt="Anytime car rental"
+                            alt="Anytime"
                           />
                         </div>
                         <div className="feature-info">
@@ -326,32 +282,50 @@ const CarDeatailPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="item-feature-car w-md-25">
+                  </div>
+                  <div className="list-feature-car">
+                    <div className="item-feature-car w-md-35">
                       <div className="item-feature-car-inner">
                         <div className="feature-image">
                           <img
-                            src="/assets/imgs/page/car/door.svg"
-                            alt="Anytime car rental"
+                            src="/assets/imgs/page/car/seat.svg"
+                            alt="Anytime"
                           />
                         </div>
                         <div className="feature-info">
                           <p className="text-md-medium neutral-1000">
-                            {product.color}
+                            {product.seat} seats
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="item-feature-car w-md-25">
+                    <div className="item-feature-car w-md-35">
                       <div className="item-feature-car-inner">
                         <div className="feature-image">
                           <img
-                            src="/assets/imgs/page/car/lit.svg"
-                            alt="Anytime car rental"
+                            src="/assets/imgs/page/car/bag.svg"
+                            alt="Anytime"
                           />
                         </div>
                         <div className="feature-info">
                           <p className="text-md-medium neutral-1000">
-                            {product.registration}L
+                            {product.bootCapacity}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="item-feature-car w-md-35">
+                      <div className="item-feature-car-inner">
+                        <div className="feature-image">
+                          <img
+                            src="/assets/imgs/page/car/suv.svg"
+                            alt="Anytime"
+                          />
+                        </div>
+                        <div className="feature-info">
+                          <p className="text-md-medium neutral-1000">
+                          {product.transmission}
+                           
                           </p>
                         </div>
                       </div>
@@ -419,7 +393,7 @@ const CarDeatailPage = () => {
                       </svg>
                     </button>
                     <div className="collapse show" id="collapseItinerary">
-                      <div className="card card-body" >
+                      <div className="card card-body">
                         <ul className="list-checked-green-price">
                           <li>{product.dailyRent}</li>
                           <li>{product.weeklyRent}</li>

@@ -46,160 +46,107 @@ const CarBrands = () => {
           <p className="text-lg-medium neutral-500">
             Unveil the Finest Selection of High-End Vehicles
           </p>
-          <div className="text-sm-bold neutral-1000">
-            Show All Brands
-          </div>
+          <div className="text-sm-bold neutral-1000">Show All Brands</div>
 
           <Slider {...settings} className="box-list-brand-car">
             <div className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/lexus.png"
+                  src="assets/imgs/page/homepage2/1.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/lexus-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </div>
             <div className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/mer.png"
+                  src="assets/imgs/page/homepage2/2.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/mer-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </div>
             <div className="carouselTicker__item">
-              <a  className="item-brand-2">
-             
+              <div className="item-brand-2">
                 <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/lexus-w.png"
+                  className="light-mode"
+                  src="assets/imgs/page/homepage2/3.avif"
                   alt="Anytime car rental"
                 />
-              </a>
+              </div>
             </div>
             <li className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/mer.png"
+                  src="assets/imgs/page/homepage2/4.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/mer-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </li>
             <li className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/bugatti.png"
+                  src="assets/imgs/page/homepage2/5.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/bugatti-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </li>
             <li className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/jaguar.png"
+                  src="assets/imgs/page/homepage2/6.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/jaguar-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </li>
             <li className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/honda.png"
+                  src="assets/imgs/page/homepage2/7.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/honda-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </li>
             <li className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/chevrolet.png"
+                  src="assets/imgs/page/homepage2/1.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/chevrolet-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </li>
             <li className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/acura.png"
+                  src="assets/imgs/page/homepage2/2.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/acura-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </li>
             <li className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/bmw.png"
+                  src="assets/imgs/page/homepage2/3.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/bmw-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </li>
             <li className="carouselTicker__item">
-              <a  className="item-brand-2">
+              <div className="item-brand-2">
                 <img
                   className="light-mode"
-                  src="assets/imgs/page/homepage2/toyota.png"
+                  src="assets/imgs/page/homepage2/4.avif"
                   alt="Anytime car rental"
                 />
-                <img
-                  className="dark-mode"
-                  src="assets/imgs/page/homepage2/toyota-w.png"
-                  alt="Anytime car rental"
-                />
-              </a>
+              </div>
             </li>
 
             {/* Add more brands similarly */}

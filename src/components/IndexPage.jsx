@@ -8,7 +8,7 @@ const CarBrands = lazy(() => import("./CarBrands/CarBrands"));
 const Footer = lazy(() => import("./Footer/Footer"));
 const HowItWorks = lazy(() => import("./HowItWorks/HowItWorks"));
 const MiddleBannners = lazy(() => import("./MiddleBannners/MiddleBannners"));
-const Testimonials = lazy(() => import("./Testimonails/Testimonials"));
+// const Testimonials = lazy(() => import("./Testimonails/Testimonials"));
 const PopularCars = lazy(() => import("./PopularCars/PopularCars"));
 const VediosReview = lazy(() => import("./Vedios/VediosReview"));
 const CounterDigits = lazy(() => import("./CounterDigits/CounterDigits"));
@@ -31,7 +31,7 @@ const IndexPage = () => {
           <HowItWorks />
           <FeaturedCars />
           <CarBrands />
-          <Testimonials />
+          {/* <Testimonials /> */}
         </main>
         <Footer />
       </Suspense>

@@ -1775,7 +1775,7 @@ body {
   margin-right: 8px;
 }
 .btn.btn-brand-2:hover {
-  color: #000000 !important;
+  color: #fff !important;
   background-color: var(--bs-brand-2-darken);
 }
 .btn.btn-mode {
@@ -8061,19 +8061,17 @@ a.icon-socials:hover svg path {
 
 .container-search-advance {
   position: absolute;
-  bottom: 30px;
-  left: 0px;
-  right: 0px;
+
   z-index: 12;
 }
 .container-search-advance .box-search-advance {
   top: 0px;
 }
 
-.block-banner-home2 {
+/* .block-banner-home2 {
   min-height: 892px;
   padding-top: 300px;
-}
+} */
 .block-banner-home2 .bg-shape::before {
   content: "";
   position: absolute;
@@ -11162,9 +11160,7 @@ a.icon-socials:hover svg path {
   }
   .container-search-advance {
     position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
+ 
     margin-top: 30px;
     margin-bottom: 30px;
   }

@@ -1774,7 +1774,7 @@ body {
   margin-right: 8px;
 }
 .btn.btn-brand-2:hover {
-  color: #000000 !important;
+  color: #fff !important;
   background-color: var(--bs-brand-2-darken);
 }
 .btn.btn-mode {
@@ -4966,6 +4966,7 @@ label {
   top: auto;
   left: auto;
   z-index: 123;
+  background-color: white;
   border-bottom: 1px solid var(--bs-neutral-200);
 }
 .header .container-fluid {
@@ -4984,7 +4985,6 @@ label {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  background-color: black;
 
 }
 .header .main-header .header-left .header-logo {
@@ -5314,7 +5314,6 @@ label {
   position: fixed;
   top: 0px;
   left: 0px;
-  background-color: black;
 }
 .header.header-fixed.header {
   border-bottom-color: rgba(255, 255, 255, 0.3);
@@ -8071,19 +8070,17 @@ a.icon-socials:hover svg path {
 
 .container-search-advance {
   position: absolute;
-  bottom: -100px;
-  left: 0px;
-  right: 0px;
+
   z-index: 12;
 }
 .container-search-advance .box-search-advance {
   top: 0px;
 }
 
-.block-banner-home2 {
+/* .block-banner-home2 {
   min-height: 892px;
   padding-top: 300px;
-}
+} */
 .block-banner-home2 .bg-shape::before {
   content: "";
   position: absolute;
@@ -8875,6 +8872,7 @@ a.icon-socials:hover svg path {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 0px -7px;
 }
 .list-feature-car .item-feature-car {
@@ -8884,6 +8882,7 @@ a.icon-socials:hover svg path {
 .list-feature-car .item-feature-car .item-feature-car-inner {
   display: flex;
   align-items: center;
+  min-width: 150px;
   padding: 14px 16px;
   border: 1px solid var(--bs-border-color);
   background-color: var(--bs-background-2);

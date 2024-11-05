@@ -38,9 +38,9 @@ const ServicesPage = () => {
                   alt="Anytime car rental"
                 />
               </span>
-              <a href="#" className="neutral-1000 text-md-bold">
+              <Link to="/Services"  className="neutral-1000 text-md-bold">
                 Services
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ const ServicesPage = () => {
             <div className="row align-items-end">
               <div className="col-lg-7">
                 <h3 className="neutral-1000">
-                  Comprehensive <span className="text-primary">Car Rental</span>{" "}
+                  Comprehensive <span className="text-primary">Car Rental</span>
                   Services to Meet All Your Needs
                 </h3>
               </div>
@@ -64,7 +64,10 @@ const ServicesPage = () => {
             </div>
             <div className="row mt-50">
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div
+                  className="card-news background-card hover-up mb-24 wow fadeIn"
+                  data-wow-delay="0.1s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-1.png"
@@ -73,12 +76,12 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         Car & Bus Rentals with and Without Driver
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         Discover Qatar at your own pace with our flexible car
                         and bus rental options. Whether you&apos;re planning a
@@ -91,7 +94,10 @@ const ServicesPage = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div
+                  className="card-news background-card hover-up wow fadeIn"
+                  data-wow-delay="0.2s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
@@ -100,12 +106,12 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         Commercial Rental with and Without Driver
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         Our experienced and professional drivers will ensure
                         safe and efficient transportation of your goods or
@@ -118,7 +124,10 @@ const ServicesPage = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div
+                  className="card-news background-card hover-up mb-24 wow fadeIn"
+                  data-wow-delay="0.3s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
@@ -127,12 +136,12 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         Limousine Service
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         Our luxurious limousine service in Qatar offers an
                         unparalleled level of comfort and sophistication.
@@ -147,7 +156,10 @@ const ServicesPage = () => {
             </div>
             <div className="row mt-50">
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div
+                  className="card-news background-card hover-up mb-24 wow fadeIn"
+                  data-wow-delay="0.4s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-1.png"
@@ -156,13 +168,13 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         Providing Trained Driver for long term customer with
                         special rate
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         Our drivers are available to take you wherever you need
                         to go, whenever you need to go. This means you can enjoy
@@ -175,7 +187,10 @@ const ServicesPage = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div
+                  className="card-news background-card hover-up mb-24 wow fadeIn"
+                  data-wow-delay="0.5s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
@@ -184,12 +199,12 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         Vallet Service
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         Let our professional valets handle all your parking
                         needs, ensuring your vehicle is always parked safely and
@@ -201,7 +216,7 @@ const ServicesPage = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div className="card-news background-card hover-up mb-24 wow fadeIn"   data-wow-delay="0.6s">
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
@@ -210,12 +225,12 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         Premium Car Rentals with Well Trained Driver
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         Enjoy the comfort of a chauffeur-driven vehicle as you
                         explore this stunning country. Our fleet features a wide
@@ -229,7 +244,9 @@ const ServicesPage = () => {
             </div>
             <div className="row mt-50">
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div className="card-news background-card hover-up mb-24  wow fadeIn"
+                  data-wow-delay="0.7s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-1.png"
@@ -238,12 +255,12 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         City Tour Services
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         Our city tour services offer a convenient and exciting
                         way to experience the best of Qatar. Our expertly
@@ -256,7 +273,9 @@ const ServicesPage = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div className="card-news background-card hover-up mb-24  wow fadeIn"
+                  data-wow-delay="0.8s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
@@ -265,12 +284,12 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         Pick-up and Drop-off Services
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         we believe in making your car rental experience as
                         hassle-free as possible. Our convenient pick-up and
@@ -282,7 +301,9 @@ const ServicesPage = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24">
+                <div className="card-news background-card hover-up mb-24  wow fadeIn"
+                  data-wow-delay="0.8s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
@@ -291,12 +312,12 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <a
+                      <div
                         className="text-xl-bold neutral-1000"
-                        href="blog-details.html"
+                       
                       >
                         Delivery Services
-                      </a>
+                      </div>
                       <p className="text-md-medium neutral-500 mt-2">
                         We offer convenient car delivery services throughout
                         Qatar. Simply book your rental online or over the phone,
@@ -495,7 +516,7 @@ const ServicesPage = () => {
                       </ul>
                     </div>
                   </div>
-                  <a className="btn btn-primary mt-2" href="#">
+                  <a className="btn btn-primary mt-2" >
                     Get Started Now
                     <svg
                       width={16}
