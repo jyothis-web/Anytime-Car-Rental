@@ -1712,14 +1712,14 @@ body {
 
 }
 .btn.btn-primary svg {
-  stroke: #101010;
+  stroke: #fff;
 }
 .btn.btn-primary:hover {
-  color: #101010 !important;
-  background-color: var(--bs-neutral-200);
+  color: #fff !important;
+  background-color: var(--bs-background-12);
 }
 .btn.btn-primary:hover svg {
-  stroke: #101010;
+  stroke: #fff;
 }
 .btn.btn-primary2 {
   padding: 12px 22px 12px 28px;
@@ -2709,7 +2709,7 @@ label {
   margin-bottom: 40px;
 }
 .card-journey-small .card-info .card-program .card-location .text-location {
-  background: url(../imgs/template/icons/location.svg) no-repeat left center;
+  background: url(../imgs/template/icons/car.svg) no-repeat left center;
   padding-left: 20px;
 }
 .card-journey-small .card-info .card-program .card-location .text-star img {
@@ -3219,7 +3219,7 @@ label {
   margin-bottom: 45px;
 }
 .card-flight.card-hotel .card-info .card-program .card-location .text-location {
-  background: url(../imgs/template/icons/location.svg) no-repeat left center;
+  background: url(../imgs/template/icons/car.svg) no-repeat left center;
   padding-left: 20px;
 }
 .card-flight.card-hotel .card-info .card-program .card-location .text-star img {
@@ -3485,7 +3485,7 @@ label {
   margin-bottom: 45px;
 }
 .card-news .card-info .card-program .card-location .text-location {
-  background: url(../imgs/template/icons/location.svg) no-repeat left center;
+  background: url(../imgs/template/icons/car.svg) no-repeat left center;
   padding-left: 20px;
 }
 .card-news .card-info .card-program .card-location .text-star img {
@@ -6300,6 +6300,8 @@ a.icon-socials:hover svg path {
 }
 .footer .phone-support {
   color: white;
+  padding-left: 20px;
+
 }
 .footer h6 {
   color: white;
@@ -6314,6 +6316,7 @@ a.icon-socials:hover svg path {
 .footer .menu-footer li {
   list-style: none;
   margin-bottom: 18px;
+  cursor: pointer;
 }
 .footer .menu-footer li:last-child {
   padding-right: 0px;

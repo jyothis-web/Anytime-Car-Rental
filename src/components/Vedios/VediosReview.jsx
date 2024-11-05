@@ -4,6 +4,7 @@ import img1 from "/assets/imgs/blog/blog-grid/img-1.png";
 import img2 from "/assets/imgs/blog/blog-grid/img-2.png";
 import img3 from "/assets/imgs/blog/blog-grid/img-1-1.png";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const VideosReview = () => {
   const sliderRef = useRef(null);
@@ -77,6 +78,7 @@ const VideosReview = () => {
                     className="text-lg-medium text-white"
                     dangerouslySetInnerHTML={{ __html: review.description }}
                   ></p>
+                   <Link to="/CarFilterPage">
                   <div  className="btn btn-primary mt-30">
                     View Details
                     <svg
@@ -95,6 +97,7 @@ const VideosReview = () => {
                       />
                     </svg>
                   </div>
+                  </Link>
                 </div>
                 <div className="arrows-container">
             <button className="left-arrow" onClick={goToPrev}>

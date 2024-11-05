@@ -43,3 +43,28 @@
       margin-bottom: 10px;
 
   }
+
+  .list-checked-green-price {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .price-item {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0; /* Optional: light border between items */
+  }
+  
+  .price-label {
+    font-weight: 600; /* Semibold label */
+    color: #555; /* Darker color for labels */
+  }
+  
+  .price-value {
+    font-weight: 600;
+  }
+  .price-value:hover{
+   color: #2174b6;
+  }
+  

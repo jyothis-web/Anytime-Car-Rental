@@ -134,6 +134,14 @@
   width: 100%; /* Make button fill the entire parent width */
 }
 
+.card-specs {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
 .card-latest-button {
   display: inline-block; /* Ensure the button is inline */
   padding: 5px 10px; /* Adjust padding for button */

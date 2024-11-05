@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MiddleBannners = () => {
   return (
     <div style={{marginTop:"90px"}}>
@@ -31,9 +33,10 @@ const MiddleBannners = () => {
                   Experience the freedom of the open road with our comprehensive
                   car rental services.
                 </p>
-                <a
+                <Link to="/CarFilterPage">
+                <div
                   className="btn btn-primary wow fadeInUp"
-                  href="cars-list-1.html"
+               
                 >
                   Get Started Now
                   <svg
@@ -51,11 +54,12 @@ const MiddleBannners = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
             <div className="col-lg-4 text-center wow fadeInUp">
-              <img src="assets/imgs/cta/cta-4/car-center.png" alt="Carento" />
+              <img src="assets/imgs/banners/2.avif" alt="Carento" />
             </div>
             <div className="col-lg-4">
               <div className="bg-white rounded-12 p-5 d-flex flex-column gap-4">
@@ -73,9 +77,10 @@ const MiddleBannners = () => {
                   Experience the epitome of luxury travel with our exquisite
                   limousines.
                 </p>
-                <a
+                <Link to="/CarFilterPage">
+                <div
                   className="btn btn-primary wow fadeInUp"
-                  href="cars-list-1.html"
+                  
                 >
                   Get Started Now
                   <svg
@@ -93,7 +98,8 @@ const MiddleBannners = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </div>

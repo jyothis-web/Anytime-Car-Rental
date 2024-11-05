@@ -8,32 +8,30 @@ import CarFilterCategory from "./CarFilterCategory";
 import CarFilterBrand from "./CarFilterBrand";
 import CarFilterPrice from "./CarFilterPrice";
 import CarPriceDisplay from "./CarPriceDisplay";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Loading from "../../pages/Loading";
 import Footer from "../Footer/Footer";
 
 const CarFilterPage = () => {
   const dispatch = useDispatch();
-
+  const { category } = useParams();
   const { products = [] } = useSelector((state) => state.car);
   const [filteredCars, setFilteredCars] = useState([]);
   const [loading, setLoading] = useState(true);
   // Consolidated filter state
 
-
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true); // Start loading
-      await dispatch(fetchProducts());
+      dispatch(fetchProducts());
       setLoading(false); // Stop loading when fetch completes
     };
-    
+
     fetchData();
   }, [dispatch]);
 
   useEffect(() => {
     setFilteredCars(products);
-    
   }, [products]);
 
   // Handle filtering when a category is selected
@@ -75,11 +73,25 @@ const CarFilterPage = () => {
     setFilteredCars(filteredCars);
   };
 
+  useEffect(() => {
+    if (category) {
+      // If category is present in the URL, filter cars based on it
+      const filteredByCategory = products.filter(
+        (car) => car.category === category
+      );
+      setFilteredCars(filteredByCategory);
+      console.log("Filtered Cars by Category:", filteredByCategory); // Log filtered cars
+    } else {
+      // If no category, show all cars
+      setFilteredCars(products);
+      console.log("All Cars:", products); // Log all cars
+    }
+  }, [products, category]);
+  console.log("Rendering filteredCars:", filteredCars);
 
   if (loading) {
     return <Loading />;
   }
-
 
   return (
     <div>
@@ -156,7 +168,7 @@ const CarFilterPage = () => {
                     filteredCars.map((car, index) => (
                       <div key={index} className="col-lg-3 col-md-6">
                         <div className="card-journey-small background-card hover-up">
-                          <div className="">
+                          <div style={{minHeight:"190px"}}>
                             {car.carImage1 && (
                               <img
                                 src={`${import.meta.env.VITE_URL}${
@@ -167,17 +179,9 @@ const CarFilterPage = () => {
                               />
                             )}
                           </div>
-                          <div className="card-info p-4 pt-30">
+                          <div className="card-info p-4 pt-10">
                             <div className="card-rating">
                               <div className="card-left" />
-                              <div className="card-right">
-                                <span className="rating text-xs-medium rounded-pill">
-                                  {car.rating}{" "}
-                                  <span className="text-xs-medium neutral-500">
-                                    {car.brand}
-                                  </span>
-                                </span>
-                              </div>
                             </div>
                             <div className="card-title">
                               <div className="text-lg-bold neutral-1000 text-wrap">
@@ -185,10 +189,23 @@ const CarFilterPage = () => {
                               </div>
                             </div>
                             <div className="card-program">
-                              <div className="card-location">
+                              <div className="">
                                 <p className="text-location text-sm-medium neutral-500">
+                                  <i
+                                    className="fa fa-car"
+                                    aria-hidden="true"
+                                    style={{ marginRight: "8px" }}
+                                  ></i>
                                   {car.category}
                                 </p>
+                                <div
+                                  style={{
+                                    width: "100%", // 80% width
+                                    height: ".5px", // Line height
+                                    backgroundColor: "#ccc", // Grey color
+                                    margin: "10px auto", // Centered with margin
+                                  }}
+                                ></div>
                               </div>
                               <div
                                 style={{
@@ -202,6 +219,8 @@ const CarFilterPage = () => {
                                     <i
                                       className="fa fa-tachometer-alt"
                                       aria-hidden="true"
+                                    style={{ marginRight: "8px" }}
+
                                     ></i>
                                     {car.mileage} Km
                                   </p>
@@ -209,6 +228,8 @@ const CarFilterPage = () => {
                                     <i
                                       className="fa fa-cog"
                                       aria-hidden="true"
+                                    style={{ marginRight: "8px" }}
+
                                     ></i>
                                     {car.transmission}
                                   </p>
@@ -218,6 +239,8 @@ const CarFilterPage = () => {
                                     <i
                                       className="fa fa-gas-pump"
                                       aria-hidden="true"
+                                    style={{ marginRight: "8px" }}
+
                                     ></i>
                                     {car.fuel}
                                   </p>
@@ -225,13 +248,15 @@ const CarFilterPage = () => {
                                     <i
                                       className="fa fa-user-friends"
                                       aria-hidden="true"
+                                    style={{ marginRight: "8px" }}
+
                                     ></i>
                                     {car.seat} seats
                                   </p>
                                 </div>
                               </div>
                               <div className="button-flex">
-                              <CarPriceDisplay car={car} />
+                                <CarPriceDisplay car={car} />
 
                                 <Link to={`/CarDetilPage/${car._id}`}>
                                   <div className="card-latest-button">
@@ -363,7 +388,7 @@ const CarFilterPage = () => {
           {/* Count down*/}
           {/*Custom script for this template*/}
         </main>
-        <Footer/>
+        <Footer />
       </>
     </div>
   );

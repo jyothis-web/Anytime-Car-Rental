@@ -17,7 +17,7 @@ const Footer = () => {
                   <img
                     className="light-mode"
                     alt="Anytime car rental"
-                    src="/logo.avif"
+                    src="/anytime-white.avif"
                     height={"50px"}
                   />
                 </Link>
@@ -43,10 +43,10 @@ const Footer = () => {
                   </p>
                   <br />
                   <div
-                    className="heading-6 phone-support"
+                    className="heading-5 phone-support"
                     href="tel:+97433411122"
                   >
-                    +974 3341 1122
+                    +97 4711 20333
                   </div>
                 </div>
               </div>

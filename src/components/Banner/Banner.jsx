@@ -8,7 +8,7 @@ const Banner = () => {
         <div>
           <div className="banner-container">
             <div className="banner-content">
-              <div className="overlay"></div>
+              {/* <div className="overlay"></div> */}
               <div className="fade-in">
                 <img
                   src="/assets/banner.avif"

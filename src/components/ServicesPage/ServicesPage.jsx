@@ -363,6 +363,7 @@ const ServicesPage = () => {
                     <div className="col">
                       <ul className="list-ticks-green ">
                         <div
+                        
                           style={{
                             display: "flex",
                             alignItems: "center",

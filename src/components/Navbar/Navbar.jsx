@@ -31,7 +31,7 @@ const Navbar = () => {
       >
         <div className="container-fluid">
           <div className="text-header-info">
-            <a className="phone-head text-black" href="">
+            <a className="phone-head text-black" href="tel:+97471120333">
               <svg
                 width={16}
                 height={16}
@@ -44,9 +44,9 @@ const Navbar = () => {
                   fill="#2174b6"
                 />
               </svg>
-              <span className="d-none d-lg-inline-block">+1 222-555-33-99</span>
+              <span className="d-none d-lg-inline-block">+97 4711 20333</span>
             </a>
-            <a className="email-head text-black" href="">
+            <a className="email-head text-black" href="mailto:info@anytimeqatar.com">
               <svg
                 width={16}
                 height={12}
@@ -61,18 +61,16 @@ const Navbar = () => {
                   fill="#2174b6"
                 />
               </svg>
-              <span className="d-none d-lg-inline-block">sale@carento.com</span>
+              <span className="d-none d-lg-inline-block">info@anytimeqatar.com</span>
             </a>
           </div>
           <div className="text-header">
             <div className="text-unlock text-sm-medium text-black">
               More than <span className="text-primary">100+</span>
-               Cars for Rental
+              &nbsp;Cars for Rental
             </div>
-            <div
-              className="btn btn-brand-2 btn-small  px-3 py-2 text-xs-medium"
-         
-            >
+            <Link to="/CarFilterPage">
+            <div className="btn btn-brand-2 btn-small  px-3 py-2 text-xs-medium">
               Access Now
               <svg
                 className="ms-1"
@@ -90,12 +88,12 @@ const Navbar = () => {
                 />
               </svg>
             </div>
+          </Link>
+
           </div>
           <div className="top-right-header">
             <div className="d-none d-xl-inline-block box-dropdown-cart align-middle mr-15 head-lang">
-              <span className="text-14-medium icon-list icon-account icon-lang">
-               
-              </span>
+              <span className="text-14-medium icon-list icon-account icon-lang"></span>
               <div className="dropdown-account"></div>
             </div>
           </div>
@@ -128,9 +126,11 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </div>
+
+          
             <div className="navbar-button">
               <Link to="/CarFilterPage" className="navbar-title">
-                <button className="btn btn-primary">Book Now</button>
+                <button className="btn btn-primary text-nowrap ">Book Now</button>
               </Link>
             </div>
             <div className="nav-mobile">

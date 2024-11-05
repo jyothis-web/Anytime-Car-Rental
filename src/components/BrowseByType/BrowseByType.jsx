@@ -3,7 +3,7 @@ const BrowseByType = () => {
   const navigate = useNavigate();
 
   const handleCategoryClick = (category) => {
-    // Navigate to the CarFilterPage with the selected category
+   
     navigate(`/CarFilterPage/${category}`);
   };
 
@@ -109,7 +109,7 @@ const BrowseByType = () => {
                     <div
                       style={{ cursor: "pointer" }}
                       className="card-title"
-                      onClick={() => handleCategoryClick("Hatchback")}
+                      onClick={() => handleCategoryClick("Mini SUV")}
                     >
                       <img
                         src="assets/imgs/categories/categories-1/car-2.png"
@@ -122,19 +122,19 @@ const BrowseByType = () => {
                     <div className="card-meta">
                       <div
                         className="meta-links"
-                        onClick={() => handleCategoryClick("Hatchback")}
+                        onClick={() => handleCategoryClick("Mini SUV")}
                       >
                         <div
                           style={{ cursor: "pointer" }}
                           className="card-title"
                         >
-                          Hatchback
+                          Mini SUV
                         </div>
                       </div>
                       <div
                         style={{ cursor: "pointer" }}
                         className="card-button"
-                        onClick={() => handleCategoryClick("Hatchback")}
+                        onClick={() => handleCategoryClick("Mini SUV")}
                       >
                         <div className="arrow">
                           <svg
@@ -221,10 +221,10 @@ const BrowseByType = () => {
                     <div
                       className="card-title"
                       style={{cursor:"pointer"}}
-                      onClick={() => handleCategoryClick("Mini SUV")}
+                      onClick={() => handleCategoryClick("Van")}
                     >
                       <img
-                        src="assets/imgs/categories/categories-1/car-4.png"
+                        src="assets/imgs/categories/categories-1/van.avif"
                         alt="Carento"
                         style={{borderRadius:"8px"}}
                       />
@@ -234,13 +234,13 @@ const BrowseByType = () => {
                     <div className="card-meta">
                       <div
                         className="meta-links"
-                        onClick={() => handleCategoryClick("Mini SUV")}
+                        onClick={() => handleCategoryClick("Van")}
                       >
-                        <div className="card-title"   style={{cursor:"pointer"}}>Mini SUV</div>
+                        <div className="card-title"   style={{cursor:"pointer"}}>Van</div>
                       </div>
                       <div
                         className="card-button"
-                        onClick={() => handleCategoryClick("Mini SUV")}
+                        onClick={() => handleCategoryClick("Van")}
                       >
                         <div className="arrow">
                           <svg

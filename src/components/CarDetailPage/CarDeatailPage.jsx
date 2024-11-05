@@ -325,8 +325,7 @@ const CarDeatailPage = () => {
                         </div>
                         <div className="feature-info">
                           <p className="text-md-medium neutral-1000">
-                          {product.transmission}
-                           
+                            {product.transmission}
                           </p>
                         </div>
                       </div>
@@ -376,7 +375,7 @@ const CarDeatailPage = () => {
                       aria-expanded="false"
                       aria-controls="collapseItinerary"
                     >
-                      <h6> price for rental</h6>
+                      <h6>Price for Rental</h6>
                       <svg
                         width={12}
                         height={7}
@@ -386,7 +385,7 @@ const CarDeatailPage = () => {
                       >
                         <path
                           d="M1 1L6 6L11 1"
-                          stroke=""
+                          stroke="#333" // Set stroke color for the arrow
                           strokeWidth="1.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -396,9 +395,47 @@ const CarDeatailPage = () => {
                     <div className="collapse show" id="collapseItinerary">
                       <div className="card card-body">
                         <ul className="list-checked-green-price">
-                          <li>{product.dailyRent}</li>
-                          <li>{product.weeklyRent}</li>
-                          <li>{product.monthlyRent}</li>
+                          <li className="price-item">
+                            <span className="price-label">
+                              Daily Price:&nbsp;
+                            </span>
+                            <span className="price-value">
+                              QAR {product.dailyRent}
+                            </span>
+                          </li>
+                          <li className="price-item">
+                            <span className="price-label">
+                              Weekly Price:&nbsp;
+                            </span>
+                            <span className="price-value">
+                              QAR {product.weeklyRent}
+                            </span>
+                          </li>
+                          <li
+                            className="price-item"
+                            style={{ marginBottom: "25px" }}
+                          >
+                            <span className="price-label">
+                              Monthly Price:&nbsp;
+                            </span>
+                            <span className="price-value">
+                              QAR {product.monthlyRent}
+                            </span>
+                          </li>
+                          <div
+                            className="card-latest-button"
+                            style={{ maxWidth: "120px" }}
+                            onClick={() => {
+                              const message = `I'm interested in renting the car: ${product.brandModel}. Please provide further details.`;
+                              const phoneNumber = "+97471120333";
+                              const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\+/g, '')}?text=${encodeURIComponent(message)}`;
+                              window.open(whatsappUrl, "_blank");
+                            }}
+                          >
+                            {" "}
+                            {/* Added classes here */}
+                            Book Now
+                          </div>
                         </ul>
                       </div>
                     </div>
@@ -409,7 +446,7 @@ const CarDeatailPage = () => {
           </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

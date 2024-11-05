@@ -76,9 +76,9 @@ const ContactPage = () => {
               </p>
             </div>
             <div className="divider"></div>
-            <div className="info-box">
+            <div className="info-box" >
               <h2>CALL US</h2>
-              <p>+91 974 3341 1122</p>
+              <p>+97 4711 20333</p>
 
               {/* <p>Email: forleodxb@gmail.com</p> */}
             </div>

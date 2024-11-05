@@ -11,16 +11,26 @@ const CarPriceDisplay = ({ car }) => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <span>View Price</span> {/* You can also include specific price here if needed */}
+          <span>View Price</span>{" "}
+          {/* You can also include specific price here if needed */}
         </button>
         <ul
           className="dropdown-menu dropdown-menu-light"
           aria-labelledby="dropdownPriceType"
         >
           <li>
-            <div className="dropdown-item">Daily - ${car.dailyRent}</div>
-            <div className="dropdown-item">Weekly - ${car.weeklyRent}</div>
-            <div className="dropdown-item">Monthly - ${car.monthlyRent}</div>
+            <div className="dropdown-item">
+              Daily -{" "}
+              <span style={{ fontWeight: "600" }}>QAR {car.dailyRent}</span>
+            </div>
+            <div className="dropdown-item">
+              Weekly -{" "}
+              <span style={{ fontWeight: "600" }}>QAR {car.weeklyRent}</span>
+            </div>
+            <div className="dropdown-item">
+              Monthly -{" "}
+              <span style={{ fontWeight: "600" }}>QAR {car.monthlyRent}</span>
+            </div>
           </li>
         </ul>
       </div>

@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const FeaturedCars = () => {
   const dispatch = useDispatch();
-
   const { products = [] } = useSelector((state) => state.car);
 
   useEffect(() => {
@@ -29,8 +28,7 @@ const FeaturedCars = () => {
             </div>
             <div className="col-md-4 mt-md-0 mt-4">
               <div className="d-flex justify-content-end">
-             
-                <div className="btn btn-primary" >
+                <div className="btn btn-primary">
                   View More
                   <svg
                     width={16}
@@ -55,7 +53,7 @@ const FeaturedCars = () => {
             {carsToShow.map((car, index) => (
               <div key={index} className="col-lg-3 col-md-6">
                 <div className="card-journey-small background-card hover-up">
-                  <div className="">
+                  <div style={{minHeight:"190px"}}>
                     {car.carImage1 && (
                       <img
                         src={`${import.meta.env.VITE_URL}${
@@ -66,42 +64,81 @@ const FeaturedCars = () => {
                       />
                     )}
                   </div>
-                  <div className="card-info p-4 pt-30">
+                  <div className="card-info p-4 pt-10">
                     <div className="card-rating">
                       <div className="card-left" />
-                      <div className="card-right">
-                        <span className="rating text-xs-medium rounded-pill">
-                          {car.rating}{" "}
-                          <span className="text-xs-medium neutral-500">
-                            {car.brand}
-                          </span>
-                        </span>
-                      </div>
                     </div>
                     <div className="card-title">
-                      <div className="text-lg-bold neutral-1000 text-nowrap">
+                      <div className="text-lg-bold neutral-1000 text-wrap">
                         {car.brandModel}
                       </div>
                     </div>
                     <div className="card-program">
-                      <div className="card-location">
+                      <div className="">
                         <p className="text-location text-sm-medium neutral-500">
+                          <i
+                            className="fa fa-car"
+                            aria-hidden="true"
+                            style={{ marginRight: "8px" }}
+                          ></i>
                           {car.category}
                         </p>
+                        <div
+                          style={{
+                            width: "100%", // 80% width
+                            height: ".5px", // Line height
+                            backgroundColor: "#ccc", // Grey color
+                            margin: "10px auto", // Centered with margin
+                          }}
+                        ></div>
                       </div>
-                      <div className="card-facitlities">
-                        <p className="card-miles ">{car.mileage} km</p>
-                        <p className="card-gear ">{car.transmission}</p>
-                        <p className="card-fuel ">{car.fuel}</p>
-                        <p className="card-seat ">{car.seat} seats</p>
-                      </div>
-                      <div className="endtime">
-                        <div className="card-price">
-                          <h6 className="text-lg-bold neutral-1000">
-                            <CarPriceDisplay car={car} />
-                          </h6>
-                          <p className="text-md-medium neutral-500" />
+                      <div
+                        style={{
+                          display: "flex",
+                          gap: "25px",
+                          marginTop: "15px",
+                        }}
+                      >
+                        <div className="card-specs">
+                          <p className="card-icons ">
+                            <i
+                              className="fa fa-tachometer-alt"
+                              aria-hidden="true"
+                              style={{ marginRight: "8px" }}
+                            ></i>
+                            {car.mileage} Km
+                          </p>
+                          <p className="card-icons ">
+                            <i
+                              className="fa fa-cog"
+                              aria-hidden="true"
+                              style={{ marginRight: "8px" }}
+                            ></i>
+                            {car.transmission}
+                          </p>
                         </div>
+                        <div className="card-specs">
+                          <p className="card-icons ">
+                            <i
+                              className="fa fa-gas-pump"
+                              aria-hidden="true"
+                              style={{ marginRight: "8px" }}
+                            ></i>
+                            {car.fuel}
+                          </p>
+                          <p className="card-icons">
+                            <i
+                              className="fa fa-user-friends"
+                              aria-hidden="true"
+                              style={{ marginRight: "8px" }}
+                            ></i>
+                            {car.seat} seats
+                          </p>
+                        </div>
+                      </div>
+                      <div className="button-flex">
+                        <CarPriceDisplay car={car} />
+
                         <Link to={`/CarDetilPage/${car._id}`}>
                           <div className="card-latest-button">
                             {" "}

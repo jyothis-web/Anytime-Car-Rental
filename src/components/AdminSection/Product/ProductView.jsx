@@ -121,9 +121,9 @@ const ProductView = () => {
                 <p>Seat: {product.seat}</p>
                 <p>Boot Capacity: {product.bootCapacity}</p>
                 
-                <p>daily price: {product.dailyRent}</p>
-                <p>weekly price: {product.weeklyRent}</p>
-                <p>monthly price: {product.monthlyRent}</p>
+                <p>daily price: QAR {product.dailyRent}</p>
+                <p>weekly price: QAR {product.weeklyRent}</p>
+                <p>monthly price: QAR {product.monthlyRent}</p>
                 <p>Description 1: {product.description1}</p>
                 <p>
                   Description 2:{product.description2}

@@ -64,9 +64,8 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
-    
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   .card-specs p {
@@ -107,9 +106,7 @@
     text-decoration: none;
   }
   
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
+
 
   .card-price-dropdown {
     margin-top: 15px;
