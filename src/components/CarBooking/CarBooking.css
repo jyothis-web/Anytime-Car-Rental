@@ -1,68 +1,71 @@
 .car-booking {
-      position: absolute;
-      top: 25%;
-      right: 20px;
-      width: 400px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      background-color: #fff;
-      z-index: 2;
-    }
-    .box-search-advance-form{
-      padding: 10px 15px;
-    }
-    .container-search-advance {
-      width: 100%;
-    }
-    
-    .input-group-form {
-      margin-bottom: 15px;
-    }
-    
-    .input-field-form {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-    
-    .button-container {
-      display: flex;
-      gap: 15px;
-      justify-content: flex-start;
-    }
-    
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  z-index: 2;
+}
+.box-search-advance-form {
+  padding: 10px 15px;
+}
+.container-search-advance {
+  width: 100%;
+}
 
-    
-    @media (max-width: 968px) {
-      .car-booking {
-        top: 15%;
-        right: 10%;
-        padding: 15px;
-      }
-    }
-    @media (max-width: 768px) {
-      .car-booking {
-        top: 130px;
-        right: 10%;
-        padding: 15px;
-      }
-    }
-    
-    @media (max-width: 580px) {
-      .car-booking {
-        width: 380px;
-        top: 100px;
-        right: 5px;
-        padding: 10px;
-      }
-    }
-    @media (max-width: 390px) {
-      .car-booking {
-        width: 320px;
-        top: 100px;
-        right: 5px;
-        padding: 10px;
-      }
-    }
-    
+.input-group-form {
+  margin-bottom: 15px;
+}
+
+.input-field-form {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+@media (max-width: 968px) {
+  .car-booking {
+    top: 15%;
+    right: 10%;
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .car-booking {
+    top: 15%; /* Adjusted for better centering on larger screens */
+    left: 50%;
+    right: auto; /* Remove `right` positioning */
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 580px) {
+  .car-booking {
+    width: 380px;
+    top: 100px; /* Adjusted for better centering on larger screens */
+    left: 50%;
+    right: auto; /* Remove `right` positioning */
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 10px;
+  }
+}
+@media (max-width: 390px) {
+  .car-booking {
+    width: 320px;
+    top: 100px;
+    left: 50%;
+    right: auto; /* Remove `right` positioning */
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 10px;
+  }
+}

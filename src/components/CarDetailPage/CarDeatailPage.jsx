@@ -8,6 +8,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import { useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const CarDeatailPage = () => {
   const { id } = useParams();
@@ -271,7 +272,7 @@ const CarDeatailPage = () => {
                       <div className="item-feature-car-inner">
                         <div className="feature-image">
                           <img
-                            src="/assets/imgs/page/car/auto.svg"
+                            src="/assets/imgs/page/car/suv.svg"
                             alt="Anytime"
                           />
                         </div>
@@ -318,7 +319,7 @@ const CarDeatailPage = () => {
                       <div className="item-feature-car-inner">
                         <div className="feature-image">
                           <img
-                            src="/assets/imgs/page/car/suv.svg"
+                            src="/assets/imgs/page/car/auto.svg"
                             alt="Anytime"
                           />
                         </div>
@@ -408,6 +409,7 @@ const CarDeatailPage = () => {
           </div>
         </section>
       </main>
+      <Footer/>
     </div>
   );
 };

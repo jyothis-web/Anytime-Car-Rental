@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../Redux/car/CarSlice";
 import "./Popularcars.css";
 import CarPriceDisplay from "../CarFilterPage/CarPriceDisplay";
-import PickUpMessage from "../PickUpMessage/PickUpMessage";
+
 const PopularCars = () => {
   const dispatch = useDispatch();
 
@@ -18,7 +18,7 @@ const PopularCars = () => {
   const carsToShow = products.slice(0, 4);
   return (
     <div>
-      <section className="section-box box-flights background-body">
+      <section className="section-box  background-body">
         <div className="container">
           <div className="row align-items-end">
             <div className="col-lg-6 mb-30 text-center text-lg-start">
@@ -28,7 +28,7 @@ const PopularCars = () => {
               </p>
             </div>
             <div className="col-lg-6 mb-30">
-              <PickUpMessage />
+            
             </div>
           </div>
 

@@ -12,7 +12,6 @@ import ProductDetail from "./components/AdminSection/Product/ProductDetail";
 import CreateCar from "./components/AdminSection/Product/ProductCreation";
 import ProductView from "./components/AdminSection/Product/ProductView";
 import BannerRotation from "./components/BannerRotation/BannerRotation";
-import PickUpMessage from "./components/PickUpMessage/PickUpMessage";
 
 function App() {
   return (
@@ -28,7 +27,6 @@ function App() {
         <Route path="/AdminPage" element={<AdminPage />} />
         <Route path="/createcar" element={<CreateCar />} />
         <Route path="/BannerRotation" element={<BannerRotation />} />
-        <Route path="/PickUpMessage" element={<PickUpMessage />} />
 
         <Route path="/ProductPage" element={<ProductView />} />
         <Route path="/car/:id" element={<ProductDetail />} />

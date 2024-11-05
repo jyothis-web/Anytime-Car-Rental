@@ -6295,14 +6295,14 @@ a.icon-socials:hover svg path {
 }
 
 .footer {
-  background-color: var(--bs-background-1000);
+  background-color: var(--bs-link-hover-color);
   padding: 40px 0px 0px 0px;
 }
 .footer .phone-support {
-  color: var(--bs-brand-2);
+  color: white;
 }
 .footer h6 {
-  color: var(--bs-color-white);
+  color: white;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 18px;
@@ -6318,15 +6318,15 @@ a.icon-socials:hover svg path {
 .footer .menu-footer li:last-child {
   padding-right: 0px;
 }
-.footer .menu-footer li a {
-  color: var(--bs-neutral-400);
+.footer .menu-footer li  {
+  color: white;
   font-size: 16px;
   text-decoration: none;
   transition-duration: 0.2s;
   line-height: 26px;
 }
-.footer .menu-footer li a:hover {
-  color: var(--bs-neutral-0);
+.footer .menu-footer li :hover {
+  color: grey;
   transition-duration: 0.2s;
   padding-left: 3px;
   transition-duration: 0.2s;
@@ -8869,7 +8869,7 @@ a.icon-socials:hover svg path {
   min-width: 150px;
   padding: 14px 16px;
   border: 1px solid var(--bs-border-color);
-  background-color: var(--bs-background-2);
+  background-color: var(--bs-background-6);
   border-radius: 4px;
 }
 .list-feature-car .item-feature-car .item-feature-car-inner .feature-image {
@@ -9919,6 +9919,7 @@ a.icon-socials:hover svg path {
 }
 .box-info-contact p {
   margin-bottom: 16px;
+  color: white;
 }
 
 .box-link-bottom {

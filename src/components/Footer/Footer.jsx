@@ -9,7 +9,11 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-3 col-sm-12 footer-1">
               <div className="mt-20 mb-20">
-              <Link to="/" className="d-flex mb-20 mt-0 " style={{ paddingLeft: "40px",paddingTop:"-10px" }} >
+                <Link
+                  to="/"
+                  className="d-flex mb-20 mt-0 "
+                  style={{ paddingLeft: "40px", paddingTop: "-10px" }}
+                >
                   <img
                     className="light-mode"
                     alt="Anytime car rental"
@@ -18,7 +22,7 @@ const Footer = () => {
                   />
                 </Link>
                 <div className="box-info-contact mt-0">
-                  <p className="text-md neutral-400 icon-address">
+                  <p  className="text-md  icon-address ">
                     Street No 955, Building No 128, Zone 56
                     <br />
                     Food Supply Co Building, Mezzanine Floor
@@ -26,10 +30,10 @@ const Footer = () => {
                     Near Messaimer Health Center, Doha, Qatar
                     <br />
                   </p>
-                  <p className="text-md neutral-400 icon-worktime">
+                  <p className="text-md  icon-worktime">
                     Hours: 8:00 - 17:00, Mon - Sat
                   </p>
-                  <p className="text-md neutral-400 icon-email">
+                  <p className="text-md  icon-email">
                     info@anytimeqatar.com
                   </p>
                 </div>
@@ -38,12 +42,12 @@ const Footer = () => {
                     Need help? Call us
                   </p>
                   <br />
-                  <a
+                  <div
                     className="heading-6 phone-support"
                     href="tel:+97433411122"
                   >
                     +974 3341 1122
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -51,19 +55,19 @@ const Footer = () => {
               <h6 className="text-linear-3">Company</h6>
               <ul className="menu-footer">
                 <li>
-                  <a href="#">About Us</a>
+                  <div >About Us</div>
                 </li>
                 <li>
-                  <a href="#">Copyright Notices</a>
+                  <div >Copyright Notices</div>
                 </li>
                 <li>
-                  <a href="#">Terms of Use</a>
+                  <div >Terms of Use</div>
                 </li>
                 <li>
-                  <a href="#">Privacy Notice</a>
+                  <div >Privacy Notice</div>
                 </li>
                 <li>
-                  <a href="#">Lost &amp; Found</a>
+                  <div >Lost &amp; Found</div>
                 </li>
               </ul>
             </div>
@@ -71,23 +75,23 @@ const Footer = () => {
               <h6 className="text-linear-3">Our Services</h6>
               <ul className="menu-footer">
                 <li>
-                  <a href="#">Car Rental Services</a>
+                  <div >Car Rental Services</div>
                 </li>
                 <li>
-                  <a href="#">Vehicle Leasing Options</a>
+                 <div >Vehicle Leasing Options</div>
                 </li>
                 <li>
-                  <a href="#">Long-Term Car Rentals</a>
+                 <div >Long-Term Car Rentals</div>
                 </li>
-             
+
                 <li>
-                  <a href="#">Luxury Car Rentals</a>
-                </li>
-                <li>
-                  <a href="#">Rent-to-Own Programs</a>
+                 <div >Luxury Car Rentals</div>
                 </li>
                 <li>
-                  <a href="#">Fleet Management Solutions</a>
+                 <div >Rent-to-Own Programs</div>
+                </li>
+                <li>
+                 <div >Fleet Management Solutions</div>
                 </li>
               </ul>
             </div>
@@ -95,18 +99,17 @@ const Footer = () => {
               <h6 className="text-linear-3">Our Partners</h6>
               <ul className="menu-footer">
                 <li>
-                  <a href="#">Affiliates</a>
+                  <div >Affiliates</div>
                 </li>
                 <li>
-                  <a href="#">Travel Agents</a>
+                  <div >Travel Agents</div>
                 </li>
-      
-              
+
                 <li>
-                  <a href="#">Work with us</a>
+                  <div >Work with us</div>
                 </li>
                 <li>
-                  <a href="#">Advertise with us</a>
+                  <div >Advertise with us</div>
                 </li>
               </ul>
             </div>
@@ -114,20 +117,20 @@ const Footer = () => {
               <h6 className="text-linear-3">Support</h6>
               <ul className="menu-footer">
                 <li>
-                  <a href="#">Forum support</a>
+                  <div >Forum support</div>
                 </li>
                 <li>
-                  <a href="#">Help Center</a>
+                  <div >Help Center</div>
                 </li>
-           
+
                 <li>
-                  <a href="#">How it works</a>
-                </li>
-                <li>
-                  <a href="#">Security</a>
+                  <div >How it works</div>
                 </li>
                 <li>
-                  <a href="#">Refund Policy</a>
+                  <div >Security</div>
+                </li>
+                <li>
+                  <div >Refund Policy</div>
                 </li>
               </ul>
             </div>
@@ -145,7 +148,10 @@ const Footer = () => {
                     Follow us
                   </p>
                   <div className="box-socials-footer d-inline-block">
-                    <a className="icon-socials icon-instagram" href="https://www.instagram.com/anytimerentacar/">
+                    <a
+                      className="icon-socials icon-instagram"
+                      href="https://www.instagram.com/anytimerentacar/"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={21}
@@ -159,7 +165,10 @@ const Footer = () => {
                         />
                       </svg>
                     </a>
-                    <a className="icon-socials icon-facebook" href="https://www.facebook.com/profile.php?id=100063691263239">
+                    <a
+                      className="icon-socials icon-facebook"
+                      href="https://www.facebook.com/profile.php?id=100063691263239"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={21}
@@ -173,7 +182,7 @@ const Footer = () => {
                         />
                       </svg>
                     </a>
-                    <a className="icon-socials icon-twitter" href="#">
+                    <a className="icon-socials icon-twitter" >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={21}
@@ -187,7 +196,7 @@ const Footer = () => {
                         />
                       </svg>
                     </a>
-                    <a className="icon-socials icon-be" href="#">
+                    <a className="icon-socials icon-be" >
                       <svg
                         width={21}
                         height={15}

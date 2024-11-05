@@ -6309,15 +6309,15 @@ a.icon-socials:hover svg path {
 .footer .menu-footer li:last-child {
   padding-right: 0px;
 }
-.footer .menu-footer li a {
+.footer .menu-footer li  {
   color: var(--bs-neutral-400);
   font-size: 16px;
   text-decoration: none;
   transition-duration: 0.2s;
   line-height: 26px;
 }
-.footer .menu-footer li a:hover {
-  color: var(--bs-neutral-0);
+.footer .menu-footer li :hover {
+  color: grey;
   transition-duration: 0.2s;
   padding-left: 3px;
   transition-duration: 0.2s;
@@ -8877,7 +8877,7 @@ a.icon-socials:hover svg path {
   align-items: center;
   padding: 14px 16px;
   border: 1px solid var(--bs-border-color);
-  background-color: var(--bs-background-2);
+  background-color: var(--bs-background-6);
   border-radius: 4px;
 }
 .list-feature-car .item-feature-car .item-feature-car-inner .feature-image {

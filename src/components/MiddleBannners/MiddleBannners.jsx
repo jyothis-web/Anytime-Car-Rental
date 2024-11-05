@@ -1,7 +1,7 @@
 const MiddleBannners = () => {
   return (
-    <div>
-      <section className="section-cta-4 position-relative overflow-hidden">
+    <div style={{marginTop:"90px"}}>
+      <section className="section-cta-4  position-relative overflow-hidden">
         <div className="bg-shape" />
         <div className="container position-relative z-1">
           <div className="text-center">
