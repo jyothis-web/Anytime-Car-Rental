@@ -140,7 +140,7 @@ const SearchedVehicles = () => {
                             <div className="card-button">
                             <Link to={`/CarDetilPage/${car._id}`}>
                               <div className="btn btn-gray">
-                                Book Now
+                              More Info
                               </div>
                               </Link>
                             </div>

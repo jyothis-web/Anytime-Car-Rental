@@ -44,7 +44,6 @@
   }
   .navbar-title {
     font-size: 18px;
-    color: white;
     padding-right: 20px;
   }
 
@@ -59,7 +58,7 @@
   }
   .navbar-title {
     font-size: 18px;
-    color: white;
+    color: black;
     padding-right: 20px;
     cursor: pointer;
   }

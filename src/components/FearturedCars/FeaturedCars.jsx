@@ -143,7 +143,7 @@ const FeaturedCars = () => {
                           <div className="card-latest-button">
                             {" "}
                             {/* Added classes here */}
-                            Book Now
+                            More Info
                           </div>
                         </Link>
                       </div>

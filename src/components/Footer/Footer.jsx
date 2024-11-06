@@ -66,9 +66,7 @@ const Footer = () => {
                 <li>
                   <div >Privacy Notice</div>
                 </li>
-                <li>
-                  <div >Lost &amp; Found</div>
-                </li>
+           
               </ul>
             </div>
             <div className="col-md-2 col-xs-6 footer-2">

@@ -48,7 +48,7 @@ export default function NavbarMobile() {
   const list = (anchor) => (
     <Box
       sx={{
-        background: "black",
+        background: "white",
         width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
       }}
       role="presentation"
@@ -71,7 +71,12 @@ export default function NavbarMobile() {
               gap: "10px",
             }}
           >
-            <img src="" alt="logo" height={"50px"} />
+           <img
+                  className="light-mode"
+                  alt="Anytime car rental"
+                  src="/logo.avif"
+                  height={"50px"}
+                />
           </div>
           <div>
             <Button onClick={toggleDrawer(anchor, false)}>
@@ -98,7 +103,7 @@ export default function NavbarMobile() {
                 className="navbar-title"
                 style={{
                   textDecoration: "none",
-                  color: "white",
+                  color: "black",
                   width: "100%", 
                 }}
               >
@@ -126,7 +131,7 @@ export default function NavbarMobile() {
             sx={{ outline: "none", border: "none" }}
             onClick={toggleDrawer(anchor, true)}
           >
-            <MenuIcon sx={{ fontSize: "40px", color: "white" }} />
+            <MenuIcon sx={{ fontSize: "40px", color: "#2174b6" }} />
           </IconButton>
           <Drawer
             anchor={anchor}

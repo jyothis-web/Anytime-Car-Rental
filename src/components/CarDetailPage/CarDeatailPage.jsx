@@ -310,7 +310,7 @@ const CarDeatailPage = () => {
                         </div>
                         <div className="feature-info">
                           <p className="text-md-medium neutral-1000">
-                            {product.bootCapacity}
+                            {product.bootCapacity} Litres
                           </p>
                         </div>
                       </div>

@@ -103,7 +103,7 @@ const PopularCars = () => {
                         <div className="card-latest-button padding-popular">
                           {" "}
                           {/* Added classes here */}
-                          Book Now
+                          More Info
                         </div>
                       </Link>
                     </div>
