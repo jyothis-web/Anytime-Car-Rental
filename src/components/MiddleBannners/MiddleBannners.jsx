@@ -30,8 +30,7 @@ const MiddleBannners = () => {
                   Looking for a Car Rental Services?
                 </h6>
                 <p className="text-md-regular wow fadeInUp">
-                  Experience the freedom of the open road with our comprehensive
-                  car rental services.
+                Embrace the freedom of the open road with our all-inclusive car rental services, offering convenience, flexibility, and a perfect ride for every journey.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">
@@ -57,19 +56,22 @@ const MiddleBannners = () => {
             </div>
             <div className="col-lg-4 text-center wow fadeInUp">
               <div className="bg-white rounded-12 p-5 d-flex flex-column gap-4">
-              <span className="icon-shape icon_70 background-6 rounded-circle wow fadeIn">
+                <span className="icon-shape icon_70 background-6 rounded-circle wow fadeIn">
                   <img
                     className="dark-invert"
                     src="assets/imgs/cta/cta-4/icon-2.svg"
                     alt="Anytime car rental"
                   />
                 </span>
-                <h6 className="wow fadeInUp" style={{textAlign:"left"}}>
-                  Looking for a Car Rental Services?
+                <h6 className="wow fadeInUp" style={{ textAlign: "left" }}>
+                  Looking for a Transportation Services?
                 </h6>
-                <p className="text-md-regular wow fadeInUp" style={{textAlign:"left"}}>
-                  Experience the freedom of the open road with our comprehensive
-                  car rental services.
+                <p
+                  className="text-md-regular wow fadeInUp"
+                  style={{ textAlign: "left" }}
+                >
+                  Our staff transportation solutions are designed to streamline your operations,
+                  boost morale, and increase productivity.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">
@@ -108,8 +110,7 @@ const MiddleBannners = () => {
                   Looking for a Limousine Services?
                 </h6>
                 <p className="text-md-regular wow fadeInUp">
-                  Experience the epitome of luxury travel with our exquisite
-                  limousines.
+                Experience the epitome of luxury travel with our exquisite, top-of-the-line limousines, designed to offer unparalleled comfort, style, and sophistication.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">

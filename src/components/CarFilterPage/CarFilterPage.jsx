@@ -11,6 +11,7 @@ import CarPriceDisplay from "./CarPriceDisplay";
 import { Link, useParams } from "react-router-dom";
 import Loading from "../../pages/Loading";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
 
 const CarFilterPage = () => {
   const dispatch = useDispatch();
@@ -95,6 +96,52 @@ const CarFilterPage = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Anytime Qatar | Best Car Rental Services in Qatar</title>
+        <meta
+          name="description"
+          content="Discover Anytime Qatar's top car rental services, offering luxury cars, airport transfers, and limousine services tailored to your needs. Rent a car for business, travel, or special events across Qatar."
+        />
+
+        <meta
+          name="keywords"
+          content="car rental Qatar, luxury car rental Qatar, best car rental in Qatar, Qatar car hire, airport transfer Qatar, limousine service Qatar, chauffeur service Qatar, affordable car rental Qatar, car hire Doha, rent a car Al Rayyan"
+        />
+
+        <link rel="canonical" href="https://anytimeqatar.com/cars" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Anytime Qatar | Premium Car Rental Services"
+        />
+        <meta
+          property="og:description"
+          content="Elevate your journey with Anytime Qatar's premium car rental, limousine services, and airport transfer solutions. Perfect for all your transportation needs in Qatar."
+        />
+        <meta property="og:url" content="https://anytimeqatar.com/cars" />
+        <meta
+          property="og:image"
+          content="https://anytimeqatar.com/images/premium-car-rental.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@anytimeqatar" />
+        <meta
+          name="twitter:title"
+          content="Anytime Qatar | Car Rental & Limousine Services"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore Qatar with our fleet of luxury vehicles and top-rated transportation services. Perfect for business, travel, and special events."
+        />
+        <meta
+          name="twitter:image"
+          content="https://anytimeqatar.com/images/premium-car-rental.jpg"
+        />
+      </Helmet>
       <>
         <Navbar />
         {/* offCanvas Sidebar */}
@@ -168,7 +215,7 @@ const CarFilterPage = () => {
                     filteredCars.map((car, index) => (
                       <div key={index} className="col-lg-3 col-md-6">
                         <div className="card-journey-small background-card hover-up">
-                          <div style={{minHeight:"190px"}}>
+                          <div style={{ minHeight: "190px" }}>
                             {car.carImage1 && (
                               <img
                                 src={`${import.meta.env.VITE_URL}${
@@ -219,8 +266,7 @@ const CarFilterPage = () => {
                                     <i
                                       className="fa fa-tachometer-alt"
                                       aria-hidden="true"
-                                    style={{ marginRight: "8px" }}
-
+                                      style={{ marginRight: "8px" }}
                                     ></i>
                                     {car.mileage} Km
                                   </p>
@@ -228,8 +274,7 @@ const CarFilterPage = () => {
                                     <i
                                       className="fa fa-cog"
                                       aria-hidden="true"
-                                    style={{ marginRight: "8px" }}
-
+                                      style={{ marginRight: "8px" }}
                                     ></i>
                                     {car.transmission}
                                   </p>
@@ -239,8 +284,7 @@ const CarFilterPage = () => {
                                     <i
                                       className="fa fa-gas-pump"
                                       aria-hidden="true"
-                                    style={{ marginRight: "8px" }}
-
+                                      style={{ marginRight: "8px" }}
                                     ></i>
                                     {car.fuel}
                                   </p>
@@ -248,8 +292,7 @@ const CarFilterPage = () => {
                                     <i
                                       className="fa fa-user-friends"
                                       aria-hidden="true"
-                                    style={{ marginRight: "8px" }}
-
+                                      style={{ marginRight: "8px" }}
                                     ></i>
                                     {car.seat} seats
                                   </p>

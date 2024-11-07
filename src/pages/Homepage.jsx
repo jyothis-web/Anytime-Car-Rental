@@ -8,39 +8,41 @@ const Homepage = () => {
   return (
     <div>
       <Helmet>
-        <title>AnyTimeCarRental</title>
+        <title>Anytime Qatar | best Car Rental in Qatar</title>
         <meta
           name="description"
-          content="Designers & Manufacturers of Eco-Friendly & Sustainable Paper Bags"
+          content="Explore premium car rentals, limousine services, and transportation options in Qatar. From luxury car rentals to airport transfers, enjoy high-quality services tailored to your needs."
         />
+
         <meta
           name="keywords"
-          content="CCTV installation,CCTV camera,CCTV system,Automated gate,Automatic gate,Smart home automation,Home security system,Home automation system,Security system installation,Light automation,Smart lighting"
+          content="car rental Qatar, limousine service Qatar, transportation service Qatar, rent a car Qatar, luxury car rental Qatar, airport transfer Qatar, chauffeur service Qatar"
         />
-        <link rel="canonical" href="http://sequrhomautomations.com/" />
+
+        <link rel="canonical" href="https://anytimeqatar.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="SeQurHom" />
+        <meta property="og:title" content="Anytime Rent Car" />
         <meta
           property="og:description"
-          content="At SequrHom, we specialize in providing eco-friendly home automation and advanced security solutions that fit your budget. Our commitment to perfection and cost-effective projects has earned us the trust of our clients. We offer cutting-edge technology with full guarantees, ensuring your home is safe and smart. Our services include Gate Automation, Home Automation, Security Surveillance Systems, Access Control, and more. Choose SequrHom for reliable and modern solutions to secure and automate your home."
+          content="Elevate your Qatar experience with our premium car rental, limousine service, and airport transfer solutions with Anytime Car Rental."
         />
-        <meta property="og:url" content="http://sequrhomautomations.com/" />
+        <meta property="og:url" content="https://anytimeqatar.com/" />
         <meta
           property="og:image"
-          content="http://sequrhomautomations.com/public/favicon.png"
+          content="https://anytimeqatar.com/favicon.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@twitterhandle" />
-        <meta name="twitter:title" content="SequrHom" />
+        <meta name="twitter:title" content="Anytime rent a car" />
         <meta
           name="twitter:description"
-          content="At SequrHom, we specialize in providing eco-friendly home automation and advanced security solutions that fit your budget. Our commitment to perfection and cost-effective projects has earned us the trust of our clients. We offer cutting-edge technology with full guarantees, ensuring your home is safe and smart. Our services include Gate Automation, Home Automation, Security Surveillance Systems, Access Control, and more. Choose SequrHom for reliable and modern solutions to secure and automate your home."
+          content="Explore Qatar in style and comfort with our diverse fleet of luxury vehicles and professional chauffeurs."
         />
         <meta
           name="twitter:image"
-          content="http://sequrhomautomations.com/public/favicon.png"
+          content="https://anytimeqatar.com/favicon.png"
         />
       </Helmet>
 

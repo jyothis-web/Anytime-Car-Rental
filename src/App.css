@@ -6274,10 +6274,9 @@ a.icon-socials:last-child {
 a.icon-socials:hover {
   transform: translateY(-3px);
   transition-duration: 0.2s;
+
 }
-a.icon-socials:hover svg path {
-  fill: #2174b6;
-}
+
 
 .footer-1 {
   width: 30%;
@@ -8632,9 +8631,7 @@ a.icon-socials:hover {
   transform: translateY(-3px);
   transition-duration: 0.2s;
 }
-a.icon-socials:hover svg path {
-  fill: #2174b6;
-}
+
 
 .box-socials svg path {
   fill: var(--bs-neutral-1000) !important;

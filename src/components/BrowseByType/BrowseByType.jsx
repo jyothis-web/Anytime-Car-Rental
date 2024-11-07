@@ -99,7 +99,6 @@ const BrowseByType = () => {
                   </div>
                 </div>
               </div>
-
               <div className="custom-col">
                 <div
                   className="card-popular background-card hover-up wow fadeIn"
@@ -157,7 +156,6 @@ const BrowseByType = () => {
                   </div>
                 </div>
               </div>
-
               <div className="custom-col">
                 <div
                   className="card-popular background-card hover-up wow fadeIn"
@@ -165,7 +163,7 @@ const BrowseByType = () => {
                 >
                   <div
                     className=""
-                    onClick={() => handleCategoryClick("Sedan")}
+                    onClick={() => handleCategoryClick("SUV")}
                   >
                     <div className="card-title" style={{ cursor: "pointer" }}>
                       <img

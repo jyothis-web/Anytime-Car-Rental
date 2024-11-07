@@ -2,10 +2,52 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import CounterDigits from "../CounterDigits/CounterDigits";
+import { Helmet } from "react-helmet-async";
 
 const ServicesPage = () => {
   return (
     <div>
+      <Helmet>
+        <title>Best Car Rental & Limousine Service in Qatar</title>
+
+        <meta
+          name="description"
+          content="Discover premium car rental options across Qatar with daily, weekly, and monthly rentals available. Choose from luxury and executive limousine services, including airport, wedding, and corporate transportation options. Convenient rental services are offered in Doha, Al Khor, Al Wakrah, and Umm Salal to meet your transportation needs, whether for individual or group travel."
+        />
+
+        <meta
+          name="keywords"
+          content="Affordable car rental Qatar, luxury car rental Doha, budget car rental Doha, cheap car hire Qatar, best car rental company Qatar, reliable car rental Qatar, executive car rental Qatar, corporate car rental Qatar, wedding car rental Qatar, airport pickup and drop Qatar, hourly car rental Qatar."
+        />
+
+        <link rel="canonical" href={`${import.meta.env.VITE_URL}`} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Anytime Rent Car" />
+        <meta
+          property="og:description"
+          content="Elevate your Qatar experience with our premium car rental, limousine service, and airport transfer solutions with Anytime Car Rental."
+        />
+        <meta property="og:url" content={`${import.meta.env.VITE_URL}`} />
+        <meta
+          property="og:image"
+          content={`${import.meta.env.VITE_URL}favicon.png`}
+        />
+
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@twitterhandle" />
+        <meta name="twitter:title" content="Anytime rent a car" />
+        <meta
+          name="twitter:description"
+          content="Explore Qatar in style and comfort with our diverse fleet of luxury vehicles and professional chauffeurs."
+        />
+        <meta
+          name="twitter:image"
+          content="https://anytimeqatar.com/favicon.png"
+        />
+      </Helmet>
       <Navbar />
 
       {/* offCanvas Sidebar */}
@@ -38,7 +80,7 @@ const ServicesPage = () => {
                   alt="Anytime car rental"
                 />
               </span>
-              <Link to="/Services"  className="neutral-1000 text-md-bold">
+              <Link to="/Services" className="neutral-1000 text-md-bold">
                 Services
               </Link>
             </div>
@@ -76,10 +118,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         Car & Bus Rentals with and Without Driver
                       </div>
                       <p className="text-md-medium neutral-500 mt-2">
@@ -106,10 +145,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         Commercial Rental with and Without Driver
                       </div>
                       <p className="text-md-medium neutral-500 mt-2">
@@ -136,10 +172,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         Limousine Service
                       </div>
                       <p className="text-md-medium neutral-500 mt-2">
@@ -168,10 +201,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         Providing Trained Driver for long term customer with
                         special rate
                       </div>
@@ -199,10 +229,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         Vallet Service
                       </div>
                       <p className="text-md-medium neutral-500 mt-2">
@@ -216,7 +243,10 @@ const ServicesPage = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24 wow fadeIn"   data-wow-delay="0.6s">
+                <div
+                  className="card-news background-card hover-up mb-24 wow fadeIn"
+                  data-wow-delay="0.6s"
+                >
                   <div className="card-image">
                     <img
                       src="assets/imgs/services/services-list-1/img-9.png"
@@ -225,10 +255,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         Premium Car Rentals with Well Trained Driver
                       </div>
                       <p className="text-md-medium neutral-500 mt-2">
@@ -244,7 +271,8 @@ const ServicesPage = () => {
             </div>
             <div className="row mt-50">
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24  wow fadeIn"
+                <div
+                  className="card-news background-card hover-up mb-24  wow fadeIn"
                   data-wow-delay="0.7s"
                 >
                   <div className="card-image">
@@ -255,10 +283,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         City Tour Services
                       </div>
                       <p className="text-md-medium neutral-500 mt-2">
@@ -273,7 +298,8 @@ const ServicesPage = () => {
               </div>
 
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24  wow fadeIn"
+                <div
+                  className="card-news background-card hover-up mb-24  wow fadeIn"
                   data-wow-delay="0.8s"
                 >
                   <div className="card-image">
@@ -284,10 +310,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         Pick-up and Drop-off Services
                       </div>
                       <p className="text-md-medium neutral-500 mt-2">
@@ -301,7 +324,8 @@ const ServicesPage = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
-                <div className="card-news background-card hover-up mb-24  wow fadeIn"
+                <div
+                  className="card-news background-card hover-up mb-24  wow fadeIn"
                   data-wow-delay="0.8s"
                 >
                   <div className="card-image">
@@ -312,10 +336,7 @@ const ServicesPage = () => {
                   </div>
                   <div className="card-info">
                     <div className="card-title mb-3">
-                      <div
-                        className="text-xl-bold neutral-1000"
-                       
-                      >
+                      <div className="text-xl-bold neutral-1000">
                         Delivery Services
                       </div>
                       <p className="text-md-medium neutral-500 mt-2">
@@ -363,7 +384,6 @@ const ServicesPage = () => {
                     <div className="col">
                       <ul className="list-ticks-green ">
                         <div
-                        
                           style={{
                             display: "flex",
                             alignItems: "center",
@@ -517,7 +537,7 @@ const ServicesPage = () => {
                       </ul>
                     </div>
                   </div>
-                  <a className="btn btn-primary mt-2" >
+                  <a className="btn btn-primary mt-2">
                     Get Started Now
                     <svg
                       width={16}

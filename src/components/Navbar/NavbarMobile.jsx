@@ -71,12 +71,12 @@ export default function NavbarMobile() {
               gap: "10px",
             }}
           >
-           <img
-                  className="light-mode"
-                  alt="Anytime car rental"
-                  src="/logo.avif"
-                  height={"50px"}
-                />
+            <img
+              className="light-mode"
+              alt="Anytime car rental"
+              src="/logo.avif"
+              height={"50px"}
+            />
           </div>
           <div>
             <Button onClick={toggleDrawer(anchor, false)}>
@@ -87,7 +87,7 @@ export default function NavbarMobile() {
 
         {[
           { text: "Home", link: "/" },
-          { text: "About Us", link: "/About" },
+          { text: "About Us", link: "/Aboutus" },
           { text: "Services", link: "/Services" },
           { text: "Contact Us", link: "/ContactPage" },
         ].map((item, index) => (
@@ -104,7 +104,7 @@ export default function NavbarMobile() {
                 style={{
                   textDecoration: "none",
                   color: "black",
-                  width: "100%", 
+                  width: "100%",
                 }}
               >
                 {item.text}

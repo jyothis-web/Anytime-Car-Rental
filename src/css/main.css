@@ -6131,13 +6131,13 @@ label {
 .mobile-social-icon a img {
   max-width: 18px;
 }
-.mobile-social-icon a img:hover {
-  opacity: 0.8;
-}
+
 .mobile-social-icon a:hover {
   transform: translateY(-2px);
   transition-duration: 0.5s;
   margin-top: -2px;
+  background: #efeaff;
+
 }
 .mobile-social-icon a:last-child {
   margin-right: 0;
@@ -6270,9 +6270,7 @@ a.icon-socials:hover {
   transform: translateY(-3px);
   transition-duration: 0.2s;
 }
-a.icon-socials:hover svg path {
-  fill: #70f46d;
-}
+
 
 .footer-1 {
   width: 30%;
@@ -8640,9 +8638,7 @@ a.icon-socials:hover {
   transform: translateY(-3px);
   transition-duration: 0.2s;
 }
-a.icon-socials:hover svg path {
-  fill: #70f46d;
-}
+
 
 .box-socials svg path {
   fill: var(--bs-neutral-1000) !important;

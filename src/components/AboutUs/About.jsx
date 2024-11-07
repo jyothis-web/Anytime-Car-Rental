@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const faqData = [
@@ -68,6 +69,46 @@ const About = () => {
   ];
   return (
     <div>
+      <Helmet>
+        <title>
+          Anytime | Limousine Service & Transportation Company in Qatar
+        </title>
+        <meta
+          name="description"
+          content="Affordable car rental Qatar, luxury car rental Doha, budget car rental Doha, cheap car hire Qatar, best car rental company Qatar, reliable car rental Qatar, executive car rental Qatar, corporate car rental Qatar, wedding car rental Qatar, airport pickup and drop Qatar, hourly car rental Qatar."
+        />
+
+        <meta
+          name="keywords"
+          content="Affordable car rental Qatar, luxury car rental Doha, budget car rental Doha, cheap car hire Qatar, best car rental company Qatar, reliable car rental Qatar, executive car rental Qatar, corporate car rental Qatar, wedding car rental Qatar, airport pickup and drop Qatar, hourly car rental Qatar."
+        />
+
+        <link rel="canonical" href="https://anytimeqatar.com/About" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Anytime Rent Car" />
+        <meta
+          property="og:description"
+          content="Elevate your Qatar experience with our premium car rental, limousine service, and airport transfer solutions with Anytime Car Rental."
+        />
+        <meta property="og:url" content="https://anytimeqatar.com/" />
+        <meta
+          property="og:image"
+          content="https://anytimeqatar.com/favicon.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@twitterhandle" />
+        <meta name="twitter:title" content="Anytime rent a car" />
+        <meta
+          name="twitter:description"
+          content="Explore Qatar in style and comfort with our diverse fleet of luxury vehicles and professional chauffeurs."
+        />
+        <meta
+          name="twitter:image"
+          content="https://anytimeqatar.com/favicon.png"
+        />
+      </Helmet>
       <Navbar />
 
       <main className="main">
@@ -120,8 +161,8 @@ const About = () => {
               </div>
               <div className="col-lg-7 offset-lg-1">
                 <p className="text-lg-medium neutral-500">
-                  Since 2013, Anytime car rental Rent a Car has been Standout in the Car
-                  rental industry, offering extraordinary services that
+                  Since 2013, Anytime car rental Rent a Car has been Standout in
+                  the Car rental industry, offering extraordinary services that
                   transcend the ordinary. with a diverse fleet ranging from
                   Sedans to SUVs and 4x4s, we craft a personalized experience
                   for every traveler. Embark on a journey, not just to a
@@ -350,10 +391,10 @@ const About = () => {
                     embrace new ways of traveling, work, and live, ultimately
                     improving the quality of life for everyone.
                   </p>
-                 
+
                   <Link to="/CarFilterPage">
                     <div className="btn btn-primary mt-2">
-                    Get Your Wheels
+                      Get Your Wheels
                       <svg
                         width={16}
                         height={16}
@@ -441,7 +482,8 @@ const About = () => {
                     Our Vision
                   </div>
                   <h4 className="mb-4 neutral-1000">
-                    Anytime car rental offers trasparent pricing and 24/7 support.
+                    Anytime car rental offers trasparent pricing and 24/7
+                    support.
                   </h4>
                   <p className="text-lg-medium neutral-500 mb-4">
                     Empowering individuals to embrace their journeys with
@@ -452,13 +494,11 @@ const About = () => {
                     individual preferences, interests, and budgets.
                   </p>
                   <div className="row">
-                    <div className="col">
-                   
-                    </div>
+                    <div className="col"></div>
                   </div>
                   <Link to="/CarFilterPage">
                     <div className="btn btn-primary mt-2">
-                    Get Your Wheels
+                      Get Your Wheels
                       <svg
                         width={16}
                         height={16}

@@ -116,7 +116,7 @@ const Navbar = () => {
               <Link to="/" className="navbar-title">
                 Home
               </Link>
-              <Link to="/About" className="navbar-title">
+              <Link to="/Aboutus" className="navbar-title">
                 About Us
               </Link>
               <Link to="/Services" className="navbar-title">

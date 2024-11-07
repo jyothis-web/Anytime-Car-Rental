@@ -9,6 +9,8 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
+import Loading from "../../pages/Loading";
 
 const CarDeatailPage = () => {
   const { id } = useParams();
@@ -79,12 +81,74 @@ const CarDeatailPage = () => {
     }
   };
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading)
+    return (
+      <p>
+        <Loading />
+      </p>
+    );
   if (error) return <p>Error: {error}</p>;
   if (!product) return <p>No product found.</p>;
   return (
     <div>
-      {/* offCanvas Sidebar */}
+      <Helmet>
+        <title>Anytime | Best {product.brandModel} Car Rental in Qatar</title>
+        <meta
+          name="description"
+          content={`Rent the lowest price ${product.brandModel} in Qatar with Anytime. Discover ${product.brand} for your next ride for airport transfers, corporate needs, and special events. ${product.description2}`}
+        />
+
+        <meta
+          name="keywords"
+          content={`car rental Qatar, ${product.brandModel} rental Qatar, ${product.brand} rental Qatar, luxury car rental Qatar, best car rental in Qatar, ${product.brandModel} hire Doha, ${product.brandModel} rental Al Wakrah, ${product.brandModel} rent Al Khor`}
+        />
+
+        <link
+          rel="canonical"
+          href={`${import.meta.env.VITE_URL}CarDetilPage/${product.id}`}
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content={`Anytime | ${product.brandModel} Rental in Qatar`}
+        />
+        <meta
+          property="og:description"
+          content={`Elevate your journey with a ${product.brandModel} rental from Anytime Qatar. Luxurious, affordable, and perfect for travel, events, and corporate needs in Qatar.`}
+        />
+        <meta
+          property="og:url"
+          content={`${import.meta.env.VITE_URL}CarDetilPage/${product.id}`}
+        />
+        <meta
+          property="og:image"
+          content={`${import.meta.env.VITE_URL}${
+            mainImage ||
+            (images && images.length > 0 ? images[0] : "default-car-image.jpg")
+          }`}
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@anytimeqatar" />
+        <meta
+          name="twitter:title"
+          content={`Rent ${product.brandModel} | Anytime Qatar`}
+        />
+        <meta
+          name="twitter:description"
+          content={`Explore Qatar with the ${product.brandModel} from Anytime. Perfect for luxury car rentals, airport transfers, and events.`}
+        />
+        <meta
+          name="twitter:image"
+          content={`${import.meta.env.VITE_URL}${
+            mainImage ||
+            (images && images.length > 0 ? images[0] : "default-car-image.jpg")
+          }`}
+        />
+      </Helmet>
 
       <main className="main">
         {/* prettier-ignore */}
@@ -210,9 +274,7 @@ const CarDeatailPage = () => {
               <div className="row">
                 <div className="col-lg-8">
                   <div className="tour-title-main">
-                    <h4 className="neutral-1000">
-                      {product.brandModel}
-                    </h4>
+                    <h4 className="neutral-1000">{product.brandModel}</h4>
                   </div>
                   <div className="tour-meta-right">
                     <div className="btn btn-share" onClick={shareDetails}>
@@ -428,7 +490,10 @@ const CarDeatailPage = () => {
                             onClick={() => {
                               const message = `I'm interested in renting the car: ${product.brandModel}. Please provide further details.`;
                               const phoneNumber = "+97471120333";
-                              const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\+/g, '')}?text=${encodeURIComponent(message)}`;
+                              const whatsappUrl = `https://wa.me/${phoneNumber.replace(
+                                /\+/g,
+                                ""
+                              )}?text=${encodeURIComponent(message)}`;
                               window.open(whatsappUrl, "_blank");
                             }}
                           >

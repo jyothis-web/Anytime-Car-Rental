@@ -22,7 +22,7 @@ const Footer = () => {
                   />
                 </Link>
                 <div className="box-info-contact mt-0">
-                  <p  className="text-md  icon-address ">
+                  <p className="text-md  icon-address ">
                     Street No 955, Building No 128, Zone 56
                     <br />
                     Food Supply Co Building, Mezzanine Floor
@@ -33,9 +33,7 @@ const Footer = () => {
                   <p className="text-md  icon-worktime">
                     Hours: 8:00 - 17:00, Mon - Sat
                   </p>
-                  <p className="text-md  icon-email">
-                    info@anytimeqatar.com
-                  </p>
+                  <p className="text-md  icon-email">info@anytimeqatar.com</p>
                 </div>
                 <div className="box-need-help">
                   <p className="need-help text-md-medium mb-5">
@@ -55,41 +53,40 @@ const Footer = () => {
               <h6 className="text-linear-3">Company</h6>
               <ul className="menu-footer">
                 <li>
-                  <div >About Us</div>
+                  <div>About Us</div>
                 </li>
                 <li>
-                  <div >Copyright Notices</div>
+                  <div>Copyright Notices</div>
                 </li>
                 <li>
-                  <div >Terms of Use</div>
+                  <div>Terms of Use</div>
                 </li>
                 <li>
-                  <div >Privacy Notice</div>
+                  <div>Privacy Notice</div>
                 </li>
-           
               </ul>
             </div>
             <div className="col-md-2 col-xs-6 footer-2">
               <h6 className="text-linear-3">Our Services</h6>
               <ul className="menu-footer">
                 <li>
-                  <div >Car Rental Services</div>
+                  <div>Car Rental Services</div>
                 </li>
                 <li>
-                 <div >Vehicle Leasing Options</div>
+                  <div>Vehicle Leasing Options</div>
                 </li>
                 <li>
-                 <div >Long-Term Car Rentals</div>
+                  <div>Long-Term Car Rentals</div>
                 </li>
 
                 <li>
-                 <div >Luxury Car Rentals</div>
+                  <div>Luxury Car Rentals</div>
                 </li>
                 <li>
-                 <div >Rent-to-Own Programs</div>
+                  <div>Rent-to-Own Programs</div>
                 </li>
                 <li>
-                 <div >Fleet Management Solutions</div>
+                  <div>Fleet Management Solutions</div>
                 </li>
               </ul>
             </div>
@@ -97,17 +94,17 @@ const Footer = () => {
               <h6 className="text-linear-3">Our Partners</h6>
               <ul className="menu-footer">
                 <li>
-                  <div >Affiliates</div>
+                  <div>Affiliates</div>
                 </li>
                 <li>
-                  <div >Travel Agents</div>
+                  <div>Travel Agents</div>
                 </li>
 
                 <li>
-                  <div >Work with us</div>
+                  <div>Work with us</div>
                 </li>
                 <li>
-                  <div >Advertise with us</div>
+                  <div>Advertise with us</div>
                 </li>
               </ul>
             </div>
@@ -115,20 +112,20 @@ const Footer = () => {
               <h6 className="text-linear-3">Support</h6>
               <ul className="menu-footer">
                 <li>
-                  <div >Forum support</div>
+                  <div>Forum support</div>
                 </li>
                 <li>
-                  <div >Help Center</div>
+                  <div>Help Center</div>
                 </li>
 
                 <li>
-                  <div >How it works</div>
+                  <div>How it works</div>
                 </li>
                 <li>
-                  <div >Security</div>
+                  <div>Security</div>
                 </li>
                 <li>
-                  <div >Refund Policy</div>
+                  <div>Refund Policy</div>
                 </li>
               </ul>
             </div>
@@ -149,6 +146,8 @@ const Footer = () => {
                     <a
                       className="icon-socials icon-instagram"
                       href="https://www.instagram.com/anytimerentacar/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -166,6 +165,8 @@ const Footer = () => {
                     <a
                       className="icon-socials icon-facebook"
                       href="https://www.facebook.com/profile.php?id=100063691263239"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +181,12 @@ const Footer = () => {
                         />
                       </svg>
                     </a>
-                    <a className="icon-socials icon-twitter" >
+                    <a
+                      className="icon-socials icon-twitter"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={21}
@@ -194,7 +200,12 @@ const Footer = () => {
                         />
                       </svg>
                     </a>
-                    <a className="icon-socials icon-be" >
+                    <a
+                      className="icon-socials icon-be"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg
                         width={21}
                         height={15}
