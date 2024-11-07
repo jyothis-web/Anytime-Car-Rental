@@ -44,7 +44,7 @@ const Navbar = () => {
                   fill="#2174b6"
                 />
               </svg>
-              <span className="d-none d-lg-inline-block">+97 4711 20333</span>
+              <span className="d-none d-lg-inline-block">+974 711 20333</span>
             </a>
             <a className="email-head text-black" href="mailto:info@anytimeqatar.com">
               <svg

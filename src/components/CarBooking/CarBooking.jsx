@@ -18,7 +18,6 @@ const CarBooking = () => {
 
   return (
     <div className="car-booking">
-        <div className="container">
           <div className="box-search-advance-form background-card wow fadeInUp mb-5">
             <div className="input-container">
               <div className="input-group-form">
@@ -87,7 +86,6 @@ const CarBooking = () => {
               </div>
             </div>
           </div>
-        </div>
     </div>
   );
 };

@@ -1324,6 +1324,11 @@ p {
   background-color: var(--bs-brand-2) !important;
 }
 
+.custom-col {
+  flex: 0 0 20%; /* Set each column to 20% width on large screens */
+  max-width: 20%;
+}
+
 /*Datepick style*/
 .datepicker table tr td,
 .datepicker table tr th {
@@ -10993,8 +10998,18 @@ a.icon-socials:hover svg path {
   .box-list-flights-2 .item-flight .flight-route.flight-route-type-2 .flight-route-2 {
     justify-content: space-between;
   }
+
+  .custom-col {
+    flex: 0 0 50%; /* Set each column to 20% width on large screens */
+    max-width: 100%;
+  }
+
+
 }
 @media (max-width: 991.98px) {
+
+ 
+
   .page-header .custom-container {
     min-height: 280px;
     max-width: 98%;
@@ -11630,6 +11645,9 @@ a.icon-socials:hover svg path {
   .footer-4,
   .footer-5 {
     width: 100%;
+  }
+  .custom-col {
+    flex: 1 1 100%; 
   }
   .header .main-header .header-right {
     min-width: 150px;

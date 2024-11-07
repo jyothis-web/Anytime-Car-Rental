@@ -2,14 +2,15 @@
   position: absolute;
   top: 25%;
   right: 20px;
-  width: 400px;
+  width: 350px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #fff;
   z-index: 2;
 }
 .box-search-advance-form {
-  padding: 10px 15px;
+  padding: 30px 20px;
+  border-radius: 8px;
 }
 .container-search-advance {
   width: 100%;
@@ -32,16 +33,16 @@
   justify-content: flex-start;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1068px) {
   .car-booking {
-    top: 15%;
-    right: 10%;
+    top: 120px;
+    right: 50px;
     padding: 15px;
   }
 }
 @media (max-width: 768px) {
   .car-booking {
-    top: 15%; /* Adjusted for better centering on larger screens */
+    top: 100px;
     left: 50%;
     right: auto; /* Remove `right` positioning */
     transform: translateX(-50%); /* Center horizontally */

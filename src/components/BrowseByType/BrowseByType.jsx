@@ -45,7 +45,7 @@ const BrowseByType = () => {
           </div>
           <div className="box-list-populars">
             <div className="row">
-              <div className="col-lg-3 col-sm-6">
+              <div className="custom-col">
                 <div
                   className="card-popular background-card hover-up wow fadeIn"
                   data-wow-delay="0.3s"
@@ -100,7 +100,7 @@ const BrowseByType = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              <div className="custom-col">
                 <div
                   className="card-popular background-card hover-up wow fadeIn"
                   data-wow-delay="0.4s"
@@ -157,7 +157,7 @@ const BrowseByType = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              <div className="custom-col">
                 <div
                   className="card-popular background-card hover-up wow fadeIn"
                   data-wow-delay="0.3s"
@@ -212,7 +212,58 @@ const BrowseByType = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6">
+              <div className="custom-col">
+                <div
+                  className="card-popular background-card hover-up wow fadeIn"
+                  data-wow-delay="0.4s"
+                >
+                  <div className="">
+                    <div
+                      className="card-title"
+                      style={{cursor:"pointer"}}
+                      onClick={() => handleCategoryClick("Luxury")}
+                    >
+                      <img
+                        src="assets/imgs/categories/categories-1/van.avif"
+                        alt="Carento"
+                        style={{borderRadius:"8px"}}
+                      />
+                    </div>
+                  </div>
+                  <div className="card-info">
+                    <div className="card-meta">
+                      <div
+                        className="meta-links"
+                        onClick={() => handleCategoryClick("Luxury")}
+                      >
+                        <div className="card-title"   style={{cursor:"pointer"}}>Luxury</div>
+                      </div>
+                      <div
+                        className="card-button"
+                        onClick={() => handleCategoryClick("Luxury")}
+                      >
+                        <div className="arrow">
+                          <svg
+                            width={10}
+                            height={10}
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011"
+                              stroke="#000"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="custom-col">
                 <div
                   className="card-popular background-card hover-up wow fadeIn"
                   data-wow-delay="0.4s"

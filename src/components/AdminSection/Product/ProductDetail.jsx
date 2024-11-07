@@ -289,6 +289,7 @@ const ProductDetail = () => {
                     <option value="Hatchback">Hatchback</option>
                     <option value="Sedan">Sedan</option>
                     <option value="SUV">SUV</option>
+                    <option value="Luxury">Luxury</option>
                     <option value="Mini SUV">Mini SUV</option>
                     <option value="Coupe">Coupe</option>
                     <option value="Convertible">Convertible</option>

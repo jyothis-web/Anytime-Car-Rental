@@ -70,6 +70,18 @@ const CarFilterCategory = ({ onFilterChange }) => {
               Mini SUV
             </label>
           </div>
+          <div className="dropdown-item checkbox-container">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                value="Luxury"
+                checked={selectedCategories.includes("Luxury")}
+                onChange={() => handleCheckboxChange("Luxury")}
+              />
+              Luxury
+            </label>
+          </div>
+          
           {/* Add more categories as needed */}
         </li>
       </ul>

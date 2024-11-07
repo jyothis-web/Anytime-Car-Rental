@@ -211,7 +211,7 @@ const CarDeatailPage = () => {
                 <div className="col-lg-8">
                   <div className="tour-title-main">
                     <h4 className="neutral-1000">
-                      {product.brand} - {product.brandModel}
+                      {product.brandModel}
                     </h4>
                   </div>
                   <div className="tour-meta-right">
