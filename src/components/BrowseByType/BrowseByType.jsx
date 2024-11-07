@@ -3,7 +3,6 @@ const BrowseByType = () => {
   const navigate = useNavigate();
 
   const handleCategoryClick = (category) => {
-   
     navigate(`/CarFilterPage/${category}`);
   };
 
@@ -54,11 +53,125 @@ const BrowseByType = () => {
                     className=""
                     onClick={() => handleCategoryClick("Sedan")}
                   >
-                    <div className="card-title"   style={{cursor:"pointer"}}>
+                    <div className="card-title" style={{ cursor: "pointer" }}>
+                      <img
+                        src="assets/imgs/categories/categories-1/car-3.png"
+                        alt="Carento"
+                        style={{ borderRadius: "8px" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="card-info">
+                    <div className="card-meta">
+                      <div className="meta-links">
+                        <div
+                          className="card-title"
+                          style={{ cursor: "pointer" }}
+                          onClick={() => handleCategoryClick("Sedan")}
+                        >
+                          {" "}
+                          Sedan
+                        </div>
+                      </div>
+                      <div
+                        style={{ cursor: "pointer" }}
+                        className="card-button"
+                        onClick={() => handleCategoryClick("Sedan")}
+                      >
+                        <div className="arrow">
+                          <svg
+                            width={10}
+                            height={10}
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011"
+                              stroke="#000"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="custom-col">
+                <div
+                  className="card-popular background-card hover-up wow fadeIn"
+                  data-wow-delay="0.4s"
+                >
+                  <div className="">
+                    <div
+                      style={{ cursor: "pointer" }}
+                      className="card-title"
+                      onClick={() => handleCategoryClick("Mini SUV")}
+                    >
+                      <img
+                        src="assets/imgs/categories/categories-1/car-2.png"
+                        alt="Carento"
+                        style={{ borderRadius: "8px" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="card-info">
+                    <div className="card-meta">
+                      <div
+                        className="meta-links"
+                        onClick={() => handleCategoryClick("Mini SUV")}
+                      >
+                        <div
+                          style={{ cursor: "pointer" }}
+                          className="card-title"
+                        >
+                          Mini SUV
+                        </div>
+                      </div>
+                      <div
+                        style={{ cursor: "pointer" }}
+                        className="card-button"
+                        onClick={() => handleCategoryClick("Mini SUV")}
+                      >
+                        <div className="arrow">
+                          <svg
+                            width={10}
+                            height={10}
+                            viewBox="0 0 10 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011"
+                              stroke="#000"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="custom-col">
+                <div
+                  className="card-popular background-card hover-up wow fadeIn"
+                  data-wow-delay="0.3s"
+                >
+                  <div
+                    className=""
+                    onClick={() => handleCategoryClick("Sedan")}
+                  >
+                    <div className="card-title" style={{ cursor: "pointer" }}>
                       <img
                         src="assets/imgs/categories/categories-1/car-1.png"
                         alt="Carento"
-                        style={{borderRadius:"8px"}}
+                        style={{ borderRadius: "8px" }}
                       />
                     </div>
                   </div>
@@ -107,126 +220,14 @@ const BrowseByType = () => {
                 >
                   <div className="">
                     <div
+                      className="card-title"
                       style={{ cursor: "pointer" }}
-                      className="card-title"
-                      onClick={() => handleCategoryClick("Mini SUV")}
-                    >
-                      <img
-                        src="assets/imgs/categories/categories-1/car-2.png"
-                        alt="Carento"
-                        style={{borderRadius:"8px"}}
-                      />
-                    </div>
-                  </div>
-                  <div className="card-info">
-                    <div className="card-meta">
-                      <div
-                        className="meta-links"
-                        onClick={() => handleCategoryClick("Mini SUV")}
-                      >
-                        <div
-                          style={{ cursor: "pointer" }}
-                          className="card-title"
-                        >
-                          Mini SUV
-                        </div>
-                      </div>
-                      <div
-                        style={{ cursor: "pointer" }}
-                        className="card-button"
-                        onClick={() => handleCategoryClick("Mini SUV")}
-                      >
-                        <div className="arrow">
-                          <svg
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011"
-                              stroke="#000"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="custom-col">
-                <div
-                  className="card-popular background-card hover-up wow fadeIn"
-                  data-wow-delay="0.3s"
-                >
-                  <div
-                    className=""
-                    onClick={() => handleCategoryClick("Sedan")}
-                  >
-                    <div className="card-title"   style={{cursor:"pointer"}}>
-                      <img
-                        src="assets/imgs/categories/categories-1/car-3.png"
-                        alt="Carento"
-                        style={{borderRadius:"8px"}}
-                      />
-                    </div>
-                  </div>
-                  <div className="card-info">
-                    <div className="card-meta">
-                      <div className="meta-links">
-                        <div
-                          className="card-title"
-                          style={{ cursor: "pointer" }}
-                          onClick={() => handleCategoryClick("Sedan")}
-                        >
-                          {" "}
-                          Sedan
-                        </div>
-                      </div>
-                      <div
-                        style={{ cursor: "pointer" }}
-                        className="card-button"
-                        onClick={() => handleCategoryClick("Sedan")}
-                      >
-                        <div className="arrow">
-                          <svg
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M5.00011 9.08347L9.08347 5.00011L5.00011 0.916748M9.08347 5.00011L0.916748 5.00011"
-                              stroke="#000"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="custom-col">
-                <div
-                  className="card-popular background-card hover-up wow fadeIn"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="">
-                    <div
-                      className="card-title"
-                      style={{cursor:"pointer"}}
                       onClick={() => handleCategoryClick("Luxury")}
                     >
                       <img
                         src="assets/imgs/categories/categories-1/van.avif"
                         alt="Carento"
-                        style={{borderRadius:"8px"}}
+                        style={{ borderRadius: "8px" }}
                       />
                     </div>
                   </div>
@@ -236,7 +237,12 @@ const BrowseByType = () => {
                         className="meta-links"
                         onClick={() => handleCategoryClick("Luxury")}
                       >
-                        <div className="card-title"   style={{cursor:"pointer"}}>Luxury</div>
+                        <div
+                          className="card-title"
+                          style={{ cursor: "pointer" }}
+                        >
+                          Luxury
+                        </div>
                       </div>
                       <div
                         className="card-button"
@@ -271,13 +277,13 @@ const BrowseByType = () => {
                   <div className="">
                     <div
                       className="card-title"
-                      style={{cursor:"pointer"}}
+                      style={{ cursor: "pointer" }}
                       onClick={() => handleCategoryClick("Van")}
                     >
                       <img
                         src="assets/imgs/categories/categories-1/van.avif"
                         alt="Carento"
-                        style={{borderRadius:"8px"}}
+                        style={{ borderRadius: "8px" }}
                       />
                     </div>
                   </div>
@@ -287,7 +293,12 @@ const BrowseByType = () => {
                         className="meta-links"
                         onClick={() => handleCategoryClick("Van")}
                       >
-                        <div className="card-title"   style={{cursor:"pointer"}}>Van</div>
+                        <div
+                          className="card-title"
+                          style={{ cursor: "pointer" }}
+                        >
+                          Van
+                        </div>
                       </div>
                       <div
                         className="card-button"
