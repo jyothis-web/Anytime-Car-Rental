@@ -12,7 +12,8 @@ const Banner = () => {
               <div className="fade-in">
                 <img
                   src="/assets/banner.avif"
-                  alt="Banner"
+                  alt="Qatar Banner - Anytime Car Rental"
+                  title="Explore Qatar with Anytime Car Rental - Premium Car Rental Services"
                   className="banner-image"
                 />
               </div>

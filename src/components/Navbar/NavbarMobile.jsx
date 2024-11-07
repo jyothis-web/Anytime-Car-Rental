@@ -73,9 +73,10 @@ export default function NavbarMobile() {
           >
             <img
               className="light-mode"
-              alt="Anytime car rental"
+              alt="Anytime Car Rental Logo"
+              title="Anytime Car Rental - Premium Car Rental Services in Qatar"
               src="/logo.avif"
-              height={"50px"}
+              height="50px"
             />
           </div>
           <div>

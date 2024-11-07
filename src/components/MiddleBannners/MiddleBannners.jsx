@@ -23,14 +23,17 @@ const MiddleBannners = () => {
                   <img
                     className="dark-invert"
                     src="assets/imgs/cta/cta-4/icon-1.svg"
-                    alt="Anytime car rental"
+                    alt="Icon representing Anytime Car Rental services"
+                    title="Anytime Car Rental Services"
                   />
                 </span>
                 <h6 className=" wow fadeInUp">
                   Looking for a Car Rental Services?
                 </h6>
                 <p className="text-md-regular wow fadeInUp">
-                Embrace the freedom of the open road with our all-inclusive car rental services, offering convenience, flexibility, and a perfect ride for every journey.
+                  Embrace the freedom of the open road with our all-inclusive
+                  car rental services, offering convenience, flexibility, and a
+                  perfect ride for every journey.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">
@@ -60,7 +63,8 @@ const MiddleBannners = () => {
                   <img
                     className="dark-invert"
                     src="assets/imgs/cta/cta-4/icon-2.svg"
-                    alt="Anytime car rental"
+                    alt="second Icon representing Anytime Car Rental services"
+                    title="Anytime Car Rental Services"
                   />
                 </span>
                 <h6 className="wow fadeInUp" style={{ textAlign: "left" }}>
@@ -70,8 +74,8 @@ const MiddleBannners = () => {
                   className="text-md-regular wow fadeInUp"
                   style={{ textAlign: "left" }}
                 >
-                  Our staff transportation solutions are designed to streamline your operations,
-                  boost morale, and increase productivity.
+                  Our staff transportation solutions are designed to streamline
+                  your operations, boost morale, and increase productivity.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">
@@ -95,7 +99,11 @@ const MiddleBannners = () => {
                 </Link>
               </div>
 
-              <img src="assets/imgs/banners/2.avif" alt="Carento" />
+              <img
+                src="assets/imgs/banners/2.avif"
+                alt="Suzuki Dzire - Carento Car Rental"
+                title="Suzuki Dzire available at Carento Car Rental"
+              />
             </div>
             <div className="col-lg-4">
               <div className="bg-white rounded-12 p-5 d-flex flex-column gap-4">
@@ -103,14 +111,17 @@ const MiddleBannners = () => {
                   <img
                     className="dark-invert"
                     src="assets/imgs/cta/cta-4/icon-2.svg"
-                    alt="Anytime car rental"
+                    alt="Icon representing Anytime Car Rental services"
+                    title="Anytime Car Rental Services"
                   />
                 </span>
                 <h6 className=" wow fadeInUp">
                   Looking for a Limousine Services?
                 </h6>
                 <p className="text-md-regular wow fadeInUp">
-                Experience the epitome of luxury travel with our exquisite, top-of-the-line limousines, designed to offer unparalleled comfort, style, and sophistication.
+                  Experience the epitome of luxury travel with our exquisite,
+                  top-of-the-line limousines, designed to offer unparalleled
+                  comfort, style, and sophistication.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">

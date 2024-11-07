@@ -56,7 +56,8 @@ const BrowseByType = () => {
                     <div className="card-title" style={{ cursor: "pointer" }}>
                       <img
                         src="assets/imgs/categories/categories-1/car-3.png"
-                        alt="Carento"
+                        alt="Sedan Car - Anytime Car Rental"
+                        title="Sedan Car available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}
                       />
                     </div>
@@ -112,7 +113,8 @@ const BrowseByType = () => {
                     >
                       <img
                         src="assets/imgs/categories/categories-1/car-2.png"
-                        alt="Carento"
+                        alt="Mini suv Car - Anytime Car Rental"
+                        title="Mini suv Car available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}
                       />
                     </div>
@@ -161,14 +163,12 @@ const BrowseByType = () => {
                   className="card-popular background-card hover-up wow fadeIn"
                   data-wow-delay="0.3s"
                 >
-                  <div
-                    className=""
-                    onClick={() => handleCategoryClick("SUV")}
-                  >
+                  <div className="" onClick={() => handleCategoryClick("SUV")}>
                     <div className="card-title" style={{ cursor: "pointer" }}>
                       <img
                         src="assets/imgs/categories/categories-1/car-1.png"
-                        alt="Carento"
+                        alt="SUV Car - Anytime Car Rental"
+                        title="SUV Car available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}
                       />
                     </div>
@@ -224,7 +224,8 @@ const BrowseByType = () => {
                     >
                       <img
                         src="assets/imgs/categories/categories-1/van.avif"
-                        alt="Carento"
+                        alt="Luxury Car - Anytime Car Rental"
+                        title="Luxury Car available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}
                       />
                     </div>
@@ -280,7 +281,8 @@ const BrowseByType = () => {
                     >
                       <img
                         src="assets/imgs/categories/categories-1/van.avif"
-                        alt="Carento"
+                        alt="Van - Anytime Car Rental"
+                        title="Van available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}
                       />
                     </div>

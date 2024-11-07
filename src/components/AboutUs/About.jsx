@@ -118,7 +118,8 @@ const About = () => {
               <img
                 className="w-100 h-100 img-banner"
                 src="assets/imgs/page-header/banner.png"
-                alt="Anytime car rental"
+                alt="Banner image for Anytime Car Rental services in Qatar"
+                title="Explore Anytime Car Rental - Premium Car Rental Services in Qatar"
               />
             </div>
             <div className="container position-absolute z-1 top-50 start-50 translate-middle">
@@ -134,7 +135,8 @@ const About = () => {
               <span>
                 <img
                   src="assets/imgs/template/icons/arrow-right.svg"
-                  alt="Anytime car rental"
+                  alt="Anytime car rental right arrow"
+                  title="right arrow for slide"
                 />
               </span>
               <Link to="/About" className="neutral-1000 text-md-bold">
@@ -180,7 +182,7 @@ const About = () => {
                   <img
                     className="rounded-12"
                     src="assets/imgs/section-1/img-1.png"
-                    alt="Anytime car rental"
+                    alt="Anytime car rental "
                   />
                   <div className="box-tag bg-white p-3 d-flex position-absolute bottom-0 end-0 rounded-12 m-3"></div>
                 </div>
