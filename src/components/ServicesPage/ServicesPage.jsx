@@ -91,16 +91,14 @@ const ServicesPage = () => {
           <div className="container">
             <div className="row align-items-end">
               <div className="col-lg-7">
-                <h3 className="neutral-1000">
-                  Comprehensive <span className="text-primary">Car Rental</span>
-                  Services to Meet All Your Needs
+                <h3 className="neutral-1000" >
+                  Comprehensive <span className="text-primary">Car Rental</span> &nbsp;
+                  Services to Meet<br/> All Your Needs
                 </h3>
               </div>
               <div className="col-lg-5">
                 <p className="text-lg-medium neutral-500">
-                  From daily rentals to long-term solutions, we offer a
-                  comprehensive range of vehicles and services to suit every
-                  need and budget.
+                At Anytime Car Rental, we provide a full spectrum of vehicle rental options, whether you need a car for a day, a week, or a longer commitment. Our fleet ranges from economy cars to premium options, catering to every need and budget. With a commitment to customer satisfaction, Anytime Car Rental ensures you drive with comfort and confidence, anytime, anywhere.
                 </p>
               </div>
             </div>
@@ -112,7 +110,7 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-1.png"
+                      src="assets/imgs/services/services-list-1/1.avif"
                       alt="Anytime car rental"
                     />
                   </div>
@@ -139,8 +137,8 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Anytime car rental"
+                      src="assets/imgs/services/services-list-1/2.avif"
+                      alt="Anytime Commercial Rental with and Without Driver "
                     />
                   </div>
                   <div className="card-info">
@@ -166,8 +164,8 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Anytime car rental"
+                      src="assets/imgs/services/services-list-1/3.avif"
+                      alt="Anytime car rental Limousine Service"
                     />
                   </div>
                   <div className="card-info">
@@ -195,8 +193,9 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-1.png"
-                      alt="Anytime car rental"
+                      src="assets/imgs/services/services-list-1/4.avif
+                      "
+                      alt="Anytime car rental Providing Trained Driver"
                     />
                   </div>
                   <div className="card-info">
@@ -223,8 +222,8 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Anytime car rental"
+                      src="assets/imgs/services/services-list-1/5.avif"
+                      alt="Anytime car rental Vallet Service"
                     />
                   </div>
                   <div className="card-info">
@@ -249,8 +248,8 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Anytime car rental"
+                      src="assets/imgs/services/services-list-1/6.avif"
+                      alt="Anytime Premium Car Rentals"
                     />
                   </div>
                   <div className="card-info">
@@ -277,8 +276,8 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-1.png"
-                      alt="Anytime car rental"
+                      src="assets/imgs/services/services-list-1/7.avif"
+                      alt="Anytime car rental City Tour Services"
                     />
                   </div>
                   <div className="card-info">
@@ -304,8 +303,8 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-9.png"
-                      alt="Anytime car rental"
+                      src="assets/imgs/services/services-list-1/8.avif"
+                      alt="Anytime car rental Pick-up and Drop-off Services"
                     />
                   </div>
                   <div className="card-info">
@@ -330,7 +329,7 @@ const ServicesPage = () => {
                 >
                   <div className="card-image">
                     <img
-                      src="assets/imgs/services/services-list-1/img-9.png"
+                      src="assets/imgs/services/services-list-1/9.avif"
                       alt="Anytime car rental"
                     />
                   </div>

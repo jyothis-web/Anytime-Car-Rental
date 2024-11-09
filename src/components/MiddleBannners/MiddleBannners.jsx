@@ -31,9 +31,7 @@ const MiddleBannners = () => {
                   Looking for a Car Rental Services?
                 </h6>
                 <p className="text-md-regular wow fadeInUp">
-                  Embrace the freedom of the open road with our all-inclusive
-                  car rental services, offering convenience, flexibility, and a
-                  perfect ride for every journey.
+                Anytime Qatar Rent a Car service embrace the freedom of the open road with our all-inclusive car rental services, offering convenience, flexibility, and a perfect ride for every journey.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">
@@ -62,7 +60,7 @@ const MiddleBannners = () => {
                 <span className="icon-shape icon_70 background-6 rounded-circle wow fadeIn">
                   <img
                     className="dark-invert"
-                    src="assets/imgs/cta/cta-4/icon-2.svg"
+                    src="assets/imgs/cta/cta-4/transportation.svg"
                     alt="second Icon representing Anytime Car Rental services"
                     title="Anytime Car Rental Services"
                   />
@@ -74,8 +72,7 @@ const MiddleBannners = () => {
                   className="text-md-regular wow fadeInUp"
                   style={{ textAlign: "left" }}
                 >
-                  Our staff transportation solutions are designed to streamline
-                  your operations, boost morale, and increase productivity.
+           Our staff transportation solutions are designed to streamline your operations, boost morale, and increase productivity. Looking for the best transportation facility in Qatar, Anytime Qatar will be the right option.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">
@@ -119,9 +116,7 @@ const MiddleBannners = () => {
                   Looking for a Limousine Services?
                 </h6>
                 <p className="text-md-regular wow fadeInUp">
-                  Experience the epitome of luxury travel with our exquisite,
-                  top-of-the-line limousines, designed to offer unparalleled
-                  comfort, style, and sophistication.
+                Experience the epitome of luxury travel with Anytime Qatar&apos;s best Limousine service with exquisite, top-of-the-line limousines, designed to offer unparalleled comfort, style, and sophistication.
                 </p>
                 <Link to="/CarFilterPage">
                   <div className="btn btn-primary wow fadeInUp">

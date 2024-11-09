@@ -12,7 +12,7 @@ import { Link, useParams } from "react-router-dom";
 import Loading from "../../pages/Loading";
 import Footer from "../Footer/Footer";
 import { Helmet } from "react-helmet-async";
-
+import img from "../../images/banner6.png"
 const CarFilterPage = () => {
   const dispatch = useDispatch();
   const { category } = useParams();
@@ -153,7 +153,7 @@ const CarFilterPage = () => {
               <div className="bg-overlay rounded-12 overflow-hidden">
                 <img
                   className="w-100 h-100 img-fluid img-banner"
-                  src="assets/imgs/page-header/banner6.png"
+                  src={img}
                   alt="Anytime car rental"
                 />
               </div>

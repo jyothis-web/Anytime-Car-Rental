@@ -163,15 +163,7 @@ const About = () => {
               </div>
               <div className="col-lg-7 offset-lg-1">
                 <p className="text-lg-medium neutral-500">
-                  Since 2013, Anytime car rental Rent a Car has been Standout in
-                  the Car rental industry, offering extraordinary services that
-                  transcend the ordinary. with a diverse fleet ranging from
-                  Sedans to SUVs and 4x4s, we craft a personalized experience
-                  for every traveler. Embark on a journey, not just to a
-                  destination with our meticulously maintained fleet of the
-                  latest models. From the elegance of sedans to the versatility
-                  of SUVs and the rugged capability of 4x4s, our vehicles
-                  transform your travel into an unforgettable adventure.
+                Since 2013, Anytime Rent a Car, Qatar has been Standout in the Car rental industry, offering extraordinary services that transcend the ordinary, with a diverse fleet ranging from Sedans to SUVs, from Mini SUVs to Luxury Cars and 4x4s, we craft a personalized experience for every traveller. Embark on a journey, not just to a destination with our meticulously maintained fleet of leading brands and latest models. From the elegance of sedans to the versatility of SUVs and the rugged capability of 4x4s, our vehicles transform your travel into an unforgettable adventure in Qatar. Our Airport Pick up & Drop On Services, Limousine Services shoot in the first place in Customer Reviews and in Punctuality. Corporate clients rate us in top because of our excellent deals in transportation, all top companies in Qatar are our major clients  as we are the best in car rental, limousine and staff transportation services.
                 </p>
                 <br />
               </div>
@@ -396,7 +388,7 @@ const About = () => {
 
                   <Link to="/CarFilterPage">
                     <div className="btn btn-primary mt-2">
-                      Get Your Wheels
+                      Book Now
                       <svg
                         width={16}
                         height={16}
@@ -500,7 +492,7 @@ const About = () => {
                   </div>
                   <Link to="/CarFilterPage">
                     <div className="btn btn-primary mt-2">
-                      Get Your Wheels
+                      Book Now
                       <svg
                         width={16}
                         height={16}
