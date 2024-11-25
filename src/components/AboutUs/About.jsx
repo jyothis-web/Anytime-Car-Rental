@@ -413,14 +413,14 @@ const About = () => {
                       <div className="position-relative">
                         <img
                           className="bdrd8 w-100"
-                          src="assets/imgs/cta/cta-8/img-1.png"
+                          src="assets/imgs/cta/cta-8/1.jpg"
                           alt="Anytime car rental"
                         />
                       </div>
                       <div className="mt-auto">
                         <img
                           className="bdrd8 w-100"
-                          src="assets/imgs/cta/cta-8/img-2.png"
+                          src="assets/imgs/cta/cta-8/2.jpg"
                           alt="Anytime car rental"
                         />
                       </div>
@@ -429,14 +429,14 @@ const About = () => {
                       <div className="position-relative">
                         <img
                           className="bdrd8 w-100"
-                          src="assets/imgs/cta/cta-8/img-3.png"
+                          src="assets/imgs/cta/cta-8/3.jpg"
                           alt="Anytime car rental"
                         />
                       </div>
                       <div className="position-relative">
                         <img
                           className="bdrd8 w-100"
-                          src="assets/imgs/cta/cta-8/img-4.png"
+                          src="assets/imgs/cta/cta-8/4.jpg"
                           alt="Anytime car rental"
                         />
                       </div>
@@ -457,16 +457,13 @@ const About = () => {
                   <div className="card-image d-inline-block position-relative mb-100">
                     <img
                       className="rounded-12"
-                      src="assets/imgs/cta/cta-9/img-1.png"
+                      src="assets/imgs/cta/cta-9/1.avif"
                       alt="Anytime car rental"
                     />
-                    <a
-                      className="btn btn-play popup-youtube position-absolute top-50 start-50 translate-middle"
-                      href="https://www.youtube.com/watch?v=AOg61RB75Ho"
-                    />
+                    
                     <img
                       className="position-absolute top-100 start-100 translate-middle rounded-12 d-none d-md-block"
-                      src="assets/imgs/cta/cta-9/img-2.png"
+                      src="assets/imgs/cta/cta-9/2.avif"
                       alt="Anytime car rental"
                     />
                   </div>

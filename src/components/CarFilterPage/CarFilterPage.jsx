@@ -215,7 +215,7 @@ const CarFilterPage = () => {
                     filteredCars.map((car, index) => (
                       <div key={index} className="col-lg-3 col-md-6">
                         <div className="card-journey-small background-card hover-up">
-                          <div style={{ minHeight: "190px" }}>
+                          <div style={{ minHeight: "210px" }}>
                             {car.carImage1 && (
                               <img
                                 src={`${import.meta.env.VITE_URL}${

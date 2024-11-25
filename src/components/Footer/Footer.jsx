@@ -134,7 +134,10 @@ const Footer = () => {
             <div className="row align-items-center justify-content-center">
               <div className="col-md-6 text-md-start text-center mb-20">
                 <p className="text-sm color-white">
-                  © 2024 Anytime Inc. All rights reserved.
+                  © 2024 Anytime Rent a Car. All Rights Reserved. Powered by{" "}
+                  <a style={{ color: "whitesmoke" }} href="https://indall.com/">
+                    Indall
+                  </a>
                 </p>
               </div>
               <div className="col-md-6 text-md-end text-center mb-20">

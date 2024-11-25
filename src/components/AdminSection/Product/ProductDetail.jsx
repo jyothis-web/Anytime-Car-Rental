@@ -32,9 +32,13 @@ const ProductDetail = () => {
   const [carImages, setCarImages] = useState([
     null,
     null,
+    null,
+    null,
 
   ]);
   const [imagePreviews, setImagePreviews] = useState([
+    null,
+    null,
     null,
     null,
    
@@ -119,6 +123,8 @@ const ProductDetail = () => {
       const imagePreviews = [
         product.carImage1?.imagePath || null,
         product.carImage2?.imagePath || null,
+        product.carImage3?.imagePath || null,
+        product.carImage4?.imagePath || null,
        
       ];
       setImagePreviews(imagePreviews);
@@ -127,6 +133,8 @@ const ProductDetail = () => {
       const initialImages = [
         product.carImage1 || null,
         product.carImage2 || null,
+        product.carImage3 || null,
+        product.carImage4 || null,
       
       ];
       setCarImages(initialImages); // Assuming you have an array for images
