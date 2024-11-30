@@ -95,7 +95,7 @@ const CarFilterPrice = ({ onFilterChange }) => {
       />
       <div className="price-display">
         <p>
-          Price: ₹{minPrice} - ₹{maxPrice}
+           QAR &nbsp;({minPrice} - {maxPrice})
         </p>
       </div>
     </div>

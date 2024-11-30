@@ -124,7 +124,8 @@ const ContactPage = () => {
             <div className="divider"></div>
             <div className="info-box">
               <h2>CALL US</h2>
-              <p>+97 4711 20333</p>
+              <p>+974 71120333</p>
+              <p>+974 44361949</p>
 
               {/* <p>Email: forleodxb@gmail.com</p> */}
             </div>

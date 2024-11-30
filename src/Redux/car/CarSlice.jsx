@@ -8,7 +8,9 @@ export const createProduct = createAsyncThunk(
     try {
       const response = await axios.post(
         `${import.meta.env.VITE_URL}anytime/create-new-car`,
-        productData
+        productData, {
+          withCredentials: true, // Add this to send cookies with the request
+        }
       );
       console.log(response.data);
 
@@ -27,7 +29,9 @@ export const fetchProducts = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_URL}anytime/getAll-car`
+        `${import.meta.env.VITE_URL}anytime/getAll-car`, {
+          withCredentials: true, 
+        }
       );
       return response.data.cars; // Assuming the response has a
     } catch (error) {
@@ -44,7 +48,9 @@ export const fetchSingleProduct = createAsyncThunk(
   async (id, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_URL}anytime/singleCar/${id}`
+        `${import.meta.env.VITE_URL}anytime/singleCar/${id}`, {
+          withCredentials: true, // Add this to send cookies with the request
+        }
       ); // Adjust according to your API route
       return response.data.car; // Adjust based on API response
     } catch (error) {
@@ -62,7 +68,9 @@ export const updateProduct = createAsyncThunk(
     try {
       const response = await axios.put(
         `${import.meta.env.VITE_URL}anytime/update-car/${id}`,
-        updatedProduct,
+        updatedProduct, {
+          withCredentials: true, // Add this to send cookies with the request
+        },
         {
           headers: {
             "Content-Type": "application/json",
@@ -85,12 +93,15 @@ export const updateFirstProductImage = createAsyncThunk(
     try {
       const response = await axios.put(
         `${import.meta.env.VITE_URL}anytime/update-carImages/${id}`,
-        formData, // Send the FormData object
+        formData,  {
+          withCredentials: true, // Add this to send cookies with the request
+        },// Send the FormData object
         {
           headers: {
             "Content-Type": "multipart/form-data", // Set the correct content type
           },
         }
+        
       );
       console.log(response.data);
       return response.data;
@@ -107,7 +118,9 @@ export const deleteProduct = createAsyncThunk(
   "product/deleteProduct",
   async (id, { rejectWithValue }) => {
     try {
-      await axios.delete(`${import.meta.env.VITE_URL}anytime/deleteCar/${id}`);
+      await axios.delete(`${import.meta.env.VITE_URL}anytime/deleteCar/${id}`, {
+        withCredentials: true, // Add this to send cookies with the request
+      });
       return id; // Return the id for removal from the state
     } catch (error) {
       return rejectWithValue(

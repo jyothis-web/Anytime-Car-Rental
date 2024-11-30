@@ -44,7 +44,7 @@ const Navbar = () => {
                   fill="#2174b6"
                 />
               </svg>
-              <span className="d-none d-lg-inline-block">+974 711 20333</span>
+              <span className="d-none d-lg-inline-block">+974 71120333</span>
             </a>
             <a
               className="email-head text-black"

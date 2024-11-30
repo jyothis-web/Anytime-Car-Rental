@@ -65,6 +65,50 @@ const CarFilterBrand = ({ onFilterChange }) => {
               Toyota
             </label>
           </div>
+          <div className="dropdown-item checkbox-container">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                value="Hyundai"
+                checked={selectedBrands.includes("Hyundai")}
+                onChange={() => handleCheckboxChange("Hyundai")}
+              />
+              Hyundai
+            </label>
+          </div>
+          <div className="dropdown-item checkbox-container">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                value="Mitsubishi"
+                checked={selectedBrands.includes("Mitsubishi")}
+                onChange={() => handleCheckboxChange("Mitsubishi")}
+              />
+              Mitsubishi
+            </label>
+          </div>
+          <div className="dropdown-item checkbox-container">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                value="Geely"
+                checked={selectedBrands.includes("Geely")}
+                onChange={() => handleCheckboxChange("Geely")}
+              />
+              Geely
+            </label>
+          </div>
+          <div className="dropdown-item checkbox-container">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                value="Nissan"
+                checked={selectedBrands.includes("Nissan")}
+                onChange={() => handleCheckboxChange("Nissan")}
+              />
+              Nissan
+            </label>
+          </div>
           {/* Add more brands as needed */}
         </li>
       </ul>

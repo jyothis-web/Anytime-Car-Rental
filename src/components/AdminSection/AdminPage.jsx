@@ -12,6 +12,9 @@ const AdminPage = () => {
         <Link to="/ProductPage">
           <Button variant="outlined" className="nav-button">Manage cars</Button>
         </Link>
+        <Link to="/UploadPopupImage">
+          <Button variant="outlined" className="nav-button"> upload popupimage </Button>
+        </Link>
       </div>
     </div>
   );

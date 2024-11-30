@@ -36,17 +36,7 @@ const CarFilterCategory = ({ onFilterChange }) => {
         aria-labelledby="dropdownCategory1"
       >
         <li>
-          <div className="dropdown-item checkbox-container">
-            <label className="checkbox-label">
-              <input
-                type="checkbox"
-                value="SUV"
-                checked={selectedCategories.includes("SUV")}
-                onChange={() => handleCheckboxChange("SUV")}
-              />
-              SUV
-            </label>
-          </div>
+          
           <div className="dropdown-item checkbox-container">
             <label className="checkbox-label">
               <input
@@ -74,11 +64,33 @@ const CarFilterCategory = ({ onFilterChange }) => {
             <label className="checkbox-label">
               <input
                 type="checkbox"
+                value="SUV"
+                checked={selectedCategories.includes("SUV")}
+                onChange={() => handleCheckboxChange("SUV")}
+              />
+              SUV
+            </label>
+          </div>
+          <div className="dropdown-item checkbox-container">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
                 value="Luxury"
                 checked={selectedCategories.includes("Luxury")}
                 onChange={() => handleCheckboxChange("Luxury")}
               />
               Luxury
+            </label>
+          </div>
+          <div className="dropdown-item checkbox-container">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                value="Van"
+                checked={selectedCategories.includes("Van")}
+                onChange={() => handleCheckboxChange("Van")}
+              />
+              Van
             </label>
           </div>
           

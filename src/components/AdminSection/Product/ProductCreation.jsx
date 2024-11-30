@@ -33,7 +33,9 @@ const CreateCar = () => {
     try {
       const response = await axios.post(
         `${import.meta.env.VITE_URL}Anytime/create-new-car`,
-        carData
+        carData,{
+          withCredentials: true, // Add this to send cookies with the request
+        }
       );
       if (response.data.success) {
         alert("Car created successfully!");

@@ -176,7 +176,10 @@ const ProductDetail = () => {
     try {
       const response = await axios.put(
         `${import.meta.env.VITE_URL}Anytime/update-car/${id}`,
-        updatedProduct
+        updatedProduct,
+        {
+          withCredentials: true, // Add this to send cookies with the request
+        }
       );
 
       if (response.data.success) {

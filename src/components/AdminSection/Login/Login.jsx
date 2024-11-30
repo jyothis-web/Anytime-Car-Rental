@@ -1,7 +1,6 @@
 
 import "../Login/Login.css";
 import { useState } from "react";
-import toast from "react-hot-toast";
 import axios from "axios";
 import {Card } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -11,29 +10,27 @@ const UserLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  console.log(email,password);
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const response = await axios.post(`${import.meta.env.VITE_URL}/auth/login`, {
+      // Send the request with credentials
+      const response = await axios.post(`${import.meta.env.VITE_URL}auth/login`, {
         email,
         password,
-      });
+      },{
+        withCredentials: true,
+      }
+    );
+  
       console.log(response.data);
-      toast.success(response.data.message);
-      // setAuth({
-      //   ...auth,
-      //   user: response.data.user,
-      //   token: response.data.token,
-      // });
-      localStorage.setItem("auth", JSON.stringify(response.data));
-      //       const admintoken =localStorage.setItem(response.data.token);
-      // console.log(admintoken);
-        navigate("/AdminDashboard");
-      // Assuming `navigate` is defined somewhere, navigate to "/UserLogin"
+  
+      // Navigate to the AdminPage if the login is successful
+      navigate("/AdminPage");
     } catch (error) {
-      console.log(error.response.data.message);
-      console.error(error);
+      console.error("Login error:", error.response?.data?.message || error);
     }
   };
 

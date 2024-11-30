@@ -44,7 +44,7 @@ const Footer = () => {
                     className="heading-5 phone-support"
                     href="tel:+97433411122"
                   >
-                    +974 711 20333
+                    +974 71120333
                   </div>
                 </div>
               </div>
