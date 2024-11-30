@@ -29,11 +29,11 @@ function App() {
       const timer = setTimeout(async () => {
         try {
           // Fetch the image URL from the backend
-          const response = await axios.get("http://localhost:8080/Anytime/getFirstImage");
+          const response = await axios.get(`${import.meta.env.VITE_URL}Anytime/getFirstImage`);
           
           if (response.data.success && response.data.imagePath) {
             // If there is a valid image path, show the popup
-            setImageUrl(`http://localhost:8080/${response.data.imagePath}`);
+            setImageUrl(`${import.meta.env.VITE_URL}${response.data.imagePath}`);
             setShowPopup(true);
             sessionStorage.setItem("hasSeenPopup", "true");
           } else {
