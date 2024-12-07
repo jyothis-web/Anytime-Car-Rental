@@ -54,8 +54,8 @@ const CounterDigits = () => {
                   <h3 className="neutral-1000">+</h3>
                 </div>
                 <div className="text-md-start text-center">
-                  <p className="text-lg-bold neutral-1000">Vehicals</p>
-                  <p className="text-lg-bold neutral-1000">Stock</p>
+                  <p className="text-lg-bold neutral-1000">Fleet</p>
+                  {/* <p className="text-lg-bold neutral-1000">Fleet</p> */}
                 </div>
               </div>
 

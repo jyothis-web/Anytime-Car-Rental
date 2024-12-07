@@ -25,6 +25,7 @@
   text-align: left;
 }
 
+
 .info-box {
   margin-bottom: 20px;
 }
@@ -141,7 +142,7 @@
   }
 
   .map-container {
-    width: 96%;
+    width: 90%;
     height: 400px;
   }
 
@@ -158,7 +159,7 @@
 
 @media (max-width: 524px) {
   .map-container {
-    width: 100%;
+    width: 90%;
     height: 400px;
   }
 }
@@ -182,10 +183,7 @@
 }
 
 @media (max-width: 424px) {
-  .map-container {
-    width: 100%;
-    height: 400px;
-  }
+
   .form-group input,
   .form-group textarea {
     min-width: 280px;

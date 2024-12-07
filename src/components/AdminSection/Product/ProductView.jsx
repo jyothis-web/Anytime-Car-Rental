@@ -14,10 +14,6 @@ const ProductView = () => {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  useEffect(() => {
-    console.log("Fetched products:", products);
-  }, [products]);
-
   const filteredProducts = products.filter((product) =>
     product.brandModel
       ? product.brandModel.toLowerCase().includes(searchTerm.toLowerCase())

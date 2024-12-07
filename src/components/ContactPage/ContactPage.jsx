@@ -4,6 +4,7 @@ import "./ContactForm.css";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import axios from "axios";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const ContactPage = () => {
     phoneNumber: "",
     message: "",
   });
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,6 +20,23 @@ const ContactPage = () => {
       ...formData,
       [name]: value,
     });
+  };
+
+  // Handler to submit form
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Sending the emails as payload to the backend
+      const response = await axios.post(
+        `${import.meta.env.VITE_URL}auth/sendemail`,
+        formData
+      );
+      setMessage(response.data.message); // Show success message from server
+    } catch (error) {
+      setMessage("Error sending emails. Please try again.");
+      console.error(error);
+    }
   };
 
   return (
@@ -35,7 +54,7 @@ const ContactPage = () => {
           content="car rental Qatar contact, limousine service contact Qatar, transportation service Qatar, rent a car Qatar contact, airport transfer Qatar, chauffeur service Qatar, contact Anytime Car Rental"
         />
 
-        <link rel="canonical" href="https://anytimeqatar.com/Contact" />
+        <link rel="canonical" href={`${import.meta.env.VITE_URL}Contact`} />
 
         <meta property="og:type" content="website" />
         <meta
@@ -46,10 +65,13 @@ const ContactPage = () => {
           property="og:description"
           content="Get in touch with Anytime Car Rental for premium car rentals, limousine services, and airport transfers in Qatar. Contact us today for reliable and affordable transportation services."
         />
-        <meta property="og:url" content="https://anytimeqatar.com/Contact" />
+        <meta
+          property="og:url"
+          content={`${import.meta.env.VITE_URL}Contact`}
+        />
         <meta
           property="og:image"
-          content="https://anytimeqatar.com/favicon.png"
+          content={`${import.meta.env.VITE_URL}favicon.png`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -66,7 +88,7 @@ const ContactPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://anytimeqatar.com/favicon.png"
+          content={`${import.meta.env.VITE_URL}favicon.png`}
         />
       </Helmet>
 
@@ -78,11 +100,11 @@ const ContactPage = () => {
             <div className="bg-overlay rounded-12 overflow-hidden">
               <img
                 className="w-100 h-100 rounded-12 img-banner"
-                src="assets/imgs/page-header/banner4.png"
+                src="assets/imgs/page-header/banner-3.avif"
                 alt="Anytime car rental"
               />
             </div>
-            <div className="container position-absolute z-1 top-50 start-50 translate-middle">
+            <div className="container position-absolute z-1 top-70 start-50 translate-middle">
               <h2 className="text-white">Get in touch</h2>
             </div>
             <div className="background-body position-absolute z-1 top-100 start-50 translate-middle px-3 py-2 rounded-12 border d-flex gap-3 @@navigation-page">
@@ -140,44 +162,49 @@ const ContactPage = () => {
             <div className="form-heading">
               <h2>Get In Touch</h2>
             </div>
-            <form className="contact-form">
-              <div className="form-group">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  placeholder="Your Name"
-                  className="input-group"
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
-                  onChange={handleChange}
-                  required
-                  placeholder="Your Phone Number"
-                />
-              </div>
-              <div className="form-group">
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  placeholder="Your Message"
-                />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Send Message
-              </button>
-            </form>
+            <div>
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    placeholder="Your Name"
+                    className="input-group"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                    required
+                    placeholder="Your Phone Number"
+                    className="input-group"
+                  />
+                </div>
+                <div className="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    placeholder="Your Message"
+                    className="input-group"
+                  />
+                </div>
+                <button type="submit" className="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+              {message && <p className="response-message">{message}</p>}
+            </div>
           </div>
         </div>
       </main>

@@ -79,9 +79,7 @@ const ProductDetail = () => {
       }
     });
      // Log the FormData entries to check what is being sent
-     for (const [key, value] of formData.entries()) {
-      console.log("values",`${key}: ${value}`);
-  }
+    
 
     try {
       const resultAction = await dispatch(
@@ -168,10 +166,7 @@ const ProductDetail = () => {
     updatedProduct.append("description1", carData.description1);
     updatedProduct.append("description2", carData.description2);
 
-    // Log the formData contents for debugging
-    for (let [key, value] of updatedProduct.entries()) {
-      console.log(key, value); // Log each field in the formData
-    }
+
 
     try {
       const response = await axios.put(

@@ -55,7 +55,7 @@ const BrowseByType = () => {
                   >
                     <div className="card-title" style={{ cursor: "pointer" }}>
                       <img
-                        src="assets/imgs/categories/categories-1/car-3.png"
+                        src="assets/imgs/categories/categories-1/car-3.avif"
                         alt="Sedan Car - Anytime Car Rental"
                         title="Sedan Car available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}
@@ -112,7 +112,7 @@ const BrowseByType = () => {
                       onClick={() => handleCategoryClick("Mini SUV")}
                     >
                       <img
-                        src="assets/imgs/categories/categories-1/car-2.png"
+                        src="assets/imgs/categories/categories-1/car-2.avif"
                         alt="Mini suv Car - Anytime Car Rental"
                         title="Mini suv Car available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}
@@ -166,7 +166,7 @@ const BrowseByType = () => {
                   <div className="" onClick={() => handleCategoryClick("SUV")}>
                     <div className="card-title" style={{ cursor: "pointer" }}>
                       <img
-                        src="assets/imgs/categories/categories-1/car-1.png"
+                        src="assets/imgs/categories/categories-1/car-1.avif"
                         alt="SUV Car - Anytime Car Rental"
                         title="SUV Car available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}
@@ -223,7 +223,7 @@ const BrowseByType = () => {
                       onClick={() => handleCategoryClick("Luxury")}
                     >
                       <img
-                        src="assets/imgs/categories/categories-1/van.avif"
+                        src="assets/imgs/categories/categories-1/Land.avif"
                         alt="Luxury Car - Anytime Car Rental"
                         title="Luxury Car available at Anytime Car Rental"
                         style={{ borderRadius: "8px" }}

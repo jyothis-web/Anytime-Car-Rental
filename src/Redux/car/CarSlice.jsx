@@ -12,7 +12,7 @@ export const createProduct = createAsyncThunk(
           withCredentials: true, // Add this to send cookies with the request
         }
       );
-      console.log(response.data);
+    
 
       return response.data;
     } catch (error) {
@@ -77,7 +77,7 @@ export const updateProduct = createAsyncThunk(
           },
         }
       );
-      console.log(response.data);
+     
       return response.data;
     } catch (error) {
       return rejectWithValue(
@@ -103,7 +103,7 @@ export const updateFirstProductImage = createAsyncThunk(
         }
         
       );
-      console.log(response.data);
+   
       return response.data;
     } catch (error) {
       return rejectWithValue(

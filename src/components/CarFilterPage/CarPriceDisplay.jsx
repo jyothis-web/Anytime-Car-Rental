@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const CarPriceDisplay = ({ car }) => {
   return (
-    <div>
+    <div style={{maxWidth:"120px"}}>
       <div className="dropdown">
         <button
           className="btn btn-dropdown dropdown-toggle m-0"

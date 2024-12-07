@@ -83,17 +83,17 @@ const About = () => {
           content="Affordable car rental Qatar, luxury car rental Doha, budget car rental Doha, cheap car hire Qatar, best car rental company Qatar, reliable car rental Qatar, executive car rental Qatar, corporate car rental Qatar, wedding car rental Qatar, airport pickup and drop Qatar, hourly car rental Qatar."
         />
 
-        <link rel="canonical" href="https://anytimeqatar.com/About" />
+        <link rel="canonical" href={`${import.meta.env.VITE_URL}/About`} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Anytime Rent Car" />
         <meta
           property="og:description"
           content="Elevate your Qatar experience with our premium car rental, limousine service, and airport transfer solutions with Anytime Car Rental."
         />
-        <meta property="og:url" content="https://anytimeqatar.com/" />
+        <meta property="og:url" href={`${import.meta.env.VITE_URL}/About`} />
         <meta
           property="og:image"
-          content="https://anytimeqatar.com/favicon.png"
+          content={`${import.meta.env.VITE_URL}favicon.png`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -106,7 +106,7 @@ const About = () => {
         />
         <meta
           name="twitter:image"
-          content="https://anytimeqatar.com/favicon.png"
+          content={`${import.meta.env.VITE_URL}favicon.png`}
         />
       </Helmet>
       <Navbar />
@@ -117,7 +117,7 @@ const About = () => {
             <div className="bg-overlay rounded-12 overflow-hidden">
               <img
                 className="w-100 h-100 img-banner"
-                src="assets/imgs/page-header/banner.png"
+                src="assets/imgs/page-header/banner.avif"
                 alt="Banner image for Anytime Car Rental services in Qatar"
                 title="Explore Anytime Car Rental - Premium Car Rental Services in Qatar"
               />
@@ -163,7 +163,22 @@ const About = () => {
               </div>
               <div className="col-lg-7 offset-lg-1">
                 <p className="text-lg-medium neutral-500">
-                Since 2013, Anytime Rent a Car, Qatar has been Standout in the Car rental industry, offering extraordinary services that transcend the ordinary, with a diverse fleet ranging from Sedans to SUVs, from Mini SUVs to Luxury Cars and 4x4s, we craft a personalized experience for every traveller. Embark on a journey, not just to a destination with our meticulously maintained fleet of leading brands and latest models. From the elegance of sedans to the versatility of SUVs and the rugged capability of 4x4s, our vehicles transform your travel into an unforgettable adventure in Qatar. Our Airport Pick up & Drop On Services, Limousine Services shoot in the first place in Customer Reviews and in Punctuality. Corporate clients rate us in top because of our excellent deals in transportation, all top companies in Qatar are our major clients  as we are the best in car rental, limousine and staff transportation services.
+                  Since 2013, Anytime Rent a Car, Qatar has been Standout in the
+                  Car rental industry, offering extraordinary services that
+                  transcend the ordinary, with a diverse fleet ranging from
+                  Sedans to SUVs, from Mini SUVs to Luxury Cars and 4x4s, we
+                  craft a personalized experience for every traveller. Embark on
+                  a journey, not just to a destination with our meticulously
+                  maintained fleet of leading brands and latest models. From the
+                  elegance of sedans to the versatility of SUVs and the rugged
+                  capability of 4x4s, our vehicles transform your travel into an
+                  unforgettable adventure in Qatar. Our Airport Pick up & Drop
+                  On Services, Limousine Services shoot in the first place in
+                  Customer Reviews and in Punctuality. Corporate clients rate us
+                  in top because of our excellent deals in transportation, all
+                  top companies in Qatar are our major clients as we are the
+                  best in car rental, limousine and staff transportation
+                  services.
                 </p>
                 <br />
               </div>
@@ -372,8 +387,10 @@ const About = () => {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-5">
-                  <div className="btn btn-signin bg-6 text-dark mb-4">
-                    Our Mission
+                <div className=" mb-4">
+                    <span className="text-sm-bold bg-6 p-3 rounded-12 ">
+                      Our Mission
+                    </span>
                   </div>
                   <h4 className="mb-4 neutral-1000">
                     Make your travel experience memorable
@@ -460,7 +477,7 @@ const About = () => {
                       src="assets/imgs/cta/cta-9/1.avif"
                       alt="Anytime car rental"
                     />
-                    
+
                     <img
                       className="position-absolute top-100 start-100 translate-middle rounded-12 d-none d-md-block"
                       src="assets/imgs/cta/cta-9/2.avif"
@@ -469,11 +486,13 @@ const About = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 ps-lg-5">
-                  <div className="btn btn-signin bg-6 text-dark mb-4">
-                    Our Vision
+                  <div className=" mb-4">
+                    <span className="text-sm-bold bg-6 p-3 rounded-12 ">
+                      Our Vision
+                    </span>
                   </div>
                   <h4 className="mb-4 neutral-1000">
-                    Anytime car rental offers trasparent pricing and 24/7
+                    Anytime car rental offers transparent pricing and 24/7
                     support.
                   </h4>
                   <p className="text-lg-medium neutral-500 mb-4">

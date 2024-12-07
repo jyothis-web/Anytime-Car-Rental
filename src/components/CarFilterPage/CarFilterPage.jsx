@@ -81,14 +81,14 @@ const CarFilterPage = () => {
         (car) => car.category === category
       );
       setFilteredCars(filteredByCategory);
-      console.log("Filtered Cars by Category:", filteredByCategory); // Log filtered cars
+     
     } else {
       // If no category, show all cars
       setFilteredCars(products);
-      console.log("All Cars:", products); // Log all cars
+     
     }
   }, [products, category]);
-  console.log("Rendering filteredCars:", filteredCars);
+
 
   if (loading) {
     return <Loading />;
@@ -108,7 +108,7 @@ const CarFilterPage = () => {
           content="car rental Qatar, luxury car rental Qatar, best car rental in Qatar, Qatar car hire, airport transfer Qatar, limousine service Qatar, chauffeur service Qatar, affordable car rental Qatar, car hire Doha, rent a car Al Rayyan"
         />
 
-        <link rel="canonical" href="https://anytimeqatar.com/cars" />
+        <link rel="canonical" href={`${import.meta.env.VITE_URL}cars`}  />
 
         <meta property="og:type" content="website" />
         <meta
@@ -119,10 +119,10 @@ const CarFilterPage = () => {
           property="og:description"
           content="Elevate your journey with Anytime Qatar's premium car rental, limousine services, and airport transfer solutions. Perfect for all your transportation needs in Qatar."
         />
-        <meta property="og:url" content="https://anytimeqatar.com/cars" />
+        <meta property="og:url" content={`${import.meta.env.VITE_URL}cars`}  />
         <meta
           property="og:image"
-          content="https://anytimeqatar.com/images/premium-car-rental.jpg"
+          content={`${import.meta.env.VITE_URL}images/premium-car-rental.jpg`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -139,7 +139,8 @@ const CarFilterPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://anytimeqatar.com/images/premium-car-rental.jpg"
+          content={`${import.meta.env.VITE_URL}images/premium-car-rental.jpg`}
+        
         />
       </Helmet>
       <>

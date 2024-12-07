@@ -20,7 +20,7 @@ const ServicesPage = () => {
           content="Affordable car rental Qatar, luxury car rental Doha, budget car rental Doha, cheap car hire Qatar, best car rental company Qatar, reliable car rental Qatar, executive car rental Qatar, corporate car rental Qatar, wedding car rental Qatar, airport pickup and drop Qatar, hourly car rental Qatar."
         />
 
-        <link rel="canonical" href={`${import.meta.env.VITE_URL}`} />
+        <link rel="canonical" href={`${import.meta.env.VITE_URL}Services`} />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Anytime Rent Car" />
@@ -28,7 +28,7 @@ const ServicesPage = () => {
           property="og:description"
           content="Elevate your Qatar experience with our premium car rental, limousine service, and airport transfer solutions with Anytime Car Rental."
         />
-        <meta property="og:url" content={`${import.meta.env.VITE_URL}`} />
+        <meta property="og:url" content={`${import.meta.env.VITE_URL}Services`} />
         <meta
           property="og:image"
           content={`${import.meta.env.VITE_URL}favicon.png`}
@@ -45,7 +45,7 @@ const ServicesPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://anytimeqatar.com/favicon.png"
+          content={`${import.meta.env.VITE_URL}favicon.png`}
         />
       </Helmet>
       <Navbar />
@@ -60,7 +60,7 @@ const ServicesPage = () => {
             <div className="bg-overlay rounded-12 overflow-hidden">
               <img
                 className="w-100 h-100 img-banner"
-                src="assets/imgs/page-header/banner1.png"
+                src="assets/imgs/page-header/banner1.avif"
                 alt="Anytime car rental"
               />
             </div>

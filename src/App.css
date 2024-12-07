@@ -4101,6 +4101,9 @@ label {
   display: inline-block;
   vertical-align: middle;
 }
+.top-70{
+  top: 70%!important;
+}
 
 .card-activity {
   background-color: #8cd8e9;
@@ -11636,12 +11639,15 @@ a.icon-socials:hover {
   }
 }
 @media (max-width: 575.98px) {
-  .footer-1,
+  .footer-1{
+    width: 100%;
+  }
   .footer-2,
   .footer-3,
   .footer-4,
   .footer-5 {
     width: 100%;
+    padding-left: 35px;
   }
   .custom-col {
     flex: 1 1 100%; 

@@ -28,6 +28,7 @@ const FeaturedCars = () => {
             </div>
             <div className="col-md-4 mt-md-0 mt-4">
               <div className="d-flex justify-content-end">
+                <Link to="/CarFilterPage">
                 <div className="btn btn-primary">
                   View More
                   <svg
@@ -46,6 +47,7 @@ const FeaturedCars = () => {
                     />
                   </svg>
                 </div>
+                </Link>
               </div>
             </div>
           </div>

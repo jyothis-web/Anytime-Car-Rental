@@ -16,6 +16,7 @@ import BannerRotation from "./components/BannerRotation/BannerRotation";
 import UserLogin from "./components/AdminSection/Login/Login";
 import UploadPopupImage from "./components/Popup/UploadPopupImage";
 import axios from "axios";
+import Whatsapp from "./pages/Whatsapp";
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
@@ -29,11 +30,15 @@ function App() {
       const timer = setTimeout(async () => {
         try {
           // Fetch the image URL from the backend
-          const response = await axios.get(`${import.meta.env.VITE_URL}Anytime/getFirstImage`);
-          
+          const response = await axios.get(
+            `${import.meta.env.VITE_URL}Anytime/getFirstImage`
+          );
+
           if (response.data.success && response.data.imagePath) {
             // If there is a valid image path, show the popup
-            setImageUrl(`${import.meta.env.VITE_URL}${response.data.imagePath}`);
+            setImageUrl(
+              `${import.meta.env.VITE_URL}${response.data.imagePath}`
+            );
             setShowPopup(true);
             sessionStorage.setItem("hasSeenPopup", "true");
           } else {
@@ -43,9 +48,9 @@ function App() {
         } catch (error) {
           console.error("Error fetching image:", error);
         }
-      }, 5000); 
+      }, 5000);
 
-      return () => clearTimeout(timer); 
+      return () => clearTimeout(timer);
     }
   }, []);
 
@@ -56,18 +61,18 @@ function App() {
   return (
     <>
       <ScrollToTop />
-
+<Whatsapp />
       {showPopup && (
         <div className="popup">
-          <div className="popup-content">
-            <h2>Pop-up Title</h2>
-            <p>This is a pop-up message!</p>
+          <div className="popupImage">
             {imageUrl ? (
-              <img src={imageUrl} alt="Popup" style={{ width: "100%", height: "auto" }} />
+              <img src={imageUrl} alt="Popup" />
             ) : (
               <p>Loading image...</p>
             )}
-            <button onClick={closePopup}>Close</button>
+            <button className="close" onClick={closePopup}>
+              <i className="fas fa-times close-button"></i>
+            </button>
           </div>
         </div>
       )}

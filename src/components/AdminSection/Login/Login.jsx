@@ -1,33 +1,32 @@
-
 import "../Login/Login.css";
 import { useState } from "react";
 import axios from "axios";
-import {Card } from "@mui/material";
+import { Card } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const UserLogin = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  console.log(email,password);
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
       // Send the request with credentials
-      const response = await axios.post(`${import.meta.env.VITE_URL}auth/login`, {
-        email,
-        password,
-      },{
-        withCredentials: true,
-      }
-    );
-  
+      const response = await axios.post(
+        `${import.meta.env.VITE_URL}auth/login`,
+        {
+          email,
+          password,
+        },
+        {
+          withCredentials: true,
+        }
+      );
+
       console.log(response.data);
-  
-      // Navigate to the AdminPage if the login is successful
+
       navigate("/AdminPage");
     } catch (error) {
       console.error("Login error:", error.response?.data?.message || error);
@@ -75,9 +74,7 @@ const UserLogin = () => {
           <button className="bluebtn" type="submit">
             Log in
           </button>
-          <div>
-            {" "}
-          </div>
+          <div> </div>
         </Card>
       </form>
     </div>

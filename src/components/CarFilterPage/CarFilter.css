@@ -120,8 +120,9 @@
 }
 
 .button-flex {
-  display: flex; /* Use Flexbox for layout */
-  align-items: center; /* Center items vertically */
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
   gap: 10px;
 }
 

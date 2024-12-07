@@ -55,6 +55,8 @@ const CarBrands = () => {
                   className="light-mode"
                   src="assets/imgs/page/homepage2/1.avif"
                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </div>
@@ -64,6 +66,8 @@ const CarBrands = () => {
                   className="light-mode"
                   src="assets/imgs/page/homepage2/2.avif"
                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </div>
@@ -73,6 +77,8 @@ const CarBrands = () => {
                   className="light-mode"
                   src="assets/imgs/page/homepage2/3.avif"
                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </div>
@@ -82,6 +88,8 @@ const CarBrands = () => {
                   className="light-mode"
                   src="assets/imgs/page/homepage2/4.avif"
                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </li>
@@ -91,6 +99,8 @@ const CarBrands = () => {
                   className="light-mode"
                   src="assets/imgs/page/homepage2/5.avif"
                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </li>
@@ -99,7 +109,9 @@ const CarBrands = () => {
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/6.avif"
-                  alt="Anytime car rental"
+                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </li>
@@ -108,7 +120,9 @@ const CarBrands = () => {
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/7.avif"
-                  alt="Anytime car rental"
+                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </li>
@@ -117,7 +131,9 @@ const CarBrands = () => {
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/1.avif"
-                  alt="Anytime car rental"
+                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </li>
@@ -126,7 +142,9 @@ const CarBrands = () => {
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/2.avif"
-                  alt="Anytime car rental"
+                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </li>
@@ -135,7 +153,9 @@ const CarBrands = () => {
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/3.avif"
-                  alt="Anytime car rental"
+                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </li>
@@ -144,12 +164,14 @@ const CarBrands = () => {
                 <img
                   className="light-mode"
                   src="assets/imgs/page/homepage2/4.avif"
-                  alt="Anytime car rental"
+                   alt="Anytime car rental"
+                   width={"300px"}
+                  style={{borderRadius:"12px"}}
                 />
               </div>
             </li>
 
-            {/* Add more brands similarly */}
+           
           </Slider>
         </div>
       </div>
