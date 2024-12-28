@@ -9,10 +9,11 @@ import CarFilterBrand from "./CarFilterBrand";
 import CarFilterPrice from "./CarFilterPrice";
 import CarPriceDisplay from "./CarPriceDisplay";
 import { Link, useParams } from "react-router-dom";
+import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import Loading from "../../pages/Loading";
 import Footer from "../Footer/Footer";
 import { Helmet } from "react-helmet-async";
-import img from "../../images/banner6.png"
+import img from "../../images/banner6.png";
 const CarFilterPage = () => {
   const dispatch = useDispatch();
   const { category } = useParams();
@@ -81,14 +82,11 @@ const CarFilterPage = () => {
         (car) => car.category === category
       );
       setFilteredCars(filteredByCategory);
-     
     } else {
       // If no category, show all cars
       setFilteredCars(products);
-     
     }
   }, [products, category]);
-
 
   if (loading) {
     return <Loading />;
@@ -108,7 +106,7 @@ const CarFilterPage = () => {
           content="car rental Qatar, luxury car rental Qatar, best car rental in Qatar, Qatar car hire, airport transfer Qatar, limousine service Qatar, chauffeur service Qatar, affordable car rental Qatar, car hire Doha, rent a car Al Rayyan"
         />
 
-        <link rel="canonical" href={`${import.meta.env.VITE_URL}cars`}  />
+        <link rel="canonical" href={`${import.meta.env.VITE_URL_SEO}select-car-in-qatar`} />
 
         <meta property="og:type" content="website" />
         <meta
@@ -119,10 +117,13 @@ const CarFilterPage = () => {
           property="og:description"
           content="Elevate your journey with Anytime Qatar's premium car rental, limousine services, and airport transfer solutions. Perfect for all your transportation needs in Qatar."
         />
-        <meta property="og:url" content={`${import.meta.env.VITE_URL}cars`}  />
+        <meta
+          property="og:url"
+          content={`${import.meta.env.VITE_URL_SEO}select-car-in-qatar`}
+        />
         <meta
           property="og:image"
-          content={`${import.meta.env.VITE_URL}images/premium-car-rental.jpg`}
+          content={`${import.meta.env.VITE_URL_SEO}favicon.png`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -139,8 +140,7 @@ const CarFilterPage = () => {
         />
         <meta
           name="twitter:image"
-          content={`${import.meta.env.VITE_URL}images/premium-car-rental.jpg`}
-        
+          content={`${import.meta.env.VITE_URL_SEO}favicon.png`}
         />
       </Helmet>
       <>
@@ -200,6 +200,12 @@ const CarFilterPage = () => {
                         onFilterChange={handleBrandFilterChange}
                       />
                     </div>
+                    <div className="filter-item">
+                      <Link to="/select-car-in-qatar">
+                        <RestartAltIcon style={{ marginRight: "8px" }} />
+                        Reset
+                      </Link>
+                    </div>
                     {/* Add any other filters here */}
                   </div>
                 </div>
@@ -219,9 +225,7 @@ const CarFilterPage = () => {
                           <div style={{ minHeight: "210px" }}>
                             {car.carImage1 && (
                               <img
-                                src={`${import.meta.env.VITE_URL}${
-                                  car.carImage1.imagePath
-                                }`} // Corrected path reference
+                                src={`${car.carImage1.imagePath}`} // Corrected path reference
                                 alt={`Image of ${car.brandModel}`}
                                 loading="lazy"
                               />
@@ -302,7 +306,7 @@ const CarFilterPage = () => {
                               <div className="button-flex">
                                 <CarPriceDisplay car={car} />
 
-                                <Link to={`/CarDetilPage/${car._id}`}>
+                                <Link to={`/Anytime-Rent-Car/${car._id}/${car.brandModel.replace(/\s+/g, '-')}`}>
                                   <div className="card-latest-button">
                                     {" "}
                                     {/* Added classes here */}

@@ -3,7 +3,7 @@ const BrowseByType = () => {
   const navigate = useNavigate();
 
   const handleCategoryClick = (category) => {
-    navigate(`/CarFilterPage/${category}`);
+    navigate(`/select-car-in-qatar/${category}`);
   };
 
   return (
@@ -19,7 +19,7 @@ const BrowseByType = () => {
             </div>
             <div className="col-md-4">
               <div className="d-flex justify-content-md-end mt-md-0 mt-4">
-                <Link to="/CarFilterPage">
+                <Link to="/select-car-in-qatar">
                   <div className="btn btn-brand-2 text-nowrap wow fadeInUp">
                     View More&nbsp; &nbsp;
                     <svg

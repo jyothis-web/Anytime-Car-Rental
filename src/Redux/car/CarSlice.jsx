@@ -9,7 +9,7 @@ export const createProduct = createAsyncThunk(
       const response = await axios.post(
         `${import.meta.env.VITE_URL}anytime/create-new-car`,
         productData, {
-          withCredentials: true, // Add this to send cookies with the request
+          withCredentials: true, 
         }
       );
     
@@ -29,9 +29,7 @@ export const fetchProducts = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_URL}anytime/getAll-car`, {
-          withCredentials: true, 
-        }
+        `${import.meta.env.VITE_URL}anytime/getAll-car`,
       );
       return response.data.cars; // Assuming the response has a
     } catch (error) {

@@ -33,7 +33,7 @@ const MiddleBannners = () => {
                 <p className="text-md-regular wow fadeInUp">
                 Anytime Qatar Rent a Car service embrace the freedom of the open road with our all-inclusive car rental services, offering convenience, flexibility, and a perfect ride for every journey.
                 </p>
-                <Link to="/CarFilterPage">
+                <Link to="/select-car-in-qatar">
                   <div className="btn btn-primary wow fadeInUp">
                     Get Started Now
                     <svg
@@ -74,7 +74,7 @@ const MiddleBannners = () => {
                 >
            Our staff transportation solutions are designed to streamline your operations, boost morale, and increase productivity. Looking for the best transportation facility in Qatar, Anytime Qatar will be the right option.
                 </p>
-                <Link to="/CarFilterPage">
+                <Link to="/select-car-in-qatar">
                   <div className="btn btn-primary wow fadeInUp">
                     Get Started Now
                     <svg
@@ -118,7 +118,7 @@ const MiddleBannners = () => {
                 <p className="text-md-regular wow fadeInUp">
                 Experience the epitome of luxury travel with Anytime Qatar&apos;s best Limousine service with exquisite, top-of-the-line limousines, designed to offer unparalleled comfort, style, and sophistication.
                 </p>
-                <Link to="/CarFilterPage">
+                <Link to="/select-car-in-qatar">
                   <div className="btn btn-primary wow fadeInUp">
                     Get Started Now
                     <svg

@@ -1,6 +1,11 @@
 import PropTypes from "prop-types";
 
 const CarPriceDisplay = ({ car }) => {
+
+  const dailyRent = car.dailyRent ?? 0; // Default to 0 if null or undefined
+  const weeklyRent = car.weeklyRent ?? 0;
+  const monthlyRent = car.monthlyRent ?? 0;
+
   return (
     <div style={{maxWidth:"120px"}}>
       <div className="dropdown">
@@ -21,15 +26,15 @@ const CarPriceDisplay = ({ car }) => {
           <li>
             <div className="dropdown-item">
               Daily -{" "}
-              <span style={{ fontWeight: "600" }}>QAR {car.dailyRent}</span>
+              <span style={{ fontWeight: "600" }}>QAR {dailyRent}</span>
             </div>
             <div className="dropdown-item">
               Weekly -{" "}
-              <span style={{ fontWeight: "600" }}>QAR {car.weeklyRent}</span>
+              <span style={{ fontWeight: "600" }}>QAR {weeklyRent}</span>
             </div>
             <div className="dropdown-item">
               Monthly -{" "}
-              <span style={{ fontWeight: "600" }}>QAR {car.monthlyRent}</span>
+              <span style={{ fontWeight: "600" }}>QAR {monthlyRent}</span>
             </div>
           </li>
         </ul>
@@ -40,10 +45,11 @@ const CarPriceDisplay = ({ car }) => {
 
 CarPriceDisplay.propTypes = {
   car: PropTypes.shape({
-    dailyRent: PropTypes.number.isRequired,
-    weeklyRent: PropTypes.number.isRequired,
-    monthlyRent: PropTypes.number.isRequired,
+    dailyRent: PropTypes.number,
+    weeklyRent: PropTypes.number,
+    monthlyRent: PropTypes.number,
   }).isRequired,
 };
+
 
 export default CarPriceDisplay;

@@ -19,17 +19,17 @@ const Homepage = () => {
     content="car rental Qatar, limousine service Qatar, transportation service Qatar, rent a car Qatar, luxury car rental Qatar, airport transfer Qatar, chauffeur service Qatar"
   />
 
-  <link rel="canonical" href={`${import.meta.env.VITE_URL}`} />
+  <link rel="canonical" href={`${import.meta.env.VITE_URL_SEO}`} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Anytime Rent Car" />
   <meta
     property="og:description"
     content="Elevate your Qatar experience with our premium car rental, limousine service, and airport transfer solutions with Anytime Car Rental."
   />
-  <meta property="og:url" content={`${import.meta.env.VITE_URL}`} />
+  <meta property="og:url" content={`${import.meta.env.VITE_URL_SEO}`} />
   <meta
   property="og:image"
-  content={`${import.meta.env.VITE_URL}favicon.png`}
+  content={`${import.meta.env.VITE_URL_SEO}favicon.png`}
 />
 
   <meta property="og:image:width" content="1200" />
@@ -43,7 +43,7 @@ const Homepage = () => {
   />
   <meta
     name="twitter:image"
-    content={`${import.meta.env.VITE_URL}favicon.png`}
+    content={`${import.meta.env.VITE_URL_SEO}favicon.png`}
   />
 </Helmet>
 

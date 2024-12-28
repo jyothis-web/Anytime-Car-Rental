@@ -90,7 +90,7 @@ export default function NavbarMobile() {
           { text: "Home", link: "/" },
           { text: "About Us", link: "/Aboutus" },
           { text: "Services", link: "/Services" },
-          { text: "Contact Us", link: "/ContactPage" },
+          { text: "Contact Us", link: "/Contact-Anytime-rent-a-car" },
         ].map((item, index) => (
           <React.Fragment key={item.text}>
             <ListItem

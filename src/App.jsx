@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Homepage from "./pages/Homepage";
 import About from "./components/AboutUs/About";
@@ -17,12 +17,16 @@ import UserLogin from "./components/AdminSection/Login/Login";
 import UploadPopupImage from "./components/Popup/UploadPopupImage";
 import axios from "axios";
 import Whatsapp from "./pages/Whatsapp";
+import ReactGA from "react-ga4";
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
   const [imageUrl, setImageUrl] = useState(null); // State to store the image URL
 
+  ReactGA.initialize("G-K7LZSHQX71");
+  const location = useLocation();
   useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
     // Check if the pop-up has been shown for this session
     const hasSeenPopup = sessionStorage.getItem("hasSeenPopup");
 
@@ -36,9 +40,7 @@ function App() {
 
           if (response.data.success && response.data.imagePath) {
             // If there is a valid image path, show the popup
-            setImageUrl(
-              `${import.meta.env.VITE_URL}${response.data.imagePath}`
-            );
+            setImageUrl(`${response.data.imagePath}`);
             setShowPopup(true);
             sessionStorage.setItem("hasSeenPopup", "true");
           } else {
@@ -52,7 +54,7 @@ function App() {
 
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [location]);
 
   const closePopup = () => {
     setShowPopup(false);
@@ -61,7 +63,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
-<Whatsapp />
+      <Whatsapp />
       {showPopup && (
         <div className="popup">
           <div className="popupImage">
@@ -82,10 +84,10 @@ function App() {
         <Route path="/UserLogin" element={<UserLogin />} />
         <Route path="/Aboutus" element={<About />} />
         <Route path="/Services" element={<ServicesPage />} />
-        <Route path="/CarFilterPage" element={<CarFilterPage />} />
-        <Route path="/CarFilterPage/:category" element={<CarFilterPage />} />
-        <Route path="/CarDetilPage/:id" element={<CarDeatailPage />} />
-        <Route path="/ContactPage" element={<ContactPage />} />
+        <Route path="/select-car-in-qatar" element={<CarFilterPage />} />
+        <Route path="/select-car-in-qatar/:category" element={<CarFilterPage />} />
+        <Route path="/Anytime-Rent-Car/:id/:name" element={<CarDeatailPage />} />
+        <Route path="/Contact-Anytime-rent-a-car" element={<ContactPage />} />
         <Route path="/AdminPage" element={<AdminPage />} />
         <Route path="/createcar" element={<CreateCar />} />
         <Route path="/BannerRotation" element={<BannerRotation />} />

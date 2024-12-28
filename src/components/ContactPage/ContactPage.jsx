@@ -54,7 +54,7 @@ const ContactPage = () => {
           content="car rental Qatar contact, limousine service contact Qatar, transportation service Qatar, rent a car Qatar contact, airport transfer Qatar, chauffeur service Qatar, contact Anytime Car Rental"
         />
 
-        <link rel="canonical" href={`${import.meta.env.VITE_URL}Contact`} />
+        <link rel="canonical" href={`${import.meta.env.VITE_URL_SEO}Contact-Anytime-rent-a-car`} />
 
         <meta property="og:type" content="website" />
         <meta
@@ -67,11 +67,11 @@ const ContactPage = () => {
         />
         <meta
           property="og:url"
-          content={`${import.meta.env.VITE_URL}Contact`}
+          content={`${import.meta.env.VITE_URL_SEO}Contact-Anytime-rent-a-car`}
         />
         <meta
           property="og:image"
-          content={`${import.meta.env.VITE_URL}favicon.png`}
+          content={`${import.meta.env.VITE_URL_SEO}favicon.png`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -88,7 +88,7 @@ const ContactPage = () => {
         />
         <meta
           name="twitter:image"
-          content={`${import.meta.env.VITE_URL}favicon.png`}
+          content={`${import.meta.env.VITE_URL_SEO}favicon.png`}
         />
       </Helmet>
 
@@ -117,7 +117,7 @@ const ContactPage = () => {
                   alt="Anytime car rental"
                 />
               </span>
-              <Link to="/ContactPage" className="neutral-1000 text-md-bold">
+              <Link to="/Contact-Anytime-rent-a-car" className="neutral-1000 text-md-bold">
                 Contact Us
               </Link>
             </div>

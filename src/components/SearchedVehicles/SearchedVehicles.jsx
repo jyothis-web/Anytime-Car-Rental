@@ -138,7 +138,7 @@ const SearchedVehicles = () => {
                               </h6>
                             </div>
                             <div className="card-button">
-                            <Link to={`/CarDetilPage/${car._id}`}>
+                            <Link to={`/Anytime-Rent-Car/${car._id}/${car.brandModel.replace(/\s+/g, '-')}`}>
                               <div className="btn btn-gray">
                               More Info
                               </div>

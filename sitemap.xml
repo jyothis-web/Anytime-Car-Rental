@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
@@ -7,10 +6,45 @@
             https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
   <url>
-    <loc>https://sequrhomautomations.com/</loc> <!-- Replace with your actual domain -->
+    <loc>https://anytimeqatar.com/</loc> <!-- Replace with your actual domain -->
     <lastmod>2024-08-02T12:33:56+00:00</lastmod> <!-- Replace with the actual last modified date -->
     <changefreq>monthly</changefreq> <!-- Optional, set frequency for crawling -->
     <priority>1.0</priority> <!-- Optional, higher priority for the main page -->
+  </url>
+
+  <url>
+    <loc>https://anytimeqatar.com/Aboutus</loc>
+    <lastmod>2024-08-02T12:33:56+00:00</lastmod> <!-- Replace with the actual last modified date -->
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority> <!-- Adjust priority as needed -->
+  </url>
+
+  <url>
+    <loc>https://anytimeqatar.com/Services</loc>
+    <lastmod>2024-08-02T12:33:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://anytimeqatar.com/ContactPage</loc>
+    <lastmod>2024-08-02T12:33:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://anytimeqatar.com/CarFilterPage</loc>
+    <lastmod>2024-08-02T12:33:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://anytimeqatar.com/CarDetilPage/{id}</loc>
+    <lastmod>2024-08-02T12:33:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

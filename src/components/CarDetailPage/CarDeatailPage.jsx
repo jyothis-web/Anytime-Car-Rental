@@ -11,6 +11,8 @@ import { useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import Loading from "../../pages/Loading";
+import ReactGA from "react-ga4";
+
 
 const CarDeatailPage = () => {
   const { id } = useParams();
@@ -105,7 +107,7 @@ const CarDeatailPage = () => {
 
         <link
           rel="canonical"
-          href={`${import.meta.env.VITE_URL}CarDetilPage/${product.id}`}
+          href={`${import.meta.env.VITE_URL_SEO}Anytime-Rent-Car/${product.id}`}
         />
 
         <meta property="og:type" content="website" />
@@ -119,11 +121,11 @@ const CarDeatailPage = () => {
         />
         <meta
           property="og:url"
-          content={`${import.meta.env.VITE_URL}CarDetilPage/${product.id}`}
+          content={`${import.meta.env.VITE_URL_SEO}Anytime-Rent-Car/${product._id}/${product.brandModel.replace(/\s+/g, '-')}`}
         />
         <meta
           property="og:image"
-          content={`${import.meta.env.VITE_URL}${
+          content={`${import.meta.env.VITE_URL_SEO}${
             mainImage ||
             (images && images.length > 0 ? images[0] : "default-car-image.jpg")
           }`}
@@ -143,7 +145,7 @@ const CarDeatailPage = () => {
         />
         <meta
           name="twitter:image"
-          content={`${import.meta.env.VITE_URL}${
+          content={`${import.meta.env.VITE_URL_SEO}${
             mainImage ||
             (images && images.length > 0 ? images[0] : "default-car-image.jpg")
           }`}
@@ -179,7 +181,7 @@ const CarDeatailPage = () => {
                 </span>
               </li>
               <li>
-                <Link to="/CarFilterPage">
+                <Link to="/select-car-in-qatar">
                   <div>Cars Rental</div>
                 </Link>
                 <span className="arrow-right">
@@ -220,7 +222,7 @@ const CarDeatailPage = () => {
                     }}
                   >
                     <img
-                      src={`${import.meta.env.VITE_URL}${
+                      src={`${
                         mainImage || (images.length > 0 ? images[0] : "")
                       }`}
                       alt={`Image of  ${product.brandModel}`}
@@ -242,7 +244,7 @@ const CarDeatailPage = () => {
                       onClick={() => handleThumbnailClick(image)}
                     >
                       <img
-                        src={`${import.meta.env.VITE_URL}${image}`}
+                        src={`${image}`}
                         alt={`Thumbnail ${index + 1}`}
                         style={{ maxHeight: "100px", objectFit: "cover" }}
                         loading="lazy"
@@ -488,6 +490,12 @@ const CarDeatailPage = () => {
                             className="card-latest-button"
                             style={{ maxWidth: "120px" }}
                             onClick={() => {
+                              ReactGA.event({
+                                category: "Button",
+                                action: "Book Now Clicked",
+                                label: product.brandModel,
+                              });
+
                               const message = `I'm interested in renting the car: ${product.brandModel}. Please provide further details.`;
                               const phoneNumber = "+97471120333";
                               const whatsappUrl = `https://wa.me/${phoneNumber.replace(

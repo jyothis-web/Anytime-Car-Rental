@@ -38,10 +38,10 @@ const PopularCars = () => {
                 {carsToShow.map((car) => (
                   <div key={car._id} className="car-card">
                     <div className="car-image">
-                      <Link to={`/CarDetilPage/${car._id}`}>
+                    <Link to={`/Anytime-Rent-Car/${car._id}/${car.brandModel.replace(/\s+/g, '-')}`}>
                         {car.carImage1 && (
                           <img
-                            src={`${import.meta.env.VITE_URL}${
+                            src={`${
                               car.carImage1.imagePath
                             }`} // Corrected path reference
                             alt={`Image of ${car.brandModel}`}
@@ -99,7 +99,7 @@ const PopularCars = () => {
                         </div>
                       </div>
                       <CarPriceDisplay car={car} />
-                      <Link to={`/CarDetilPage/${car._id}`}>
+                      <Link to={`/Anytime-Rent-Car/${car._id}/${car.brandModel.replace(/\s+/g, '-')}`}>
                         <div className="card-latest-button padding-popular">
                           {" "}
                           {/* Added classes here */}
@@ -114,7 +114,7 @@ const PopularCars = () => {
           </div>
 
           <div className="d-flex justify-content-center">
-            <Link to="/CarFilterPage">
+            <Link to="/select-car-in-qatar">
               <div className="btn btn-brand-2 text-nowrap wow fadeInUp">
                 <svg
                   className="me-2"

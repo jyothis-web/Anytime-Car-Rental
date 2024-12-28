@@ -74,7 +74,7 @@ const Navbar = () => {
               More than <span className="text-primary">100+</span>
               &nbsp;Cars for Rental
             </div>
-            <Link to="/CarFilterPage">
+            <Link to="/select-car-in-qatar">
               <div className="btn btn-brand-2 btn-small  px-3 py-2 text-xs-medium">
                 Access Now
                 <svg
@@ -127,13 +127,13 @@ const Navbar = () => {
               <Link to="/Services" className="navbar-title">
                 Services
               </Link>
-              <Link to="/ContactPage" className="navbar-title">
+              <Link to="/Contact-Anytime-rent-a-car" className="navbar-title">
                 Contact Us
               </Link>
             </div>
 
             <div className="navbar-button">
-              <Link to="/CarFilterPage" className="navbar-title">
+              <Link to="/select-car-in-qatar" className="navbar-title">
                 <button className="btn btn-primary text-nowrap ">
                   Book Now
                 </button>

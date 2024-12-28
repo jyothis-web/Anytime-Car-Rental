@@ -28,7 +28,7 @@ const FeaturedCars = () => {
             </div>
             <div className="col-md-4 mt-md-0 mt-4">
               <div className="d-flex justify-content-end">
-                <Link to="/CarFilterPage">
+                <Link to="/select-car-in-qatar">
                 <div className="btn btn-primary">
                   View More
                   <svg
@@ -58,7 +58,7 @@ const FeaturedCars = () => {
                   <div style={{minHeight:"190px"}}>
                     {car.carImage1 && (
                       <img
-                        src={`${import.meta.env.VITE_URL}${
+                        src={`${
                           car.carImage1.imagePath
                         }`} // Corrected path reference
                         alt={`Image of ${car.brandModel}`}
@@ -141,7 +141,7 @@ const FeaturedCars = () => {
                       <div className="button-flex">
                         <CarPriceDisplay car={car} />
 
-                        <Link to={`/CarDetilPage/${car._id}`}>
+                        <Link to={`/Anytime-Rent-Car/${car._id}/${car.brandModel.replace(/\s+/g, '-')}`}>
                           <div className="card-latest-button">
                             {" "}
                             {/* Added classes here */}
